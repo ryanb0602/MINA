@@ -1,0 +1,620 @@
+dependencies:
+  lowrisc:dv:dv_fcov_macros:0: []
+  lowrisc:ibex:ibex_core:0.1:
+  - lowrisc:dv:dv_fcov_macros:0
+  - lowrisc:ibex:ibex_icache:0.1
+  - lowrisc:ibex:ibex_pkg:0.1
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim_xilinx:clock_gating:0
+  - lowrisc:prim:lfsr:0.1
+  - lowrisc:prim:mubi:0.1
+  - lowrisc:tool:check_tool_requirements:0.1
+  lowrisc:ibex:ibex_icache:0.1:
+  - lowrisc:ibex:ibex_pkg:0.1
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim:secded:0.1
+  lowrisc:ibex:ibex_pkg:0.1: []
+  lowrisc:ibex:ibex_top:0.1:
+  - lowrisc:ibex:ibex_core:0.1
+  - lowrisc:ibex:ibex_pkg:0.1
+  - lowrisc:prim_xilinx:and2:0
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim_xilinx:buf:0
+  - lowrisc:prim_xilinx:clock_mux2:0
+  - lowrisc:prim:count:0
+  - lowrisc:prim:fifo:0
+  - lowrisc:prim_xilinx:flop:0
+  - lowrisc:prim:onehot:0
+  - lowrisc:prim:ram_1p_scr:0.1
+  - lowrisc:prim:secded:0.1
+  - lowrisc:prim:util:0.1
+  - lowrisc:tool:check_tool_requirements:0.1
+  - pulp-platform:common_cells:common_cells:0.1
+  lowrisc:prim:assert:0.1: []
+  lowrisc:prim:cdc_rand_delay:0:
+  - lowrisc:prim:assert:0.1
+  lowrisc:prim:cipher:0:
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim:cipher_pkg:0.1
+  lowrisc:prim:cipher_pkg:0.1: []
+  lowrisc:prim:count:0:
+  - lowrisc:prim:assert:0.1
+  lowrisc:prim:fifo:0:
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim:count:0
+  - lowrisc:prim_generic:flop_2sync:0
+  - lowrisc:prim:util:0.1
+  lowrisc:prim:lfsr:0.1:
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim:cipher_pkg:0.1
+  lowrisc:prim:mubi:0.1:
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim_xilinx:buf:0
+  - lowrisc:prim_xilinx:flop:0
+  - lowrisc:prim:mubi_pkg:0.1
+  lowrisc:prim:mubi_pkg:0.1:
+  - lowrisc:prim:assert:0.1
+  lowrisc:prim:onehot:0:
+  - lowrisc:prim:util:0.1
+  lowrisc:prim:ram_1p_adv:0.1:
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim_xilinx:ram_1p:0
+  - lowrisc:prim:secded:0.1
+  - lowrisc:prim:util:0.1
+  lowrisc:prim:ram_1p_scr:0.1:
+  - lowrisc:prim:assert:0.1
+  - lowrisc:prim_xilinx:buf:0
+  - lowrisc:prim:cipher:0
+  - lowrisc:prim:lfsr:0.1
+  - lowrisc:prim:ram_1p_adv:0.1
+  - lowrisc:prim:util:0.1
+  - lowrisc:prim:util_get_scramble_params:0
+  lowrisc:prim:secded:0.1: []
+  lowrisc:prim:util:0.1:
+  - lowrisc:prim:assert:0.1
+  lowrisc:prim:util_get_scramble_params:0: []
+  lowrisc:prim:util_memload:0: []
+  lowrisc:prim_generic:flop_2sync:0:
+  - lowrisc:prim:cdc_rand_delay:0
+  - lowrisc:prim_xilinx:flop:0
+  lowrisc:prim_generic:ram_1p_pkg:0: []
+  lowrisc:prim_xilinx:and2:0: []
+  lowrisc:prim_xilinx:buf:0: []
+  lowrisc:prim_xilinx:clock_gating:0: []
+  lowrisc:prim_xilinx:clock_mux2:0: []
+  lowrisc:prim_xilinx:flop:0: []
+  lowrisc:prim_xilinx:prim_xilinx_default_pkg:0: []
+  lowrisc:prim_xilinx:ram_1p:0: []
+  lowrisc:tool:check_tool_requirements:0.1: []
+  pulp-platform:common_cells:common_cells:0.1:
+  - lowrisc:prim:assert:0.1
+files:
+- core: lowrisc:dv:dv_fcov_macros:0
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_dv_dv_fcov_macros_0/dv_fcov_macros.svh
+- core: lowrisc:ibex:ibex_pkg:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv
+- core: lowrisc:ibex:ibex_pkg:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_cheriot_pkg.sv
+- core: lowrisc:prim:assert:0.1
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_assert_0.1/rtl/prim_assert.sv
+- core: lowrisc:prim:assert:0.1
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_assert_0.1/rtl/prim_assert_dummy_macros.svh
+- core: lowrisc:prim:assert:0.1
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_assert_0.1/rtl/prim_assert_yosys_macros.svh
+- core: lowrisc:prim:assert:0.1
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_assert_0.1/rtl/prim_assert_standard_macros.svh
+- core: lowrisc:prim:assert:0.1
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_assert_0.1/rtl/prim_assert_sec_cm.svh
+- core: lowrisc:prim:assert:0.1
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_assert_0.1/rtl/prim_flop_macros.sv
+- core: lowrisc:prim:cipher_pkg:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_cipher_pkg_0.1/rtl/prim_cipher_pkg.sv
+- core: lowrisc:prim_generic:ram_1p_pkg:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_generic_ram_1p_pkg_0/rtl/prim_ram_1p_pkg.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_pkg.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_22_16_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_22_16_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_28_22_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_28_22_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_39_32_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_39_32_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_64_57_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_64_57_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_72_64_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_72_64_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_22_16_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_22_16_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_39_32_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_39_32_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_72_64_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_72_64_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_76_68_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_hamming_76_68_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_22_16_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_22_16_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_28_22_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_28_22_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_39_32_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_39_32_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_64_57_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_64_57_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_72_64_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_72_64_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_22_16_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_22_16_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_39_32_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_39_32_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_72_64_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_72_64_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_76_68_dec.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inv_hamming_76_68_enc.sv
+- core: lowrisc:prim:secded:0.1
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_secded_0.1/rtl/prim_secded_inc.svh
+- core: lowrisc:prim:util_get_scramble_params:0
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_util_get_scramble_params_0/rtl/prim_util_get_scramble_params.svh
+- core: lowrisc:prim:util_memload:0
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_util_memload_0/rtl/prim_util_memload.svh
+- core: lowrisc:prim_xilinx:and2:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_xilinx_and2_0/rtl/prim_and2.sv
+- core: lowrisc:prim_xilinx:buf:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_xilinx_buf_0/rtl/prim_buf.sv
+- core: lowrisc:prim_xilinx:clock_gating:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_xilinx_clock_gating_0/rtl/prim_clock_gating.sv
+- core: lowrisc:prim_xilinx:clock_mux2:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_xilinx_clock_mux2_0/rtl/prim_clock_mux2.sv
+- core: lowrisc:prim_xilinx:flop:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_xilinx_flop_0/rtl/prim_flop.sv
+- core: lowrisc:prim_xilinx:prim_xilinx_default_pkg:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_xilinx_prim_xilinx_default_pkg_0/rtl/prim_xilinx_pkg.sv
+- core: lowrisc:tool:check_tool_requirements:0.1
+  file_type: user
+  name: util/check_tool_requirements.py
+- core: lowrisc:tool:check_tool_requirements:0.1
+  file_type: user
+  name: util/tool_requirements.py
+- core: lowrisc:ibex:ibex_icache:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_icache_0.1/rtl/ibex_icache.sv
+- core: lowrisc:prim:cdc_rand_delay:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_cdc_rand_delay_0/rtl/prim_cdc_rand_delay.sv
+- core: lowrisc:prim:cipher:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_cipher_0/rtl/prim_subst_perm.sv
+- core: lowrisc:prim:cipher:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_cipher_0/rtl/prim_present.sv
+- core: lowrisc:prim:cipher:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_cipher_0/rtl/prim_prince.sv
+- core: lowrisc:prim:count:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_count_0/rtl/prim_count_pkg.sv
+- core: lowrisc:prim:count:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_count_0/rtl/prim_count.sv
+- core: lowrisc:prim:lfsr:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_lfsr_0.1/rtl/prim_lfsr.sv
+- core: lowrisc:prim:mubi_pkg:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_pkg_0.1/rtl/prim_mubi_pkg.sv
+- core: lowrisc:prim:util:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_util_0.1/rtl/prim_util_pkg.sv
+- core: lowrisc:prim_xilinx:ram_1p:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_xilinx_ram_1p_0/rtl/prim_ram_1p.sv
+- core: pulp-platform:common_cells:common_cells:0.1
+  file_type: systemVerilogSource
+  name: ../src/pulp-platform_common_cells_common_cells_0.1/pulp_common_cells/rtl/stream_fork.sv
+- core: pulp-platform:common_cells:common_cells:0.1
+  file_type: systemVerilogSource
+  name: ../src/pulp-platform_common_cells_common_cells_0.1/pulp_common_cells/rtl/stream_join_dynamic.sv
+- core: lowrisc:prim_generic:flop_2sync:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_generic_flop_2sync_0/rtl/prim_flop_2sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi4_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi4_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi4_dec.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi8_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi8_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi8_dec.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi12_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi12_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi12_dec.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi16_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi16_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi16_dec.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi20_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi20_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi20_dec.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi24_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi24_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi24_dec.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi28_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi28_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi28_dec.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi32_sender.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi32_sync.sv
+- core: lowrisc:prim:mubi:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_mubi_0.1/rtl/prim_mubi32_dec.sv
+- core: lowrisc:prim:onehot:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_onehot_0/rtl/prim_onehot_enc.sv
+- core: lowrisc:prim:onehot:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_onehot_0/rtl/prim_onehot_mux.sv
+- core: lowrisc:prim:ram_1p_adv:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_ram_1p_adv_0.1/rtl/prim_ram_1p_adv.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cheriot_ex.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_alu.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_branch_predict.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_counter.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_decoder.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_ex_block.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_fetch_fifo.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_id_stage.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_slow.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_prefetch_buffer.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_pmp.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_wb_stage.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_dummy_instr.sv
+- core: lowrisc:ibex:ibex_core:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv
+- core: lowrisc:prim:fifo:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_fifo_0/rtl/prim_fifo_async_sram_adapter.sv
+- core: lowrisc:prim:fifo:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_fifo_0/rtl/prim_fifo_async_simple.sv
+- core: lowrisc:prim:fifo:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_fifo_0/rtl/prim_fifo_async.sv
+- core: lowrisc:prim:fifo:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_fifo_0/rtl/prim_fifo_sync.sv
+- core: lowrisc:prim:fifo:0
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_fifo_0/rtl/prim_fifo_sync_cnt.sv
+- core: lowrisc:prim:fifo:0
+  file_type: systemVerilogSource
+  is_include_file: true
+  name: ../src/lowrisc_prim_fifo_0/rtl/prim_fifo_assert.svh
+- core: lowrisc:prim:ram_1p_scr:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_prim_ram_1p_scr_0.1/rtl/prim_ram_1p_scr.sv
+- core: lowrisc:ibex:ibex_top:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv
+- core: lowrisc:ibex:ibex_top:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_fpga.sv
+- core: lowrisc:ibex:ibex_top:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_latch.sv
+- core: lowrisc:ibex:ibex_top:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_trvk.sv
+- core: lowrisc:ibex:ibex_top:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_lockstep.sv
+- core: lowrisc:ibex:ibex_top:0.1
+  file_type: systemVerilogSource
+  name: ../src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv
+hooks:
+  pre_build: []
+name: lowrisc_ibex_ibex_top_0.1
+parameters:
+  BaseIsa:
+    datatype: str
+    default: ibex_pkg::BaseIsaRV32I
+    description: Base ISA parameter enum. See the ibex_pkg::base_isa_e enum in ibex_pkg.sv
+      for permitted values.
+    paramtype: vlogdefine
+  BranchPredictor:
+    datatype: int
+    default: 0
+    description: Enables static branch prediction (EXPERIMENTAL)
+    paramtype: vlogparam
+  BranchTargetALU:
+    datatype: int
+    default: 1
+    description: Enables separate branch target ALU (increasing branch performance
+      EXPERIMENTAL) [0/1]
+    paramtype: vlogparam
+  DbgTriggerEn:
+    datatype: int
+    default: 0
+    description: 'Enable support for debug triggers. '
+    paramtype: vlogparam
+  FPGA_XILINX:
+    datatype: bool
+    default: true
+    description: Identifies Xilinx FPGA targets to set DSP pragmas for performance
+      counters.
+    paramtype: vlogdefine
+  ICache:
+    datatype: int
+    default: 0
+    description: Enable instruction cache
+    paramtype: vlogparam
+  ICacheECC:
+    datatype: int
+    default: 0
+    description: Enable ECC protection in instruction cache
+    paramtype: vlogparam
+  ICacheScramble:
+    datatype: int
+    default: 0
+    description: Enables ICache scrambling feature (EXPERIMENTAL) [0/1]
+    paramtype: vlogparam
+  MHPMCounterNum:
+    datatype: int
+    default: 0
+    description: Number of performance monitor event counters [0/29]
+    paramtype: vlogparam
+  MHPMCounterWidth:
+    datatype: int
+    default: 40
+    description: Bit width of performance monitor event counters [32/64]
+    paramtype: vlogparam
+  PMPEnable:
+    datatype: int
+    default: 0
+    description: Enable PMP
+    paramtype: vlogparam
+  PMPGranularity:
+    datatype: int
+    default: 0
+    description: Granularity of NAPOT range, 0 = 4 byte, 1 = 8 byte, 2 = 16 byte,
+      3 = 32 byte etc
+    paramtype: vlogparam
+  PMPNumRegions:
+    datatype: int
+    default: 4
+    description: Number of PMP regions
+    paramtype: vlogparam
+  RV32B:
+    datatype: str
+    default: ibex_pkg::RV32BNone
+    description: Bitmanip implementation parameter enum. See the ibex_pkg::rv32b_e
+      enum in ibex_pkg.sv for permitted values.
+    paramtype: vlogdefine
+  RV32E:
+    datatype: int
+    default: 0
+    paramtype: vlogparam
+  RV32M:
+    datatype: str
+    default: ibex_pkg::RV32MSingleCycle
+    description: RV32M implementation parameter enum. See the ibex_pkg::rv32m_e enum
+      in ibex_pkg.sv for permitted values.
+    paramtype: vlogdefine
+  RV32ZC:
+    datatype: str
+    default: ibex_pkg::RV32ZcaZcbZcmp
+    description: Compressed instructions parameter enum. See the ibex_pkg::rv32zc_e
+      enum in ibex_pkg.sv for permitted values.
+    paramtype: vlogdefine
+  RegFile:
+    datatype: str
+    default: ibex_pkg::RegFileFF
+    description: Register file implementation parameter enum. See the ibex_pkg::regfile_e
+      enum in ibex_pkg.sv for permitted values.
+    paramtype: vlogdefine
+  SecureIbex:
+    datatype: int
+    default: 0
+    description: Enables security hardening features (EXPERIMENTAL) [0/1]
+    paramtype: vlogparam
+  WritebackStage:
+    datatype: int
+    default: 1
+    description: Enables third pipeline stage (EXPERIMENTAL) [0/1]
+    paramtype: vlogparam
+tool_options:
+  vivado: {}
+toplevel: ibex_top
+version: 0.2.1
+vpi: []

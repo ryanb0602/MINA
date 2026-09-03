@@ -1,0 +1,1 @@
+fusesoc --cores-root . run --setup --tool=vivado --build-root ../../custom_ip/ibex_build lowrisc:ibex:ibex_top $(./util/ibex_config.py maxperf fusesoc_opts)
