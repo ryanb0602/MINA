@@ -1,0 +1,6 @@
+[submodule "hw/ip/ibex"]
+	path = hw/ip/ibex
+	url = https://github.com/lowRISC/ibex.git
+[submodule "hw/ip/axi_obi"]
+	path = hw/ip/axi_obi
+	url = https://github.com/pulp-platform/axi_obi.git
