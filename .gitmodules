@@ -1,3 +1,6 @@
 [submodule "hw/ip/VexRiscv"]
 	path = hw/ip/VexRiscv
 	url = https://github.com/SpinalHDL/VexRiscv.git
+[submodule "hw/ip/verilog-axi"]
+	path = hw/ip/verilog-axi
+	url = https://github.com/alexforencich/verilog-axi.git
