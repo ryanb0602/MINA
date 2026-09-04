@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Sep  4 14:14:20 2026
+# Process ID         : 24220
+# Current directory  : /home/ryanb/Documents/MINA/hw/custom_ip
+# Command line       : vivado
+# Log file           : /home/ryanb/Documents/MINA/hw/custom_ip/vivado.log
+# Journal file       : /home/ryanb/Documents/MINA/hw/custom_ip/vivado.jou
+# Running On         : ryan-21k8s14n00
+# Platform           : EndeavourOS
+# Operating System   : EndeavourOS Linux
+# Processor Detail   : AMD Ryzen 7 PRO 7840U w/ Radeon 780M Graphics
+# CPU Frequency      : 1396.621 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 32211 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 32211 MB
+# Available Virtual  : 18556 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.xpr
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_register_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_dma_wr_32_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_vfifo_enc.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_dma_rd_32_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_register.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_register.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dma.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_crossbar_addr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_dma_rd_32_32_unaligned.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_crossbar_4x4.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dma_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_crossbar.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_dma_32_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_crossbar_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_register_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_adapter_16_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_addr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_vfifo_raw_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_16.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dma_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_vfifo_raw_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_dp_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_adapter_32_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_interconnect.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_adapter_32_16.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_reg_if_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_register_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_cdc_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_adapter_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_crossbar_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/arbiter.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_reg_if_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_cdc.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_vfifo_dec.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_interconnect.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_fifo_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/priority_encoder.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_ram_rd_if.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_register.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dma_desc_mux.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_ram_wr_rd_if.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma_desc_mux.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_ram_wr_if.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_vfifo.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_adapter_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_reg_if.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_interconnect_4x4.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_cdc_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_dp_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_adapter_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_dma_wr_32_32_unaligned.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32_unaligned.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_adapter.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_dp_ram.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_adapter.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_adapter_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_register_rd.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_fifo_delay.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_vfifo_raw.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_16_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_register.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axil_adapter_32_16.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_fifo.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_fifo.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_fifo_wr.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_adapter_16_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_interconnect_4x4.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_cdc.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_adapter_32_32.v}
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference VexRiscvMcuAxi VexRiscvMcuAxi_0
+create_bd_cell -type module -reference axi_crossbar_1x4 axi_crossbar_1x4_0
+create_bd_cell -type module -reference axi_crossbar_1x4 axi_crossbar_1x4_0
+set_property location {0.5 -77 241} [get_bd_cells axi_crossbar_1x4_0]
+set_property location {1 28 257} [get_bd_cells axi_crossbar_1x4_0]
+set_property location {1 -92 296} [get_bd_cells axi_crossbar_1x4_0]
+set_property location {1 -30 420} [get_bd_cells axi_crossbar_1x4_0]
+create_bd_intf_port -mode Master -vlnv xilinx.com:interface:aximm_rtl:1.0 axi
+delete_bd_objs [get_bd_intf_ports axi]
+set_property location {2 500 329} [get_bd_cells VexRiscvMcuAxi_0]
+update_module_reference design_1_VexRiscvMcuAxi_0_0
+set_property location {2 445 227} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {2 466 124} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {2.5 887 96} [get_bd_cells axi_crossbar_1x4_0]
+set_property location {2 876 126} [get_bd_cells axi_crossbar_1x4_0]
+set_property location {2 880 111} [get_bd_cells axi_crossbar_1x4_0]
+connect_bd_intf_net [get_bd_intf_pins VexRiscvMcuAxi_0/dBusAxi] [get_bd_intf_pins axi_crossbar_1x4_0/s00_axi]
+save_bd_design
