@@ -1,15 +1,3 @@
-[submodule "hw/ip/ibex"]
-	path = hw/ip/ibex
-	url = https://github.com/lowRISC/ibex.git
-[submodule "hw/ip/axi_obi"]
-	path = hw/ip/axi_obi
-	url = https://github.com/pulp-platform/axi_obi.git
-[submodule "hw/ip/obi"]
-	path = hw/ip/obi
-	url = https://github.com/pulp-platform/obi.git
-[submodule "hw/ip/axi"]
-	path = hw/ip/axi
-	url = https://github.com/pulp-platform/axi.git
-[submodule "hw/ip/common_cells"]
-	path = hw/ip/common_cells
-	url = https://github.com/pulp-platform/common_cells.git
+[submodule "hw/ip/VexRiscv"]
+	path = hw/ip/VexRiscv
+	url = https://github.com/SpinalHDL/VexRiscv.git
