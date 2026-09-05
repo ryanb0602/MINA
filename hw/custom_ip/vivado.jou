@@ -46,3 +46,106 @@ set_property location {2 876 126} [get_bd_cells axi_crossbar_1x4_0]
 set_property location {2 880 111} [get_bd_cells axi_crossbar_1x4_0]
 connect_bd_intf_net [get_bd_intf_pins VexRiscvMcuAxi_0/dBusAxi] [get_bd_intf_pins axi_crossbar_1x4_0/s00_axi]
 save_bd_design
+set_property location {2.5 1051 115} [get_bd_cells axi_crossbar_1x4_0]
+delete_bd_objs [get_bd_intf_nets VexRiscvMcuAxi_0_dBusAxi] [get_bd_cells axi_crossbar_1x4_0]
+add_files -norecurse -scan_for_includes /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference axi_crossbar_2x5 axi_crossbar_2x5_0
+create_bd_cell -type module -reference axi_crossbar_2x5 axi_crossbar_2x5_0
+set_property location {1.5 874 257} [get_bd_cells axi_crossbar_2x5_0]
+set_property location {2 887 298} [get_bd_cells axi_crossbar_2x5_0]
+set_property location {2 907 312} [get_bd_cells axi_crossbar_2x5_0]
+connect_bd_intf_net [get_bd_intf_pins VexRiscvMcuAxi_0/dBusAxi] [get_bd_intf_pins axi_crossbar_2x5_0/s00_axi]
+set_property location {2 966 307} [get_bd_cells axi_crossbar_2x5_0]
+set_property location {2 930 301} [get_bd_cells axi_crossbar_2x5_0]
+create_bd_cell -type module -reference axi_dp_ram axi_dp_ram_0
+set_property location {1.5 207 120} [get_bd_cells axi_dp_ram_0]
+set_property location {2 551 103} [get_bd_cells axi_dp_ram_0]
+set_property location {1.5 710 119} [get_bd_cells axi_dp_ram_0]
+set_property location {3.5 1210 263} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1206 279} [get_bd_cells axi_dp_ram_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dp_ram_0/s_axi_b] [get_bd_intf_pins axi_crossbar_2x5_0/m00_axi]
+connect_bd_intf_net [get_bd_intf_pins axi_dp_ram_0/s_axi_a] [get_bd_intf_pins VexRiscvMcuAxi_0/iBusAxi]
+set_property location {3 1256 213} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1227 335} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1211 368} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1212 336} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1214 299} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1210 283} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1210 290} [get_bd_cells axi_dp_ram_0]
+set_property location {1 450 320} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {1 450 310} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {1 450 300} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {3 1255 131} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1210 -48} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1222 -454} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1220 -319} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1231 -178} [get_bd_cells axi_dp_ram_0]
+copy_bd_objs /  [get_bd_cells {axi_dp_ram_0}]
+set_property location {4 1350 34} [get_bd_cells axi_dp_ram_1]
+set_property location {3 1239 25} [get_bd_cells axi_dp_ram_1]
+delete_bd_objs [get_bd_cells axi_dp_ram_1]
+create_bd_cell -type module -reference axi_ram axi_ram_0
+set_property location {4 1216 -14} [get_bd_cells axi_ram_0]
+connect_bd_intf_net [get_bd_intf_pins axi_crossbar_2x5_0/m01_axi] [get_bd_intf_pins axi_ram_0/s_axi]
+set_property location {3 1284 -12} [get_bd_cells axi_ram_0]
+create_bd_cell -type module -reference axi_dma axi_dma_0
+set_property location {2 292 -61} [get_bd_cells axi_dma_0]
+set_property location {1 376 -90} [get_bd_cells axi_dma_0]
+set_property location {1 353 -99} [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_intf_nets axi_crossbar_2x5_0_m00_axi]
+set_property location {3.5 1469 -177} [get_bd_cells axi_dp_ram_0]
+set_property location {4 1465 -7} [get_bd_cells axi_ram_0]
+delete_bd_objs [get_bd_intf_nets VexRiscvMcuAxi_0_iBusAxi] [get_bd_cells axi_dp_ram_0]
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+remove_files  {/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_16.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_16_32.v}
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+set_property location {3 1509 377} [get_bd_cells axi_axil_adapter_0]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_0/s_axi] [get_bd_intf_pins axi_crossbar_2x5_0/m04_axi]
+set_property location {3 1468 343} [get_bd_cells axi_axil_adapter_0]
+set_property location {3 1470 364} [get_bd_cells axi_axil_adapter_0]
+delete_bd_objs [get_bd_intf_nets axi_crossbar_2x5_0_m04_axi] [get_bd_cells axi_axil_adapter_0]
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+remove_files  /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32.v
+remove_files  /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32_unaligned.v
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+save_bd_design
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v w ]
+add_files /home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v
+update_compile_order -fileset sources_1
+remove_files  /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+remove_files  /home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_cdma:4.1 axi_cdma_0
+endgroup
+set_property location {2 390 -48} [get_bd_cells axi_cdma_0]
+set_property location {2.5 1297 337} [get_bd_cells axi_cdma_0]
+set_property location {3 1425 379} [get_bd_cells axi_cdma_0]
+set_property location {3 1331 521} [get_bd_cells axi_cdma_0]
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+set_property location {3 1270 391} [get_bd_cells axi_axil_adapter_0]
+set_property location {4 1583 504} [get_bd_cells axi_cdma_0]
+set_property location {4.5 1695 419} [get_bd_cells axi_cdma_0]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_0/s_axi] [get_bd_intf_pins axi_crossbar_2x5_0/m04_axi]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_0/m_axil] [get_bd_intf_pins axi_cdma_0/S_AXI_LITE]
+set_property location {4.5 1553 421} [get_bd_cells axi_cdma_0]
+set_property location {4.5 1387 416} [get_bd_cells axi_cdma_0]
+set_property location {5 1271 424} [get_bd_cells axi_cdma_0]
+startgroup
+set_property CONFIG.C_INCLUDE_SG {0} [get_bd_cells axi_cdma_0]
+endgroup
+set_property location {4.5 1271 419} [get_bd_cells axi_cdma_0]
+connect_bd_intf_net [get_bd_intf_pins axi_cdma_0/M_AXI] [get_bd_intf_pins axi_crossbar_2x5_0/s01_axi]
+copy_bd_objs /  [get_bd_cells {axi_axil_adapter_0}]
+set_property location {4 1102 271} [get_bd_cells axi_axil_adapter_1]
+set_property location {4 1057 300} [get_bd_cells axi_axil_adapter_1]
+set_property location {4 1059 317} [get_bd_cells axi_axil_adapter_1]
+set_property location {4 1058 303} [get_bd_cells axi_axil_adapter_1]
+connect_bd_intf_net [get_bd_intf_pins axi_crossbar_2x5_0/m02_axi] [get_bd_intf_pins axi_axil_adapter_1/s_axi]
+save_bd_design

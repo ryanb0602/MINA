@@ -448,3 +448,708 @@ connect_bd_intf_net [get_bd_intf_pins VexRiscvMcuAxi_0/dBusAxi] [get_bd_intf_pin
 save_bd_design
 Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
 Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+set_property location {2.5 1051 115} [get_bd_cells axi_crossbar_1x4_0]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+delete_bd_objs [get_bd_intf_nets VexRiscvMcuAxi_0_dBusAxi] [get_bd_cells axi_crossbar_1x4_0]
+add_files -norecurse -scan_for_includes /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+create_bd_cell -type module -reference axi_crossbar_2x5 axi_crossbar_2x5_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm01_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm02_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm03_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm04_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's01_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm00_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.DATA_WIDTH')) / 8)" into user parameter "STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.S_ID_WIDTH')) + spirit:ceil(spirit:log(2,S_COUNT)))" into user parameter "M_ID_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M00_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M01_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M02_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M03_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M04_ADDR_WIDTH".
+ERROR: [IP_Flow 19-350] User Parameter 'M_ID_WIDTH (M Id Width)': Missing default value
+ERROR: [IP_Flow 19-350] HDL Parameter 'M_ID_WIDTH (M Id Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'M_ID_WIDTH (M Id Width)': XPath expression failed: Failed to evaluate expression "(spirit:decode(id('MODELPARAM_VALUE.S_ID_WIDTH')) + spirit:ceil(spirit:log(2,S_COUNT)))".  Simplify this expression by eliminating local parameters, macros and/or functions in either the source HDL or port/parameter expression.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'axi_crossbar_2x5'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'axi_crossbar_2x5'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_crossbar_2x5 -name axi_crossbar_2x5_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+create_bd_cell -type module -reference axi_crossbar_2x5 axi_crossbar_2x5_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm01_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm02_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm03_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm04_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's01_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm00_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.DATA_WIDTH')) / 8)" into user parameter "STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.S_ID_WIDTH')) + 3)" into user parameter "M_ID_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M00_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M01_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M02_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M03_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M04_ADDR_WIDTH".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+set_property location {1.5 874 257} [get_bd_cells axi_crossbar_2x5_0]
+set_property location {2 887 298} [get_bd_cells axi_crossbar_2x5_0]
+set_property location {2 907 312} [get_bd_cells axi_crossbar_2x5_0]
+connect_bd_intf_net [get_bd_intf_pins VexRiscvMcuAxi_0/dBusAxi] [get_bd_intf_pins axi_crossbar_2x5_0/s00_axi]
+set_property location {2 966 307} [get_bd_cells axi_crossbar_2x5_0]
+set_property location {2 930 301} [get_bd_cells axi_crossbar_2x5_0]
+create_bd_cell -type module -reference axi_dp_ram axi_dp_ram_0
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'mem' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'addr_a_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'addr_a_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'addr_b_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'addr_b_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_a' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_b' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'a_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'b_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'a_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'b_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'a_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'a_rst'.
+INFO: [IP_Flow 19-4728] Bus Interface 'b_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'b_rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.DATA_WIDTH')) / 8)" into user parameter "STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.ADDR_WIDTH')) - spirit:ceil(spirit:log(2,spirit:decode(id('MODELPARAM_VALUE.STRB_WIDTH')))))" into user parameter "VALID_ADDR_WIDTH".
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axi_a': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 's_axi_b': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-5661] Bus Interface 'a_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'a_clk' has no FREQ_HZ parameter.
+WARNING: [IP_Flow 19-5661] Bus Interface 'b_clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'b_clk' has no FREQ_HZ parameter.
+set_property location {1.5 207 120} [get_bd_cells axi_dp_ram_0]
+set_property location {2 551 103} [get_bd_cells axi_dp_ram_0]
+set_property location {1.5 710 119} [get_bd_cells axi_dp_ram_0]
+set_property location {3.5 1210 263} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1206 279} [get_bd_cells axi_dp_ram_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dp_ram_0/s_axi_b] [get_bd_intf_pins axi_crossbar_2x5_0/m00_axi]
+connect_bd_intf_net [get_bd_intf_pins axi_dp_ram_0/s_axi_a] [get_bd_intf_pins VexRiscvMcuAxi_0/iBusAxi]
+set_property location {3 1256 213} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1227 335} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1211 368} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1212 336} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1214 299} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1210 283} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1210 290} [get_bd_cells axi_dp_ram_0]
+set_property location {1 450 320} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {1 450 310} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {1 450 300} [get_bd_cells VexRiscvMcuAxi_0]
+set_property location {3 1255 131} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1210 -48} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1222 -454} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1220 -319} [get_bd_cells axi_dp_ram_0]
+set_property location {3 1231 -178} [get_bd_cells axi_dp_ram_0]
+copy_bd_objs /  [get_bd_cells {axi_dp_ram_0}]
+set_property location {4 1350 34} [get_bd_cells axi_dp_ram_1]
+set_property location {3 1239 25} [get_bd_cells axi_dp_ram_1]
+delete_bd_objs [get_bd_cells axi_dp_ram_1]
+create_bd_cell -type module -reference axi_ram axi_ram_0
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_state_reg' has a dependency on the module local parameter or undefined parameter 'WRITE_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_state_next' has a dependency on the module local parameter or undefined parameter 'WRITE_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'mem' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_awaddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_awaddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_araddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 's_axi_araddr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'write_addr_valid' has a dependency on the module local parameter or undefined parameter 'VALID_ADDR_WIDTH'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.DATA_WIDTH')) / 8)" into user parameter "STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.ADDR_WIDTH')) - spirit:ceil(spirit:log(2,spirit:decode(id('MODELPARAM_VALUE.STRB_WIDTH')))))" into user parameter "VALID_ADDR_WIDTH".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+set_property location {4 1216 -14} [get_bd_cells axi_ram_0]
+connect_bd_intf_net [get_bd_intf_pins axi_crossbar_2x5_0/m01_axi] [get_bd_intf_pins axi_ram_0/s_axi]
+set_property location {3 1284 -12} [get_bd_cells axi_ram_0]
+create_bd_cell -type module -reference axi_dma axi_dma_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_read_data' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axis_write_data' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis_read_data'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / 8)" into user parameter "AXI_STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH'))" into user parameter "AXIS_DATA_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXIS_DATA_WIDTH')) > 8)" into user parameter "AXIS_KEEP_ENABLE".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXIS_DATA_WIDTH')) / 8)" into user parameter "AXIS_KEEP_WIDTH".
+WARNING: [IP_Flow 19-533] HDL Parameter 'AXIS_KEEP_ENABLE (Axis Keep Enable)': Missing data type
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+set_property location {2 292 -61} [get_bd_cells axi_dma_0]
+set_property location {1 376 -90} [get_bd_cells axi_dma_0]
+set_property location {1 353 -99} [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_cells axi_dma_0]
+delete_bd_objs [get_bd_intf_nets axi_crossbar_2x5_0_m00_axi]
+set_property location {3.5 1469 -177} [get_bd_cells axi_dp_ram_0]
+set_property location {4 1465 -7} [get_bd_cells axi_ram_0]
+delete_bd_objs [get_bd_intf_nets VexRiscvMcuAxi_0_iBusAxi] [get_bd_cells axi_dp_ram_0]
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+ERROR: [filemgmt 56-610] Failed to uniquely resolve reference.
+Multiple different parameterized instances were found for the module 'axi_axil_adapter' in the design:
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_32.v
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_16_32.v
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_16.v
+
+ERROR: [BD 41-1690] Unable to resolve module-source based on inputs: axi_axil_adapter
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_axil_adapter -name axi_axil_adapter_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+ERROR: [filemgmt 56-610] Failed to uniquely resolve reference.
+Multiple different parameterized instances were found for the module 'axi_axil_adapter' in the design:
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_32.v
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_16_32.v
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_16.v
+
+ERROR: [BD 41-1690] Unable to resolve module-source based on inputs: axi_axil_adapter
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_axil_adapter -name axi_axil_adapter_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+remove_files  {/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_16.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_32_32.v /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_axil_adapter_16_32.v}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axil' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axil'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / 8)" into user parameter "AXI_STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXIL_DATA_WIDTH')) / 8)" into user parameter "AXIL_STRB_WIDTH".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+set_property location {3 1509 377} [get_bd_cells axi_axil_adapter_0]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_0/s_axi] [get_bd_intf_pins axi_crossbar_2x5_0/m04_axi]
+set_property location {3 1468 343} [get_bd_cells axi_axil_adapter_0]
+set_property location {3 1470 364} [get_bd_cells axi_axil_adapter_0]
+delete_bd_objs [get_bd_intf_nets axi_crossbar_2x5_0_m04_axi] [get_bd_cells axi_axil_adapter_0]
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+ERROR: [filemgmt 56-610] Failed to uniquely resolve reference.
+Multiple different parameterized instances were found for the module 'axi_cdma' in the design:
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32_unaligned.v
+/home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32.v
+
+ERROR: [BD 41-1690] Unable to resolve module-source based on inputs: axi_cdma
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_cdma -name axi_cdma_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+remove_files  /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+remove_files  /home/ryanb/Documents/MINA/hw/ip/verilog-axi/tb/test_axi_cdma_32_unaligned.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_2x5.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_axil_adapter.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_dp_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_reg' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_next' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_tag'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_resp'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_last'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'active_count_reg'
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'shift_axi_rdata' has a dependency on the module local parameter or undefined parameter 'AXI_WORD_SIZE'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wdata'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wstrb'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wlast'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / 8)" into user parameter "AXI_STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH')) > 1) ? spirit:ceil(spirit:log(2,spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH')))) : 1)" into user parameter "OFFSET_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)" into user parameter "CYCLE_COUNT_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)" into user parameter "AXI_WORD_SIZE".
+ERROR: [IP_Flow 19-350] User Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-350] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': XPath expression failed: Undefined parameter "AXI_BURST_SIZE" used in expression "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': XPath expression failed: Undefined parameter "AXI_WORD_WIDTH" used in expression "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'axi_cdma'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'axi_cdma'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_cdma -name axi_cdma_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_reg' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_next' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_tag'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_resp'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_last'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'active_count_reg'
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'shift_axi_rdata' has a dependency on the module local parameter or undefined parameter 'AXI_WORD_SIZE'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wdata'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wstrb'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wlast'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / 8)" into user parameter "AXI_STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH')) > 1) ? clogb2(spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH'))) : 1)" into user parameter "OFFSET_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)" into user parameter "CYCLE_COUNT_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)" into user parameter "AXI_WORD_SIZE".
+ERROR: [IP_Flow 19-350] User Parameter 'OFFSET_WIDTH (Offset Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-350] HDL Parameter 'OFFSET_WIDTH (Offset Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'OFFSET_WIDTH (Offset Width)': XPath expression failed: Unsupported function call or array usage "clogb2" found in expression "((spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH')) > 1) ? clogb2(spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH'))) : 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': XPath expression failed: Undefined parameter "AXI_BURST_SIZE" used in expression "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': XPath expression failed: Undefined parameter "AXI_WORD_WIDTH" used in expression "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'axi_cdma'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'axi_cdma'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_cdma -name axi_cdma_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_reg' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_next' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_tag'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_resp'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_last'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'active_count_reg'
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'shift_axi_rdata' has a dependency on the module local parameter or undefined parameter 'AXI_WORD_SIZE'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wdata'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wstrb'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wlast'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / 8)" into user parameter "AXI_STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH')) > 1) ? spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH_LOG')) : 1)" into user parameter "OFFSET_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)" into user parameter "CYCLE_COUNT_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)" into user parameter "AXI_WORD_SIZE".
+ERROR: [IP_Flow 19-350] User Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-350] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': XPath expression failed: Undefined parameter "AXI_BURST_SIZE" used in expression "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': XPath expression failed: Undefined parameter "AXI_WORD_WIDTH" used in expression "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'axi_cdma'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'axi_cdma'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_cdma -name axi_cdma_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+save_bd_design
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_reg' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_next' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_tag'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_resp'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_last'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'active_count_reg'
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'shift_axi_rdata' has a dependency on the module local parameter or undefined parameter 'AXI_WORD_SIZE'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wdata'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wstrb'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wlast'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / 8)" into user parameter "AXI_STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH')) > 1) ? clog2(spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH'))) : 1)" into user parameter "OFFSET_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)" into user parameter "CYCLE_COUNT_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)" into user parameter "AXI_WORD_SIZE".
+ERROR: [IP_Flow 19-350] User Parameter 'OFFSET_WIDTH (Offset Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-350] HDL Parameter 'OFFSET_WIDTH (Offset Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'OFFSET_WIDTH (Offset Width)': XPath expression failed: Unsupported function call or array usage "clog2" found in expression "((spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH')) > 1) ? clog2(spirit:decode(id('MODELPARAM_VALUE.AXI_STRB_WIDTH'))) : 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': XPath expression failed: Undefined parameter "AXI_BURST_SIZE" used in expression "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': XPath expression failed: Undefined parameter "AXI_WORD_WIDTH" used in expression "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'axi_cdma'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'axi_cdma'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_cdma -name axi_cdma_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v w ]
+add_files /home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+remove_files  /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+create_bd_cell -type module -reference axi_cdma axi_cdma_0
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_reg' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'read_state_next' has a dependency on the module local parameter or undefined parameter 'READ_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_reg' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_state_next' has a dependency on the module local parameter or undefined parameter 'AXI_STATE_IDLE'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'axi_cmd_output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'first_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_reg' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'last_cycle_offset_next' has a dependency on the module local parameter or undefined parameter 'OFFSET_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'input_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_reg' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'output_cycle_count_next' has a dependency on the module local parameter or undefined parameter 'CYCLE_COUNT_WIDTH'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'rresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_reg' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'bresp_next' has a dependency on the module local parameter or undefined parameter 'AXI_RESP_OKAY'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_tag'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_resp'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'status_fifo_last'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'STATUS_FIFO_ADDR_WIDTH' by 5 for port or parameter 'active_count_reg'
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'shift_axi_rdata' has a dependency on the module local parameter or undefined parameter 'AXI_WORD_SIZE'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wr_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_rd_ptr_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wdata'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wstrb'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'OUTPUT_FIFO_ADDR_WIDTH' by 5 for port or parameter 'out_fifo_wlast'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / 8)" into user parameter "AXI_STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((AXI_BURST_SIZE > 0) ? AXI_BURST_SIZE : 1)" into user parameter "OFFSET_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)" into user parameter "CYCLE_COUNT_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)" into user parameter "AXI_WORD_SIZE".
+ERROR: [IP_Flow 19-350] User Parameter 'OFFSET_WIDTH (Offset Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-350] User Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-350] HDL Parameter 'OFFSET_WIDTH (Offset Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'OFFSET_WIDTH (Offset Width)': XPath expression failed: Undefined parameter "AXI_BURST_SIZE" used in expression "((AXI_BURST_SIZE > 0) ? AXI_BURST_SIZE : 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'CYCLE_COUNT_WIDTH (Cycle Count Width)': XPath expression failed: Undefined parameter "AXI_BURST_SIZE" used in expression "((spirit:decode(id('MODELPARAM_VALUE.LEN_WIDTH')) - AXI_BURST_SIZE) + 1)".
+ERROR: [IP_Flow 19-350] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': Missing default value
+ERROR: [IP_Flow 19-627] HDL Parameter 'AXI_WORD_SIZE (Axi Word Size)': XPath expression failed: Undefined parameter "AXI_WORD_WIDTH" used in expression "(spirit:decode(id('MODELPARAM_VALUE.AXI_DATA_WIDTH')) / AXI_WORD_WIDTH)".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'axi_cdma'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'axi_cdma'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference axi_cdma -name axi_cdma_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+remove_files  /home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_cdma:4.1 axi_cdma_0
+endgroup
+set_property location {2 390 -48} [get_bd_cells axi_cdma_0]
+set_property location {2.5 1297 337} [get_bd_cells axi_cdma_0]
+set_property location {3 1425 379} [get_bd_cells axi_cdma_0]
+set_property location {3 1331 521} [get_bd_cells axi_cdma_0]
+create_bd_cell -type module -reference axi_axil_adapter axi_axil_adapter_0
+set_property location {3 1270 391} [get_bd_cells axi_axil_adapter_0]
+set_property location {4 1583 504} [get_bd_cells axi_cdma_0]
+set_property location {4.5 1695 419} [get_bd_cells axi_cdma_0]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_0/s_axi] [get_bd_intf_pins axi_crossbar_2x5_0/m04_axi]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_0/m_axil] [get_bd_intf_pins axi_cdma_0/S_AXI_LITE]
+set_property location {4.5 1553 421} [get_bd_cells axi_cdma_0]
+set_property location {4.5 1387 416} [get_bd_cells axi_cdma_0]
+set_property location {5 1271 424} [get_bd_cells axi_cdma_0]
+startgroup
+set_property CONFIG.C_INCLUDE_SG {0} [get_bd_cells axi_cdma_0]
+endgroup
+set_property location {4.5 1271 419} [get_bd_cells axi_cdma_0]
+connect_bd_intf_net [get_bd_intf_pins axi_cdma_0/M_AXI] [get_bd_intf_pins axi_crossbar_2x5_0/s01_axi]
+copy_bd_objs /  [get_bd_cells {axi_axil_adapter_0}]
+set_property location {4 1102 271} [get_bd_cells axi_axil_adapter_1]
+set_property location {4 1057 300} [get_bd_cells axi_axil_adapter_1]
+set_property location {4 1059 317} [get_bd_cells axi_axil_adapter_1]
+set_property location {4 1058 303} [get_bd_cells axi_axil_adapter_1]
+connect_bd_intf_net [get_bd_intf_pins axi_crossbar_2x5_0/m02_axi] [get_bd_intf_pins axi_axil_adapter_1/s_axi]
+save_bd_design
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
