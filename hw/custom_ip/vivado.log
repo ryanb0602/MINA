@@ -1153,3 +1153,200 @@ connect_bd_intf_net [get_bd_intf_pins axi_crossbar_2x5_0/m02_axi] [get_bd_intf_p
 save_bd_design
 Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
 Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd w ]
+add_files /home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd w ]
+add_files /home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+create_bd_cell -type module -reference plic_axil_wrapper plic_axil_wrapper_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_intr' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'ext_intr': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+set_property location {3.5 993 71} [get_bd_cells plic_axil_wrapper_0]
+set_property location {6 1436 48} [get_bd_cells plic_axil_wrapper_0]
+save_bd_design
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+update_module_reference design_1_plic_axil_wrapper_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_intr' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'ext_intr': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'ext_intr' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'ext_intr': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+Upgrading '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_plic_axil_wrapper_0_0 to use current project options
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+set_property location {3.5 939 86} [get_bd_cells axi_ram_0]
+set_property location {4 878 98} [get_bd_cells axi_ram_0]
+set_property location {4.5 1130 325} [get_bd_cells axi_axil_adapter_1]
+set_property location {5.5 1263 440} [get_bd_cells axi_cdma_0]
+set_property location {5 1110 446} [get_bd_cells axi_cdma_0]
+set_property location {6 1424 150} [get_bd_cells plic_axil_wrapper_0]

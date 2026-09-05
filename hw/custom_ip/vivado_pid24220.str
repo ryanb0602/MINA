@@ -2878,3 +2878,824 @@ runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gb (PAReso
 // TclEventType: RSB_CANVAS_LOCATION
 // Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 10h:30m:01s
 // HMemoryUtils.trashcanNow. Engine heap size: 3,225 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:45:03 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:45:43 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:46:23 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:47:03 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:47:43 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:48:23 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:49:03 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:49:43 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:50:23 AM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:51:03 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:51:43 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:52:23 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:53:03 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 12:53:43 AM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 111 MB. Current time: 9/5/26, 12:54:23 AM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// WARNING: HEventQueue.dispatchEvent() is taking  35268636 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 111 MB. Current time: 9/5/26, 10:42:43 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 110 MB. Current time: 9/5/26, 10:42:51 AM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 35935 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,217 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:43:31 AM EDT
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // h (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "plic"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // be (PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "File location:", "Choose Location...", 1); // d (PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, File location:)
+setFolderChooser("/home/ryanb/Documents/MINA/hw/custom_ip");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // l (dialog56)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // d (dialog57)
+// Tcl Message: close [ open /home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd 
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // f (RDIResource.BaseDialog_OK)
+selectButton("YES", "Yes", "Define Module"); // JButton (YES)
+dismissDialog("Define Module"); // o (dialog58)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 20h:29m:32s
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,241 MB. GUI used memory: 111 MB. Current time: 9/5/26, 10:44:11 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 20h:29m:36s
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 20h:29m:38s
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 20h:29m:40s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// TclEventType: RSB_CANVAS_LOCATION
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, plic.vhd]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, Unreferenced, plic.vhd]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("plic.vhd", 80, 323); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 19, 231); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 63, 230); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,290 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:44:51 AM EDT
+// Elapsed time: 53 seconds
+selectCodeEditor("plic.vhd", 119, 207); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,300 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:45:31 AM EDT
+// Elapsed time: 42 seconds
+selectCodeEditor("plic.vhd", 58, 316); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:46:11 AM EDT
+selectCodeEditor("plic.vhd", 39, 248); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:46:51 AM EDT
+// Elapsed time: 43 seconds
+selectCodeEditor("plic.vhd", 104, 374); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 91, 350); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 73, 364); // ae (plic.vhd)
+// Elapsed time: 15 seconds
+selectCodeEditor("plic.vhd", 30, 250); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 195, 380); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:47:31 AM EDT
+// Elapsed time: 21 seconds
+selectCodeEditor("plic.vhd", 83, 380); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 83, 380, false, false, false, false, true); // ae (plic.vhd) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:48:11 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:48:51 AM EDT
+// Elapsed time: 76 seconds
+selectCodeEditor("plic.vhd", 176, 456); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:49:31 AM EDT
+// Elapsed time: 46 seconds
+selectCodeEditor("plic.vhd", 493, 366); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:50:11 AM EDT
+// Elapsed time: 49 seconds
+selectCodeEditor("plic.vhd", 497, 361); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 497, 361); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 497, 361); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 497, 361); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 497, 361); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:50:51 AM EDT
+// Elapsed time: 13 seconds
+selectCodeEditor("plic.vhd", 285, 384); // ae (plic.vhd)
+// Elapsed time: 10 seconds
+selectCodeEditor("plic.vhd", 95, 383); // ae (plic.vhd)
+// Elapsed time: 20 seconds
+selectCodeEditor("plic.vhd", 148, 501); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 114, 492); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,292 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:51:31 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 20h:37m:32s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 20h:37m:34s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,305 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:52:11 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,305 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:52:51 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,305 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:53:31 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,305 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:54:11 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,305 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:54:51 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,305 MB. GUI used memory: 112 MB. Current time: 9/5/26, 10:55:31 AM EDT
+// Elapsed time: 251 seconds
+selectCodeEditor("plic.vhd", 203, 285); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 278, 341); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 175, 422); // ae (plic.vhd)
+// Elapsed time: 13 seconds
+selectCodeEditor("plic.vhd", 60, 434); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,305 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:56:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,315 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:56:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,307 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:57:32 AM EDT
+// Elapsed time: 118 seconds
+selectCodeEditor("plic.vhd", 608, 447); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 553, 455); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 527, 462); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,307 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:58:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,307 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:58:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 10:59:32 AM EDT
+// Elapsed time: 126 seconds
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 90, 515); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 485, 514); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:00:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:00:52 AM EDT
+// Elapsed time: 63 seconds
+selectCodeEditor("plic.vhd", 95, 485); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:01:32 AM EDT
+// Elapsed time: 61 seconds
+selectCodeEditor("plic.vhd", 74, 521); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:02:12 AM EDT
+selectCodeEditor("plic.vhd", 80, 501); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 125, 540); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 101, 522); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:02:52 AM EDT
+// Elapsed time: 50 seconds
+selectCodeEditor("plic.vhd", 129, 452); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 131, 392); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 447, 363); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:03:32 AM EDT
+// Elapsed time: 29 seconds
+selectCodeEditor("plic.vhd", 156, 398); // ae (plic.vhd)
+// Elapsed time: 12 seconds
+selectCodeEditor("plic.vhd", 104, 413); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:04:12 AM EDT
+// Elapsed time: 39 seconds
+selectCodeEditor("plic.vhd", 133, 432); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 75, 265); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:04:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:05:32 AM EDT
+// Elapsed time: 46 seconds
+selectCodeEditor("plic.vhd", 139, 436); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 135, 448); // ae (plic.vhd)
+// Elapsed time: 27 seconds
+selectCodeEditor("plic.vhd", 139, 402); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:06:12 AM EDT
+// Elapsed time: 20 seconds
+selectCodeEditor("plic.vhd", 141, 265); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 114, 400); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:06:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:07:32 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:08:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:08:52 AM EDT
+// Elapsed time: 151 seconds
+selectCodeEditor("plic.vhd", 280, 385); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 187, 446); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:09:32 AM EDT
+// Elapsed time: 40 seconds
+selectCodeEditor("plic.vhd", 464, 434); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 241, 402); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:10:12 AM EDT
+// Elapsed time: 35 seconds
+selectCodeEditor("plic.vhd", 130, 437); // ae (plic.vhd)
+// Elapsed time: 19 seconds
+selectCodeEditor("plic.vhd", 271, 431); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 271, 431); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 164, 414); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 147, 407); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 334, 370); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 130, 359); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:10:52 AM EDT
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 226, 365); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 109, 319); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 329, 356); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 131, 419); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:11:32 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:12:12 AM EDT
+// Elapsed time: 65 seconds
+selectCodeEditor("plic.vhd", 161, 468); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 158, 479); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 155, 494); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 161, 488); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:12:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:13:32 AM EDT
+// Elapsed time: 75 seconds
+selectCodeEditor("plic.vhd", 247, 207); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 401, 301); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:14:12 AM EDT
+// Elapsed time: 46 seconds
+selectCodeEditor("plic.vhd", 190, 230); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 226, 300); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 213, 405); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 347, 299); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:14:52 AM EDT
+// Elapsed time: 36 seconds
+selectCodeEditor("plic.vhd", 253, 416); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 330, 416); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 179, 425); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:15:32 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:16:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:16:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:17:32 AM EDT
+// Elapsed time: 137 seconds
+selectCodeEditor("plic.vhd", 274, 111); // ae (plic.vhd)
+// Elapsed time: 20 seconds
+selectCodeEditor("plic.vhd", 214, 407); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 205, 427); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 210, 417); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:18:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 114 MB. Current time: 9/5/26, 11:18:52 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:19:32 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:20:12 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:20:52 AM EDT
+// Elapsed time: 188 seconds
+selectCodeEditor("plic.vhd", 489, 264); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:21:32 AM EDT
+// Elapsed time: 51 seconds
+selectCodeEditor("plic.vhd", 488, 262); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 459, 334); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 399, 301); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:22:12 AM EDT
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 398, 225); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:22:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:23:32 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:24:12 AM EDT
+// Elapsed time: 145 seconds
+selectCodeEditor("plic.vhd", 379, 236); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 3, 418); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,308 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:24:52 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:10m:39s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:10m:43s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:25:33 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:26:13 AM EDT
+// Elapsed time: 84 seconds
+selectCodeEditor("plic.vhd", 186, 237); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:26:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:27:33 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:28:13 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:28:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:29:33 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,324 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:30:13 AM EDT
+// Elapsed time: 256 seconds
+selectCodeEditor("plic.vhd", 272, 175); // ae (plic.vhd)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources]", 8, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectCodeEditor("plic.vhd", 120, 189); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:30:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:31:33 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:32:13 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:32:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:33:33 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:34:13 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:34:53 AM EDT
+// Elapsed time: 256 seconds
+selectCodeEditor("plic.vhd", 208, 361); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:35:33 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,325 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:36:13 AM EDT
+// Elapsed time: 96 seconds
+selectCodeEditor("plic.vhd", 373, 307); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 181, 280); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 181, 280, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 181, 280); // ae (plic.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:22m:07s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:22m:11s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:36:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:37:33 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:38:13 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:38:53 AM EDT
+// Elapsed time: 152 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "axi_crossbar_1x4.v", 1); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:39:33 AM EDT
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic.vhd", 4); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("plic.vhd", 397, 360); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:40:13 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:40:53 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:41:34 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 109 MB. Current time: 9/5/26, 11:42:14 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 109 MB. Current time: 9/5/26, 11:42:54 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 109 MB. Current time: 9/5/26, 11:43:34 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 110 MB. Current time: 9/5/26, 11:44:14 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 109 MB. Current time: 9/5/26, 11:44:54 AM EDT
+// Elapsed time: 333 seconds
+selectCodeEditor("plic.vhd", 360, 419); // ae (plic.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 3); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 2); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "axi_crossbar_1x4.v", 1); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 112 MB. Current time: 9/5/26, 11:45:34 AM EDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:46:14 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 112 MB. Current time: 9/5/26, 11:46:54 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 112 MB. Current time: 9/5/26, 11:47:34 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:48:14 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:48:54 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:49:34 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:50:14 AM EDT
+// Elapsed time: 310 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic.vhd", 4); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("plic.vhd", 144, 194); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 190, 212); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:50:54 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:51:34 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 113 MB. Current time: 9/5/26, 11:52:14 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,341 MB. GUI used memory: 112 MB. Current time: 9/5/26, 11:52:54 AM EDT
+// Elapsed time: 133 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // C (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next", "Add Sources"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File", "Add Sources"); // h (PAResourceQtoS.SrcChooserPanel_CREATE_FILE)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "plic_axil"); // ad (PAResourceAtoD.CreateSrcFileDialog_FILE_NAME)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // be (PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE)
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, "File location:", "Choose Location...", 1); // d (PAResourceAtoD.CreateSrcFileDialog_FILE_LOCATION, File location:)
+setFolderChooser("/home/ryanb/Documents/MINA/hw/custom_ip");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Source File"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Create Source File"); // l (dialog59)
+selectButton("FINISH", "Finish", "Add Sources"); // JButton (FINISH)
+// 'f' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // d (dialog60)
+// Tcl Message: close [ open /home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Define Module"); // f (RDIResource.BaseDialog_OK)
+selectButton("YES", "Yes", "Define Module"); // JButton (YES)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // o (dialog61)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:38m:43s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, plic_axil.vhd]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, plic_axil.vhd]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, plic_axil.vhd]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("plic_axil.vhd", 265, 258); // ae (plic_axil.vhd)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:38m:47s
+// Tcl Message: update_compile_order -fileset sources_1 
+typeControlKey((HResource) null, "plic_axil.vhd", 'v'); // ae (plic_axil.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:38m:49s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:38m:53s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:38m:57s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,439 MB. GUI used memory: 114 MB. Current time: 9/5/26, 11:53:35 AM EDT
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // C (PAResourceQtoS.SystemBuilderView_ADD_IP, System_RSB_ADD_IP)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 211, 99, 1235, 644, false, false, false, true, false); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // am (PAResourceQtoS.SystemBuilderView_PINNING, Pinning)
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, "Add Module..."); // ap (PAResourceQtoS.SystemBuilderMenu_ADD_MODULE, Add Module...)
+setText("PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD", "plic"); // OverlayTextField (PAResourceQtoS.RSBAddModuleDialog_MODULES_SEARCH_FIELD)
+selectList(PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST, "plic_axil_wrapper(Behavioral) (plic_axil.vhd)", 0); // cj (PAResourceQtoS.RSBAddModuleDialog_MODULE_LIST)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Add Module"); // f (RDIResource.BaseDialog_OK)
+dismissDialog("Add Module"); // cg (dialog62)
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type module -reference plic_axil_wrapper plic_axil_wrapper_0 
+dismissDialog("Add Module"); // bk (Add Module Progress)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /plic_axil_wrapper_0/ext_intr]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:39m:15s
+// TclEventType: DG_GRAPH_GENERATED
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /plic_axil_wrapper_0]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:39m:17s
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {3.5 993 71} [get_bd_cells plic_axil_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 993 71} [get_bd_cells plic_axil_wrapper_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {6 1436 48} [get_bd_cells plic_axil_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 1436 48} [get_bd_cells plic_axil_wrapper_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /plic_axil_wrapper_0]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:39m:35s
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 21h:39m:37s
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,466 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:23:36 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 1781 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic.vhd", 4); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("plic.vhd", 126, 198); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 118, 214); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 78, 227); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 85, 240); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 213, 252); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 111, 243); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 111, 243, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 208, 251); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 225, 247); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 116, 243); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 228, 245); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,672 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:24:04 PM EDT
+selectCodeEditor("plic.vhd", 70, 283); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 70, 283, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 57, 265); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 430, 449); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,468 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:24:16 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+selectCodeEditor("plic.vhd", 100, 364); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 100, 364, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 208, 448); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 119, 368); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 119, 368, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 110, 382); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 110, 382, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 93, 399); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 93, 399, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 99, 416); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 105, 418); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 141, 415); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 107, 450); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 608, 465); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 504, 299); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 335, 317); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 92, 216); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,468 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:24:56 PM EDT
+selectCodeEditor("plic.vhd", 190, 426); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 326, 417); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 326, 417, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 326, 417); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 333, 377); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 333, 377, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 333, 377); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 282, 368); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 282, 368, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 282, 368); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 327, 408); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 325, 399); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 647, 381); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 353, 402); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 204, 400); // ae (plic.vhd)
+// [GUI Memory]: 195 MB (+446kb) [22:11:01]
+selectCodeEditor("plic.vhd", 141, 385); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 135, 362); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 129, 345); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 674, 397); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,468 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:25:36 PM EDT
+// Elapsed time: 23 seconds
+selectCodeEditor("plic.vhd", 387, 380); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 382, 390); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 176, 342); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 239, 330); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 239, 330, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 239, 330); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 225, 315); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 358, 365); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,468 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:26:16 PM EDT
+// Elapsed time: 24 seconds
+selectCodeEditor("plic.vhd", 167, 515); // ae (plic.vhd)
+// Elapsed time: 20 seconds
+selectCodeEditor("plic.vhd", 238, 38); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 238, 38, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 238, 38); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 512, 92); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 512, 92); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 115, 116); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,469 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:26:56 PM EDT
+selectCodeEditor("plic.vhd", 504, 74); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 322, 469); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 93, 453); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 306, 468); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 306, 468); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,469 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:27:36 PM EDT
+// Elapsed time: 39 seconds
+selectCodeEditor("plic.vhd", 699, 91); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,469 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:28:16 PM EDT
+// Elapsed time: 29 seconds
+selectCodeEditor("plic.vhd", 242, 450); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 388, 296); // ae (plic.vhd)
+// Elapsed time: 11 seconds
+selectCodeEditor("plic.vhd", 228, 467); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,469 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:28:56 PM EDT
+// Elapsed time: 28 seconds
+selectCodeEditor("plic.vhd", 285, 469); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 308, 472); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 272, 481); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 279, 455); // ae (plic.vhd)
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 357 seconds
+selectCodeEditor("plic.vhd", 457, 480); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,469 MB. GUI used memory: 115 MB. Current time: 9/5/26, 12:35:13 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 22h:21m:15s
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,479 MB. GUI used memory: 115 MB. Current time: 9/5/26, 6:08:06 PM EDT
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 3,485 MB. GUI used memory: 115 MB. Current time: 9/5/26, 6:08:07 PM EDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 27h:53m:32s
+// [Engine Memory]: 3,864 MB (+253279kb) [27:53:44]
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 20007 seconds
+selectCodeEditor("plic.vhd", 242, 281); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 214, 416); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,864 MB. GUI used memory: 115 MB. Current time: 9/5/26, 6:08:45 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,485 MB. GUI used memory: 115 MB. Current time: 9/5/26, 6:09:25 PM EDT
+// Elapsed time: 52 seconds
+selectCodeEditor("plic.vhd", 245, 420); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 363, 420); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 466, 390); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 251, 419); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 417, 421); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 540, 419); // ae (plic.vhd)
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 13 seconds
+selectCodeEditor("plic.vhd", 249, 409); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 253, 412); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 253, 412, false, false, false, false, true); // ae (plic.vhd) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,485 MB. GUI used memory: 115 MB. Current time: 9/5/26, 6:10:05 PM EDT
+selectCodeEditor("plic.vhd", 571, 418); // ae (plic.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 27h:55m:38s
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 5693924ms to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,547 MB. GUI used memory: 117 MB. Current time: 9/5/26, 7:45:10 PM EDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:30m:34s
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,513 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:45:39 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,513 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:46:19 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 5777 seconds
+selectCodeEditor("plic.vhd", 315, 415); // ae (plic.vhd)
+// Elapsed time: 28 seconds
+selectCodeEditor("plic.vhd", 554, 412); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 481, 437); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,513 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:46:59 PM EDT
+// Elapsed time: 28 seconds
+selectCodeEditor("plic.vhd", 404, 187); // ae (plic.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:32m:47s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:32m:50s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,534 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:47:39 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,534 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:48:19 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 60 seconds
+selectCodeEditor("plic.vhd", 435, 384); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 336, 327); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 309, 288); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 324, 333); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 534, 381); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 481, 332); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 589, 295); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,534 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:48:59 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,534 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:49:39 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 60 seconds
+selectCodeEditor("plic.vhd", 264, 322); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'v'); // ae (plic.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:35m:11s
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:35m:14s
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,563 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:50:20 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 55 seconds
+selectCodeEditor("plic.vhd", 343, 335); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 322, 215); // ae (plic.vhd)
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,555 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:50:59 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic_axil.vhd", 5); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("plic_axil.vhd", 235, 358); // ae (plic_axil.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic.vhd", 4); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("plic.vhd", 173, 280); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 104, 162); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 187, 432); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 153, 435); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 300, 208); // ae (plic.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+typeControlKey((HResource) null, "plic.vhd", 'c'); // ae (plic.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:36m:44s
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:36m:47s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,581 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:51:40 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,573 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:52:20 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 90 seconds
+selectCodeEditor("plic.vhd", 456, 363); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 332, 225); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 261, 255); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 224, 242); // ae (plic.vhd)
+selectCodeEditor("plic.vhd", 224, 242, false, false, false, false, true); // ae (plic.vhd) - Double Click
+selectCodeEditor("plic.vhd", 224, 242); // ae (plic.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,573 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:53:00 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 18 seconds
+selectCodeEditor("plic.vhd", 358, 257); // ae (plic.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:38m:38s
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic_axil.vhd", 5); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:38m:41s
+// TclEventType: RSB_CANVAS_LOCATION
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic_axil.vhd", 5); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "plic_axil.vhd", 5); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,599 MB. GUI used memory: 116 MB. Current time: 9/5/26, 7:53:40 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 32 seconds
+typeControlKey((HResource) null, "plic_axil.vhd", 'v'); // ae (plic_axil.vhd)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:39m:29s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:39m:32s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_pins /plic_axil_wrapper_0/S_AXI_ACLK]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /plic_axil_wrapper_0]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1175, 208, 1235, 609, false, false, false, true, false); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /plic_axil_wrapper_0]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // am (PAResourceQtoS.SystemBuilderView_ORIENTATION, Orientation)
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_RSB_BLOCK, "Refresh Module"); // ap (PAResourceCommand.PACommandNames_REFRESH_RSB_BLOCK, refresh_rsb_block_menu)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_RSB_BLOCK
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// TclEventType: PAUSE_COMPOSITE_FILE_CHANGE_GUI
+// Tcl Message: update_module_reference design_1_plic_axil_wrapper_0_0 
+// Tcl Message: Upgrading '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated design_1_plic_axil_wrapper_0_0 to use current project options 
+// Tcl Message: Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+selectButton("OK", "OK", "Refresh Module References"); // JButton (OK)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:39m:41s
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/M.f': 29h:39m:44s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,639 MB. GUI used memory: 118 MB. Current time: 9/5/26, 7:54:21 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {3.5 939 86} [get_bd_cells axi_ram_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3.5 939 86} [get_bd_cells axi_ram_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {4 878 98} [get_bd_cells axi_ram_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4 878 98} [get_bd_cells axi_ram_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_ram_0]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Tcl Command: 'set_property location {4.5 1130 325} [get_bd_cells axi_axil_adapter_1]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {4.5 1130 325} [get_bd_cells axi_axil_adapter_1] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {5.5 1263 440} [get_bd_cells axi_cdma_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {5.5 1263 440} [get_bd_cells axi_cdma_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Command: 'set_property location {5 1110 446} [get_bd_cells axi_cdma_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {5 1110 446} [get_bd_cells axi_cdma_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Tcl Command: 'set_property location {6 1424 150} [get_bd_cells plic_axil_wrapper_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 1424 150} [get_bd_cells plic_axil_wrapper_0] 
+// TclEventType: RSB_CANVAS_LOCATION
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,631 MB. GUI used memory: 117 MB. Current time: 9/5/26, 7:55:01 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 54 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_crossbar_2x5_0]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// TclEventType: RSB_BLOCK_SIZE
+// TclEventType: RSB_CANVAS_LOCATION
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /axi_crossbar_2x5_0]"); // gb (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runCommand("customize_rsb_block");
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// TclEventType: RSB_CANVAS_LOCATION
+// HMemoryUtils.trashcanNow. Engine heap size: 3,634 MB. GUI used memory: 127 MB. Current time: 9/5/26, 7:55:41 PM EDT
+// TclEventType: RSB_CANVAS_LOCATION
+// Elapsed time: 39 seconds
+setText("Addr Width", "32"); // I (Addr Width)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Re-customize Module Reference"); // f (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Re-customize Module Reference"); // m (dialog63)
