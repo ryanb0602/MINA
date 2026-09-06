@@ -1350,3 +1350,782 @@ set_property location {4.5 1130 325} [get_bd_cells axi_axil_adapter_1]
 set_property location {5.5 1263 440} [get_bd_cells axi_cdma_0]
 set_property location {5 1110 446} [get_bd_cells axi_cdma_0]
 set_property location {6 1424 150} [get_bd_cells plic_axil_wrapper_0]
+add_files -norecurse -scan_for_includes /home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axil_crossbar_1x5.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_crossbar_1x4.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+create_bd_cell -type module -reference axil_crossbar_1x5 axil_crossbar_1x5_0
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M00_CONNECT_READ' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M00_CONNECT_WRITE' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M01_CONNECT_READ' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M01_CONNECT_WRITE' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M02_CONNECT_READ' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M02_CONNECT_WRITE' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M03_CONNECT_READ' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M03_CONNECT_WRITE' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M04_CONNECT_READ' is inferred to be bitString format.
+INFO: [IP_Flow 19-4821] For module 'axil_crossbar_1x5', parameter 'M04_CONNECT_WRITE' is inferred to be bitString format.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00_axil' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm01_axil' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm02_axil' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm03_axil' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm04_axil' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axil' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm00_axil'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "(spirit:decode(id('MODELPARAM_VALUE.DATA_WIDTH')) / 8)" into user parameter "STRB_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M00_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M01_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M02_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M03_ADDR_WIDTH".
+INFO: [IP_Flow 19-818] Not transferring value dependency attribute "{spirit:decode(id('MODELPARAM_VALUE.M_REGIONS')){0x00000018}}" into user parameter "M04_ADDR_WIDTH".
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+set_property location {5.5 1415 297} [get_bd_cells axil_crossbar_1x5_0]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_1/m_axil] [get_bd_intf_pins axil_crossbar_1x5_0/s00_axil]
+set_property location {6 1404 349} [get_bd_cells axil_crossbar_1x5_0]
+set_property location {6 1408 322} [get_bd_cells axil_crossbar_1x5_0]
+set_property location {7 1743 245} [get_bd_cells plic_axil_wrapper_0]
+connect_bd_intf_net [get_bd_intf_pins axil_crossbar_1x5_0/m00_axil] [get_bd_intf_pins plic_axil_wrapper_0/S_AXI]
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/VexRiscvMcuAxi_0/iBusAxi' to master interface '/VexRiscvMcuAxi_0/iBusAxi'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axil_crossbar_1x5_0/m01_axil' to master interface '/axil_crossbar_1x5_0/m01_axil'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axil_crossbar_1x5_0/m02_axil' to master interface '/axil_crossbar_1x5_0/m02_axil'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axil_crossbar_1x5_0/m03_axil' to master interface '/axil_crossbar_1x5_0/m03_axil'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axil_crossbar_1x5_0/m04_axil' to master interface '/axil_crossbar_1x5_0/m04_axil'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_crossbar_2x5_0/m00_axi' to master interface '/axi_crossbar_2x5_0/m00_axi'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_crossbar_2x5_0/m03_axi' to master interface '/axi_crossbar_2x5_0/m03_axi'. Please either complete or remove this path to resolve.
+CRITICAL WARNING: [BD 41-1356] Slave segment </axi_cdma_0/S_AXI_LITE/Reg> is not assigned into address space </axi_axil_adapter_0/m_axil>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </axi_axil_adapter_0/s_axi/reg0> is not assigned into address space </axi_crossbar_2x5_0/m04_axi>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </axi_axil_adapter_1/s_axi/reg0> is not assigned into address space </axi_crossbar_2x5_0/m02_axi>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </axi_ram_0/s_axi/reg0> is not assigned into address space </axi_crossbar_2x5_0/m01_axi>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </axi_crossbar_2x5_0/s01_axi/reg0> is not assigned into address space </axi_cdma_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </axi_crossbar_2x5_0/s00_axi/reg0> is not assigned into address space </VexRiscvMcuAxi_0/dBusAxi>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </axil_crossbar_1x5_0/s00_axil/reg0> is not assigned into address space </axi_axil_adapter_1/m_axil>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </plic_axil_wrapper_0/S_AXI/reg0> is not assigned into address space </axil_crossbar_1x5_0/m00_axil>. Please use Address Editor to either assign or exclude it.
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/VexRiscvMcuAxi_0/clk
+/axi_crossbar_2x5_0/clk
+/axi_ram_0/clk
+/axi_cdma_0/m_axi_aclk
+/axi_cdma_0/s_axi_lite_aclk
+/axi_axil_adapter_0/clk
+/axi_axil_adapter_1/clk
+/plic_axil_wrapper_0/S_AXI_ACLK
+/axil_crossbar_1x5_0/clk
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+set_property location {7 1673 217} [get_bd_cells plic_axil_wrapper_0]
+connect_bd_net [get_bd_pins plic_axil_wrapper_0/ext_intr] [get_bd_pins VexRiscvMcuAxi_0/externalInterrupt]
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd w ]
+add_files /home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+create_bd_cell -type module -reference axil_timer_64 axil_timer_64_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IRQ' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IRQ': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+set_property location {7 1662 361} [get_bd_cells axil_timer_64_0]
+set_property location {7.5 1755 356} [get_bd_cells axil_timer_64_0]
+set_property location {8 1717 210} [get_bd_cells plic_axil_wrapper_0]
+connect_bd_intf_net [get_bd_intf_pins axil_timer_64_0/S_AXI] [get_bd_intf_pins axil_crossbar_1x5_0/m01_axil]
+connect_bd_net [get_bd_pins axil_timer_64_0/IRQ] [get_bd_pins VexRiscvMcuAxi_0/timerInterrupt]
+startgroup
+set_property CONFIG.M00_BASE_ADDR {0} [get_bd_cells axi_crossbar_2x5_0]
+endgroup
+assign_bd_address -target_address_space /axi_crossbar_2x5_0/m01_axi [get_bd_addr_segs axi_ram_0/s_axi/reg0] -force
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/axi_crossbar_2x5_0/m01_axi' at <0x0000_0000 [ 64K ]>.
+set_property offset 0x1000000 [get_bd_addr_segs {axi_crossbar_2x5_0/m01_axi/SEG_axi_ram_0_reg0}]
+set_property offset 0x10000000 [get_bd_addr_segs {axi_crossbar_2x5_0/m01_axi/SEG_axi_ram_0_reg0}]
+assign_bd_address -target_address_space /axi_crossbar_2x5_0/m02_axi [get_bd_addr_segs axi_axil_adapter_1/s_axi/reg0] -force
+Slave segment '/axi_axil_adapter_1/s_axi/reg0' is being assigned into address space '/axi_crossbar_2x5_0/m02_axi' at <0x0_0000_0000 [ 4G ]>.
+set_property range 1M [get_bd_addr_segs {axi_crossbar_2x5_0/m02_axi/SEG_axi_axil_adapter_1_reg0}]
+set_property offset 0x20000000 [get_bd_addr_segs {axi_crossbar_2x5_0/m02_axi/SEG_axi_axil_adapter_1_reg0}]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+set_property CONFIG.NUM_MI {5} [get_bd_cells smartconnect_0]
+delete_bd_objs [get_bd_intf_nets axi_crossbar_2x5_0_m02_axi] [get_bd_intf_nets axi_cdma_0_M_AXI] [get_bd_intf_nets axi_crossbar_2x5_0_m04_axi] [get_bd_intf_nets axi_crossbar_2x5_0_m01_axi] [get_bd_intf_nets VexRiscvMcuAxi_0_dBusAxi] [get_bd_cells axi_crossbar_2x5_0]
+set_property location {3 572 125} [get_bd_cells smartconnect_0]
+set_property location {1.5 364 347} [get_bd_cells smartconnect_0]
+set_property location {2 384 269} [get_bd_cells smartconnect_0]
+connect_bd_intf_net [get_bd_intf_pins VexRiscvMcuAxi_0/dBusAxi] [get_bd_intf_pins smartconnect_0/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M01_AXI] [get_bd_intf_pins axi_ram_0/s_axi]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M02_AXI] [get_bd_intf_pins axi_axil_adapter_1/s_axi]
+set_property location {3.5 958 447} [get_bd_cells axi_axil_adapter_0]
+set_property location {3 966 405} [get_bd_cells axi_axil_adapter_0]
+set_property location {3 967 432} [get_bd_cells axi_axil_adapter_0]
+set_property location {3 967 418} [get_bd_cells axi_axil_adapter_0]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M04_AXI] [get_bd_intf_pins axi_axil_adapter_0/s_axi]
+connect_bd_net [get_bd_pins smartconnect_0/aclk] [get_bd_pins VexRiscvMcuAxi_0/jtag_tdo]
+delete_bd_objs [get_bd_nets VexRiscvMcuAxi_0_jtag_tdo]
+connect_bd_net [get_bd_pins axi_cdma_0/cdma_introut] [get_bd_pins plic_axil_wrapper_0/intr_pins]
+delete_bd_objs [get_bd_nets axi_cdma_0_cdma_introut]
+connect_bd_intf_net [get_bd_intf_pins axi_cdma_0/M_AXI] [get_bd_intf_pins smartconnect_0/S01_AXI]
+delete_bd_objs [get_bd_intf_nets axil_crossbar_1x5_0_m01_axil] [get_bd_intf_nets axi_axil_adapter_1_m_axil] [get_bd_intf_nets axil_crossbar_1x5_0_m00_axil] [get_bd_cells axil_crossbar_1x5_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_1
+endgroup
+set_property location {5.5 1697 299} [get_bd_cells smartconnect_1]
+set_property -dict [list \
+  CONFIG.NUM_MI {5} \
+  CONFIG.NUM_SI {1} \
+] [get_bd_cells smartconnect_1]
+connect_bd_intf_net [get_bd_intf_pins axi_axil_adapter_1/m_axil] [get_bd_intf_pins smartconnect_1/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_1/M00_AXI] [get_bd_intf_pins plic_axil_wrapper_0/S_AXI]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_1/M01_AXI] [get_bd_intf_pins axil_timer_64_0/S_AXI]
+delete_bd_objs [get_bd_intf_nets axi_axil_adapter_1_m_axil] [get_bd_intf_nets smartconnect_0_M02_AXI] [get_bd_cells axi_axil_adapter_1]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M02_AXI] [get_bd_intf_pins smartconnect_1/S00_AXI]
+delete_bd_objs [get_bd_intf_nets axi_axil_adapter_0_m_axil] [get_bd_intf_nets smartconnect_0_M04_AXI] [get_bd_cells axi_axil_adapter_0]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M03_AXI] [get_bd_intf_pins axi_cdma_0/S_AXI_LITE]
+assign_bd_address -target_address_space /axi_cdma_0/Data [get_bd_addr_segs plic_axil_wrapper_0/S_AXI/reg0] -force
+Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0000_0000 [ 4K ]>.
+assign_bd_address -target_address_space /axi_cdma_0/Data [get_bd_addr_segs axil_timer_64_0/S_AXI/reg0] -force
+Slave segment '/axil_timer_64_0/S_AXI/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0001_0000 [ 4K ]>.
+assign_bd_address -target_address_space /axi_cdma_0/Data [get_bd_addr_segs axi_ram_0/s_axi/reg0] -force
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0002_0000 [ 64K ]>.
+assign_bd_address -target_address_space /axi_cdma_0/Data [get_bd_addr_segs axi_cdma_0/S_AXI_LITE/Reg] -force
+Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' is being assigned into address space '/axi_cdma_0/Data' at <0x44A0_0000 [ 64K ]>.
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs axi_cdma_0/S_AXI_LITE/Reg] -force
+Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x44A0_0000 [ 64K ]>.
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs plic_axil_wrapper_0/S_AXI/reg0] -force
+Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0000_0000 [ 4K ]>.
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs axil_timer_64_0/S_AXI/reg0] -force
+Slave segment '/axil_timer_64_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0001_0000 [ 4K ]>.
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs axi_ram_0/s_axi/reg0] -force
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0002_0000 [ 64K ]>.
+set_property location {2.5 904 225} [get_bd_cells axi_ram_0]
+set_property location {3 888 363} [get_bd_cells axi_ram_0]
+set_property location {3 858 300} [get_bd_cells axi_ram_0]
+set_property location {3 837 98} [get_bd_cells axi_ram_0]
+set_property location {3 900 81} [get_bd_cells axi_ram_0]
+set_property location {3 874 436} [get_bd_cells axi_cdma_0]
+set_property location {3 808 425} [get_bd_cells axi_cdma_0]
+set_property location {3 789 491} [get_bd_cells axi_cdma_0]
+delete_bd_objs [get_bd_intf_nets smartconnect_0_M02_AXI]
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M02_AXI] [get_bd_intf_pins smartconnect_1/S00_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+delete_bd_objs [get_bd_cells axi_bram_ctrl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] design_1_axi_bram_ctrl_0_1: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] design_1_axi_bram_ctrl_0_1: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+set_property location {4 885 -128} [get_bd_cells axi_bram_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] [get_bd_intf_pins smartconnect_0/M00_AXI]
+set_property location {4 916 72} [get_bd_cells axi_ram_0]
+set_property location {4 975 72} [get_bd_cells axi_ram_0]
+set_property location {4 918 69} [get_bd_cells axi_ram_0]
+startgroup
+set_property CONFIG.SINGLE_PORT_BRAM {1} [get_bd_cells axi_bram_ctrl_0]
+endgroup
+copy_bd_objs /  [get_bd_cells {axi_bram_ctrl_0}]
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] design_1_axi_bram_ctrl_0_2: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] design_1_axi_bram_ctrl_0_2: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] design_1_axi_bram_ctrl_0_2: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] design_1_axi_bram_ctrl_0_2: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+set_property location {4 900 -239} [get_bd_cells axi_bram_ctrl_1]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_1/S_AXI] [get_bd_intf_pins VexRiscvMcuAxi_0/iBusAxi]
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v w ]
+add_files /home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/axi_cdma_fixed.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_cdma.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/plic_axil.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+create_bd_cell -type module -reference muxed_dual_port_ram muxed_dual_port_ram_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-11770] Clock interface 'clk' has no FREQ_HZ parameter.
+set_property location {5 1300 -103} [get_bd_cells muxed_dual_port_ram_0]
+set_property location {5.5 1391 -143} [get_bd_cells muxed_dual_port_ram_0]
+set_property location {6 1460 -99} [get_bd_cells muxed_dual_port_ram_0]
+set_property location {5.5 1321 -97} [get_bd_cells muxed_dual_port_ram_0]
+set_property location {5 1156 -94} [get_bd_cells muxed_dual_port_ram_0]
+connect_bd_net [get_bd_pins muxed_dual_port_ram_0/axi_a_en] [get_bd_pins axi_bram_ctrl_0/bram_en_a]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_en_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_en_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins muxed_dual_port_ram_0/axi_a_we] [get_bd_pins axi_bram_ctrl_0/bram_we_a]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_we_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_we_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins muxed_dual_port_ram_0/axi_a_addr] [get_bd_pins axi_bram_ctrl_0/bram_wrdata_a]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_wrdata_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_wrdata_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins muxed_dual_port_ram_0/axi_a_din] [get_bd_pins axi_bram_ctrl_0/bram_we_a]
+delete_bd_objs [get_bd_nets axi_bram_ctrl_0_bram_we_a]
+connect_bd_net [get_bd_pins muxed_dual_port_ram_0/axi_a_we] [get_bd_pins axi_bram_ctrl_0/bram_we_a]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_we_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_we_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins muxed_dual_port_ram_0/axi_a_dout] [get_bd_pins axi_bram_ctrl_0/bram_rddata_a]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_rddata_a> is being overridden by the user with net <muxed_dual_port_ram_0_axi_a_dout>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/bram_clk_a] [get_bd_pins muxed_dual_port_ram_0/clk]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_clk_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_clk_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+delete_bd_objs [get_bd_nets axi_bram_ctrl_0_bram_wrdata_a]
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/bram_addr_a] [get_bd_pins muxed_dual_port_ram_0/axi_a_addr]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_addr_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_addr_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins axi_bram_ctrl_0/bram_wrdata_a] [get_bd_pins muxed_dual_port_ram_0/axi_a_din]
+WARNING: [BD 41-1306] The connection to interface pin </axi_bram_ctrl_0/bram_wrdata_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_wrdata_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+set_property location {5.5 1322 -213} [get_bd_cells muxed_dual_port_ram_0]
+create_bd_cell -type hier instr_ram
+/instr_ram
+delete_bd_objs [get_bd_nets axi_bram_ctrl_0_bram_clk_a]
+delete_bd_objs [get_bd_nets axi_bram_ctrl_0_bram_en_a]
+delete_bd_objs [get_bd_nets axi_bram_ctrl_0_bram_we_a]
+delete_bd_objs [get_bd_nets axi_bram_ctrl_0_bram_addr_a]
+delete_bd_objs [get_bd_nets axi_bram_ctrl_0_bram_wrdata_a]
+delete_bd_objs [get_bd_nets muxed_dual_port_ram_0_axi_a_dout]
+move_bd_cells [get_bd_cells instr_ram] [get_bd_cells muxed_dual_port_ram_0]
+set_property location {3 423 -260} [get_bd_cells axi_bram_ctrl_1]
+move_bd_cells [get_bd_cells instr_ram] [get_bd_cells axi_bram_ctrl_1]
+move_bd_cells [get_bd_cells instr_ram] [get_bd_cells axi_bram_ctrl_0]
+set_property location {-171 195} [get_bd_intf_pins instr_ram/S_AXI]
+set_property location {-130 60} [get_bd_intf_pins instr_ram/S_AXI1]
+set_property location {-13 50} [get_bd_intf_pins instr_ram/S_AXI1]
+set_property location {1.5 498 324} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+set_property location {2 581 189} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+set_property location {2 592 159} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+set_property location {2 590 158} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+set_property location {2.5 744 164} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+set_property location {0 297} [get_bd_intf_pins instr_ram/S_AXI]
+create_bd_pin -dir I instr_ram/s_axi_aclk
+set_property location {-12 121} [get_bd_pins instr_ram/s_axi_aclk]
+startgroup
+connect_bd_net [get_bd_pins instr_ram/s_axi_aclk] [get_bd_pins instr_ram/axi_bram_ctrl_0/s_axi_aclk]
+endgroup
+connect_bd_net [get_bd_pins instr_ram/s_axi_aclk] [get_bd_pins instr_ram/axi_bram_ctrl_1/s_axi_aclk]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/s_axi_aclk}]
+set_property name s_axi_aresetn [get_bd_pins instr_ram/s_axi_aclk1]
+startgroup
+connect_bd_net [get_bd_pins instr_ram/s_axi_aresetn] [get_bd_pins instr_ram/axi_bram_ctrl_0/s_axi_aresetn]
+connect_bd_net [get_bd_pins instr_ram/s_axi_aresetn] [get_bd_pins instr_ram/axi_bram_ctrl_1/s_axi_aresetn]
+set_property location {-18 186} [get_bd_pins instr_ram/s_axi_aresetn]
+set_property location {2 691 249} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+set_property location {2 690 242} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+set_property name S_AXI_INST [get_bd_intf_pins instr_ram/S_AXI1]
+S_AXI_INST
+set_property name S_AXI_DATA [get_bd_intf_pins instr_ram/S_AXI]
+S_AXI_DATA
+delete_bd_objs [get_bd_intf_nets VexRiscvMcuAxi_0_iBusAxi]
+endgroup
+delete_bd_objs [get_bd_intf_nets smartconnect_0_M00_AXI]
+set_property location {3 360 -57} [get_bd_cells instr_ram]
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_0/bram_clk_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/clk]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_0/bram_clk_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_clk_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_0/bram_addr_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_a_addr]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_0/bram_addr_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_addr_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_0/bram_wrdata_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_a_din]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_0/bram_wrdata_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_wrdata_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_0/bram_rddata_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_a_dout]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_0/bram_rddata_a> is being overridden by the user with net <muxed_dual_port_ram_0_axi_a_dout>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_0/bram_en_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_a_en]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_0/bram_en_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_en_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_0/bram_we_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_a_we]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_0/bram_we_a> is being overridden by the user with net <axi_bram_ctrl_0_bram_we_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_1/bram_addr_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_b_addr]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_1/bram_addr_a> is being overridden by the user with net <axi_bram_ctrl_1_bram_addr_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_1/bram_wrdata_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_b_din]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_1/bram_wrdata_a> is being overridden by the user with net <axi_bram_ctrl_1_bram_wrdata_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_1/bram_rddata_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_b_dout]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_1/bram_rddata_a> is being overridden by the user with net <muxed_dual_port_ram_0_axi_b_dout>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_1/bram_en_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/raw_b_en]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_1/bram_en_a> is being overridden by the user with net <axi_bram_ctrl_1_bram_en_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+delete_bd_objs [get_bd_nets instr_ram/axi_bram_ctrl_1_bram_en_a]
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_1/bram_en_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_b_en]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_1/bram_en_a> is being overridden by the user with net <axi_bram_ctrl_1_bram_en_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+connect_bd_net [get_bd_pins instr_ram/axi_bram_ctrl_1/bram_we_a] [get_bd_pins instr_ram/muxed_dual_port_ram_0/axi_b_we]
+WARNING: [BD 41-1306] The connection to interface pin </instr_ram/axi_bram_ctrl_1/bram_we_a> is being overridden by the user with net <axi_bram_ctrl_1_bram_we_a>. This pin will not be connected as a part of interface connection <BRAM_PORTA>, and might not recreate the connectivity as expected using the writ_bd_tcl command.
+create_bd_intf_pin -mode Slave -vlnv xilinx.com:interface:bram_rtl:1.0 instr_ram/bram
+set_property name bram_raw [get_bd_intf_pins instr_ram/bram]
+bram_raw
+set_property location {376 10} [get_bd_intf_pins instr_ram/bram_raw]
+delete_bd_objs [get_bd_intf_pins instr_ram/bram_raw]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/s_axi_aclk}]
+set_property location {524 29} [get_bd_pins instr_ram/s_axi_aclk1]
+set_property name ram_mux_select [get_bd_pins instr_ram/s_axi_aclk1]
+connect_bd_net [get_bd_pins instr_ram/ram_mux_select] [get_bd_pins instr_ram/muxed_dual_port_ram_0/mode_pin]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/ram_mux_select}]
+set_property name ram_en [get_bd_pins instr_ram/ram_mux_select1]
+startgroup
+connect_bd_net [get_bd_pins instr_ram/ram_en] [get_bd_pins instr_ram/muxed_dual_port_ram_0/raw_b_en]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/ram_en}]
+set_property name ram_we [get_bd_pins instr_ram/ram_en1]
+connect_bd_net [get_bd_pins instr_ram/ram_we] [get_bd_pins instr_ram/muxed_dual_port_ram_0/raw_b_we]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/ram_we}]
+set_property name ram_addr [get_bd_pins instr_ram/ram_we1]
+connect_bd_net [get_bd_pins instr_ram/ram_addr] [get_bd_pins instr_ram/muxed_dual_port_ram_0/raw_b_addr]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/ram_addr}]
+set_property name ram_din [get_bd_pins instr_ram/ram_addr1]
+connect_bd_net [get_bd_pins instr_ram/ram_din] [get_bd_pins instr_ram/muxed_dual_port_ram_0/raw_b_din]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/ram_en}]
+set_property name ram_dout [get_bd_pins instr_ram/ram_en1]
+set_property location {1252 252} [get_bd_pins instr_ram/ram_dout]
+set_property location {1043 308} [get_bd_pins instr_ram/ram_dout]
+delete_bd_objs [get_bd_pins instr_ram/ram_dout]
+endgroup
+create_bd_pin -dir O instr_ram/ram_dout
+connect_bd_net [get_bd_pins instr_ram/ram_dout] [get_bd_pins instr_ram/muxed_dual_port_ram_0/raw_b_dout]
+set_property location {1274 297} [get_bd_pins instr_ram/ram_dout]
+regenerate_bd_layout -hierarchy [get_bd_cells instr_ram]
+delete_bd_objs [get_bd_nets instr_ram/axi_bram_ctrl_0_bram_clk_a]
+copy_bd_objs instr_ram  [get_bd_pins {instr_ram/ram_mux_select}]
+set_property name ram_clk [get_bd_pins instr_ram/ram_mux_select1]
+set_property location {275 141} [get_bd_pins instr_ram/ram_clk]
+startgroup
+connect_bd_net [get_bd_pins instr_ram/ram_clk] [get_bd_pins instr_ram/muxed_dual_port_ram_0/clk]
+regenerate_bd_layout -hierarchy [get_bd_cells instr_ram]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins instr_ram/S_AXI_DATA] [get_bd_intf_pins smartconnect_0/M00_AXI]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins instr_ram/S_AXI_INST] [get_bd_intf_pins VexRiscvMcuAxi_0/iBusAxi]
+assign_bd_address -target_address_space /axi_cdma_0/Data [get_bd_addr_segs instr_ram/axi_bram_ctrl_1/S_AXI/Mem0] -force
+Slave segment '/instr_ram/axi_bram_ctrl_1/S_AXI/Mem0' is being assigned into address space '/axi_cdma_0/Data' at <0xC000_0000 [ 8K ]>.
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs instr_ram/axi_bram_ctrl_1/S_AXI/Mem0] -force
+Slave segment '/instr_ram/axi_bram_ctrl_1/S_AXI/Mem0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0xC000_0000 [ 8K ]>.
+set_property CONFIG.ADDR_WIDTH {12} [get_bd_cells instr_ram/muxed_dual_port_ram_0]
+assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/instr_ram/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/VexRiscvMcuAxi_0/iBusAxi' at <0xC000_0000 [ 8K ]>.
+delete_bd_objs [get_bd_addr_segs] [get_bd_addr_segs -excluded]
+assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0000_0000 [ 64K ]>.
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0000_0000 [ 64K ]>.
+WARNING: [BD 41-1051] Slave segment '/axi_ram_0/s_axi/reg0' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /axi_ram_0/s_axi/reg0 from address space /axi_cdma_0/Data.
+Slave segment '/axil_timer_64_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0001_0000 [ 4K ]>.
+Slave segment '/axil_timer_64_0/S_AXI/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0001_0000 [ 4K ]>.
+WARNING: [BD 41-1051] Slave segment '/axil_timer_64_0/S_AXI/reg0' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /axil_timer_64_0/S_AXI/reg0 from address space /axi_cdma_0/Data.
+Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0001_1000 [ 4K ]>.
+Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0001_1000 [ 4K ]>.
+WARNING: [BD 41-1051] Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /plic_axil_wrapper_0/S_AXI/reg0 from address space /axi_cdma_0/Data.
+Slave segment '/instr_ram/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/VexRiscvMcuAxi_0/iBusAxi' at <0xC000_0000 [ 8K ]>.
+Slave segment '/instr_ram/axi_bram_ctrl_1/S_AXI/Mem0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0xC000_0000 [ 8K ]>.
+Slave segment '/instr_ram/axi_bram_ctrl_1/S_AXI/Mem0' is being assigned into address space '/axi_cdma_0/Data' at <0xC000_0000 [ 8K ]>.
+Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' is being assigned into address space '/axi_cdma_0/Data' at <0x44A0_0000 [ 64K ]>.
+WARNING: [BD 41-1051] Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /axi_cdma_0/S_AXI_LITE/Reg from address space /axi_cdma_0/Data.
+delete_bd_objs [get_bd_addr_segs] [get_bd_addr_segs -excluded]
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs instr_ram/axi_bram_ctrl_1/S_AXI/Mem0] -force
+Slave segment '/instr_ram/axi_bram_ctrl_1/S_AXI/Mem0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0xC000_0000 [ 8K ]>.
+set_property offset 0x00000000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_bram_ctrl_1_Mem0}]
+set_property range 16K [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_bram_ctrl_1_Mem0}]
+assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0001_0000 [ 64K ]>.
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0001_0000 [ 64K ]>.
+WARNING: [BD 41-1051] Slave segment '/axi_ram_0/s_axi/reg0' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /axi_ram_0/s_axi/reg0 from address space /axi_cdma_0/Data.
+Slave segment '/axil_timer_64_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0000_4000 [ 4K ]>.
+Slave segment '/axil_timer_64_0/S_AXI/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0000_4000 [ 4K ]>.
+WARNING: [BD 41-1051] Slave segment '/axil_timer_64_0/S_AXI/reg0' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /axil_timer_64_0/S_AXI/reg0 from address space /axi_cdma_0/Data.
+Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0000_5000 [ 4K ]>.
+Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' is being assigned into address space '/axi_cdma_0/Data' at <0x0000_5000 [ 4K ]>.
+WARNING: [BD 41-1051] Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /plic_axil_wrapper_0/S_AXI/reg0 from address space /axi_cdma_0/Data.
+Slave segment '/instr_ram/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/VexRiscvMcuAxi_0/iBusAxi' at <0xC000_0000 [ 8K ]>.
+Slave segment '/instr_ram/axi_bram_ctrl_1/S_AXI/Mem0' is being assigned into address space '/axi_cdma_0/Data' at <0x0000_0000 [ 16K ]>.
+Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' is being assigned into address space '/axi_cdma_0/Data' at <0x44A0_0000 [ 64K ]>.
+WARNING: [BD 41-1051] Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' with 'register' usage does not match address space '/axi_cdma_0/Data' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /axi_cdma_0/S_AXI_LITE/Reg from address space /axi_cdma_0/Data.
+delete_bd_objs [get_bd_addr_segs VexRiscvMcuAxi_0/dBusAxi/SEG_axi_cdma_0_Reg] [get_bd_addr_segs VexRiscvMcuAxi_0/dBusAxi/SEG_plic_axil_wrapper_0_reg0] [get_bd_addr_segs VexRiscvMcuAxi_0/dBusAxi/SEG_axil_timer_64_0_reg0] [get_bd_addr_segs VexRiscvMcuAxi_0/dBusAxi/SEG_axi_ram_0_reg0] [get_bd_addr_segs VexRiscvMcuAxi_0/iBusAxi/SEG_axi_bram_ctrl_0_Mem0]
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs axi_ram_0/s_axi/reg0] -force
+Slave segment '/axi_ram_0/s_axi/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0001_0000 [ 64K ]>.
+set_property offset 0x10000000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_ram_0_reg0}]
+delete_bd_objs [get_bd_addr_segs axi_cdma_0/Data/SEG_axi_bram_ctrl_1_Mem0]
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/iBusAxi [get_bd_addr_segs instr_ram/axi_bram_ctrl_0/S_AXI/Mem0] -force
+Slave segment '/instr_ram/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/VexRiscvMcuAxi_0/iBusAxi' at <0xC000_0000 [ 8K ]>.
+set_property offset 0x00000000 [get_bd_addr_segs {VexRiscvMcuAxi_0/iBusAxi/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 16K [get_bd_addr_segs {VexRiscvMcuAxi_0/iBusAxi/SEG_axi_bram_ctrl_0_Mem0}]
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs plic_axil_wrapper_0/S_AXI/reg0] -force
+Slave segment '/plic_axil_wrapper_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0000_5000 [ 4K ]>.
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs axil_timer_64_0/S_AXI/reg0] -force
+Slave segment '/axil_timer_64_0/S_AXI/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x0000_4000 [ 4K ]>.
+set_property range 256 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_plic_axil_wrapper_0_reg0}]
+set_property offset 0x00020000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_plic_axil_wrapper_0_reg0}]
+set_property offset 0x20000000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_plic_axil_wrapper_0_reg0}]
+set_property offset 0x20001000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axil_timer_64_0_reg0}]
+set_property range 256 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axil_timer_64_0_reg0}]
+ERROR: [Common 17-243] Documentation data file not found.
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs axi_cdma_0/S_AXI_LITE/Reg] -force
+Slave segment '/axi_cdma_0/S_AXI_LITE/Reg' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x44A0_0000 [ 64K ]>.
+set_property offset 0x30000000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_cdma_0_Reg}]
+assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/instr_ram/axi_bram_ctrl_1/S_AXI/Mem0' is being assigned into address space '/axi_cdma_0/Data' at <0x0000_0000 [ 16K ]>.
+delete_bd_objs [get_bd_addr_segs] [get_bd_addr_segs -excluded]
+undo
+WARNING: [Common 17-378] Calling 'undo' without closing open command group.
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_addr_segs] [get_bd_addr_segs -excluded]'
+Excluding slave segment /plic_axil_wrapper_0/S_AXI/reg0 from address space /axi_cdma_0/Data.
+Excluding slave segment /axil_timer_64_0/S_AXI/reg0 from address space /axi_cdma_0/Data.
+Excluding slave segment /axi_ram_0/s_axi/reg0 from address space /axi_cdma_0/Data.
+Excluding slave segment /axi_cdma_0/S_AXI_LITE/Reg from address space /axi_cdma_0/Data.
+delete_bd_objs [get_bd_addr_segs axi_cdma_0/Data/SEG_axi_bram_ctrl_1_Mem0]
+delete_bd_objs [get_bd_addr_segs -excluded axi_cdma_0/Data/SEG_axi_cdma_0_Reg]
+delete_bd_objs [get_bd_addr_segs -excluded axi_cdma_0/Data/SEG_axi_ram_0_reg0]
+delete_bd_objs [get_bd_addr_segs -excluded axi_cdma_0/Data/SEG_axil_timer_64_0_reg0]
+delete_bd_objs [get_bd_addr_segs -excluded axi_cdma_0/Data/SEG_plic_axil_wrapper_0_reg0]
+create_bd_cell -type hier peripherals
+/peripherals
+move_bd_cells [get_bd_cells peripherals] [get_bd_cells smartconnect_1]
+move_bd_cells [get_bd_cells peripherals] [get_bd_cells plic_axil_wrapper_0]
+move_bd_cells [get_bd_cells peripherals] [get_bd_cells axil_timer_64_0]
+set_property location {3 643 -108} [get_bd_cells peripherals/plic_axil_wrapper_0]
+set_property location {2 630 -217} [get_bd_cells peripherals/plic_axil_wrapper_0]
+set_property location {2 641 -64} [get_bd_cells peripherals/axil_timer_64_0]
+set_property location {795 -37} [get_bd_pins peripherals/IRQ]
+set_property location {795 -60} [get_bd_pins peripherals/IRQ]
+set_property location {3 415 260} [get_bd_cells axi_cdma_0]
+set_property location {3 423 300} [get_bd_cells axi_cdma_0]
+set_property location {3 421 320} [get_bd_cells axi_cdma_0]
+startgroup
+make_bd_pins_external  [get_bd_cells peripherals/plic_axil_wrapper_0]
+make_bd_intf_pins_external  [get_bd_cells peripherals/plic_axil_wrapper_0]
+endgroup
+undo
+WARNING: [Common 17-378] Calling 'undo' without closing open command group.
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_cells peripherals/plic_axil_wrapper_0]'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_cells peripherals/plic_axil_wrapper_0]'
+INFO: [Common 17-17] undo 'startgroup'
+set_property location {3.5 542 81} [get_bd_cells axi_ram_0]
+set_property location {4 524 114} [get_bd_cells axi_ram_0]
+set_property location {4 491 210} [get_bd_cells axi_ram_0]
+set_property location {3 371 427} [get_bd_cells axi_cdma_0]
+set_property location {3.5 435 440} [get_bd_cells axi_cdma_0]
+set_property location {4 475 254} [get_bd_cells axi_ram_0]
+set_property location {4 427 273} [get_bd_cells axi_ram_0]
+set_property location {4.5 778 79} [get_bd_cells peripherals]
+set_property location {4.5 683 144} [get_bd_cells peripherals]
+set_property location {5 629 244} [get_bd_cells peripherals]
+set_property location {5 700 334} [get_bd_cells peripherals]
+set_property location {5 703 358} [get_bd_cells peripherals]
+set_property location {5 713 354} [get_bd_cells peripherals]
+set_property location {5.5 1064 279} [get_bd_cells instr_ram]
+set_property location {5 1067 249} [get_bd_cells instr_ram]
+set_property location {4 732 308} [get_bd_cells peripherals]
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_ec15ec3b.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/synth_1/VexRiscvMcuAxi.dcp to /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs synth_1 -jobs 8
+[Sat Sep  5 21:29:54 2026] Launched synth_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 12305.875 ; gain = 0.000 ; free physical = 2977 ; free virtual = 12747
+INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 12415.738 ; gain = 0.000 ; free physical = 2902 ; free virtual = 12673
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+close_bd_design [get_bd_designs design_1]
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_ec15ec3b.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+open_bd_design {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:VexRiscvMcuAxi:1.0 - VexRiscvMcuAxi_0
+Adding component instance block -- xilinx.com:module_ref:axi_ram:1.0 - axi_ram_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:module_ref:muxed_dual_port_ram:1.0 - muxed_dual_port_ram_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:module_ref:plic_axil_wrapper:1.0 - plic_axil_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:axil_timer_64:1.0 - axil_timer_64_0
+Successfully read diagram <design_1> from block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/uart_with_bootloader.vhd w ]
+add_files /home/ryanb/Documents/MINA/hw/custom_ip/uart_with_bootloader.vhd
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference axi_uart_bootloader axi_uart_bootloader_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'uart_irq' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'uart_irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axi_aresetn'.
+WARNING: [IP_Flow 19-11770] Clock interface 's_axi_aclk' has no FREQ_HZ parameter.
+set_property location {3.5 1169 498} [get_bd_cells axi_uart_bootloader_0]
+set_property location {3 862 530} [get_bd_cells axi_uart_bootloader_0]
+move_bd_cells [get_bd_cells peripherals] [get_bd_cells axi_uart_bootloader_0]
+move_bd_cells [get_bd_cells /] [get_bd_cells peripherals/axi_uart_bootloader_0]
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells /] [get_bd_cells peripherals/axi_uart_bootloader_0]'
+undo
+INFO: [Common 17-17] undo 'move_bd_cells [get_bd_cells peripherals] [get_bd_cells axi_uart_bootloader_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 862 530} [get_bd_cells axi_uart_bootloader_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 1169 498} [get_bd_cells axi_uart_bootloader_0]'
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type module -reference axi_uart_bootloader axi_uart_bootloader_0'
+redo
+INFO: [Common 17-16] redo 'create_bd_cell -type module -reference axi_uart_bootloader axi_uart_bootloader_0'
+move_bd_cells [get_bd_cells peripherals] [get_bd_cells axi_uart_bootloader_0]
+set_property location {2 567 103} [get_bd_cells peripherals/axi_uart_bootloader_0]
+connect_bd_intf_net [get_bd_intf_pins peripherals/axi_uart_bootloader_0/s_axi] [get_bd_intf_pins peripherals/smartconnect_1/M02_AXI]
+create_bd_pin -dir I peripherals/axi_resetn
+startgroup
+connect_bd_net [get_bd_pins peripherals/axi_resetn] [get_bd_pins peripherals/plic_axil_wrapper_0/S_AXI_ARESETN]
+connect_bd_net [get_bd_pins peripherals/axi_resetn] [get_bd_pins peripherals/axil_timer_64_0/S_AXI_ARESETN]
+connect_bd_net [get_bd_pins peripherals/axi_resetn] [get_bd_pins peripherals/axi_uart_bootloader_0/s_axi_aresetn]
+copy_bd_objs peripherals  [get_bd_pins {peripherals/axi_resetn}]
+set_property name axi_clk [get_bd_pins peripherals/axi_resetn1]
+WARNING: [Vivado 12-107] Warning: command group already in progress: resetting Undo stack
+startgroup
+connect_bd_net [get_bd_pins peripherals/axi_clk] [get_bd_pins peripherals/plic_axil_wrapper_0/S_AXI_ACLK]
+connect_bd_net [get_bd_pins peripherals/axi_clk] [get_bd_pins peripherals/axil_timer_64_0/S_AXI_ACLK]
+connect_bd_net [get_bd_pins peripherals/axi_clk] [get_bd_pins peripherals/axi_uart_bootloader_0/s_axi_aclk]
+copy_bd_objs peripherals  [get_bd_pins {peripherals/axi_resetn}]
+set_property name timer_clk_in [get_bd_pins peripherals/axi_resetn1]
+connect_bd_net [get_bd_pins peripherals/timer_clk_in] [get_bd_pins peripherals/axil_timer_64_0/TIMER_CLK_IN]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+set_property name timer_irq [get_bd_pins peripherals/IRQ]
+set_property name ext_irq [get_bd_pins peripherals/ext_intr]
+copy_bd_objs peripherals  [get_bd_pins {peripherals/axi_resetn}]
+set_property location {-7 125} [get_bd_pins peripherals/axi_resetn1]
+set_property name boot_mode [get_bd_pins peripherals/axi_resetn1]
+WARNING: [Vivado 12-107] Warning: command group already in progress: resetting Undo stack
+startgroup
+connect_bd_net [get_bd_pins peripherals/boot_mode] [get_bd_pins peripherals/axi_uart_bootloader_0/boot_mode]
+endgroup
+set_property location {-11 120} [get_bd_pins peripherals/boot_mode]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 peripherals/xlslice_0
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilslice:1.0 for the IP type xilinx.com:ip:xlslice:1.0 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlslice:1.0 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+endgroup
+delete_bd_objs [get_bd_cells peripherals/xlslice_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 peripherals/xlconcat_0
+INFO: [BD 5-1043] It is recommended to use inline hdl version xilinx.com:inline_hdl:ilconcat:1.0 for the IP type xilinx.com:ip:xlconcat:2.1 for improved performance and reduced disk space. IPs with VLNV xilinx.com:ip:xlconcat:2.1 will not be supported from release 2025.2. More information on inline hdl IP is available in UG994 
+endgroup
+set_property CONFIG.NUM_PORTS {7} [get_bd_cells peripherals/xlconcat_0]
+set_property CONFIG.NUM_PORTS {8} [get_bd_cells peripherals/xlconcat_0]
+connect_bd_net [get_bd_pins peripherals/xlconcat_0/dout] [get_bd_pins peripherals/plic_axil_wrapper_0/intr_pins]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+connect_bd_net [get_bd_pins peripherals/axi_uart_bootloader_0/uart_irq] [get_bd_pins peripherals/xlconcat_0/In0]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+copy_bd_objs peripherals  [get_bd_pins {peripherals/axi_clk}]
+set_property location {-16 470} [get_bd_pins peripherals/axi_clk1]
+set_property location {-19 446} [get_bd_pins peripherals/axi_clk1]
+connect_bd_net [get_bd_pins peripherals/axi_clk1] [get_bd_pins peripherals/xlconcat_0/In1]
+set_property name cdma_irq [get_bd_pins peripherals/axi_clk1]
+connect_bd_net [get_bd_pins peripherals/cdma_irq] [get_bd_pins axi_cdma_0/cdma_introut]
+startgroup
+set_property CONFIG.BRAM_ADDR_WIDTH {12} [get_bd_cells peripherals/axi_uart_bootloader_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins peripherals/axi_uart_bootloader_0/uart_tx]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins peripherals/axi_uart_bootloader_0/uart_rx]
+endgroup
+create_bd_pin -dir O peripherals/bram_en
+connect_bd_net [get_bd_pins peripherals/bram_en] [get_bd_pins peripherals/axi_uart_bootloader_0/bram_en]
+copy_bd_objs peripherals  [get_bd_pins {peripherals/bram_en}]
+set_property name bram_we [get_bd_pins peripherals/bram_en1]
+connect_bd_net [get_bd_pins peripherals/bram_we] [get_bd_pins peripherals/axi_uart_bootloader_0/bram_we]
+copy_bd_objs peripherals  [get_bd_pins {peripherals/bram_we}]
+set_property name bram_addr [get_bd_pins peripherals/bram_we1]
+connect_bd_net [get_bd_pins peripherals/bram_addr] [get_bd_pins peripherals/axi_uart_bootloader_0/bram_addr]
+copy_bd_objs peripherals  [get_bd_pins {peripherals/bram_addr}]
+set_property name bram_d [get_bd_pins peripherals/bram_addr1]
+connect_bd_net [get_bd_pins peripherals/bram_d] [get_bd_pins peripherals/axi_uart_bootloader_0/bram_din]
+regenerate_bd_layout -hierarchy [get_bd_cells instr_ram]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+connect_bd_net [get_bd_pins peripherals/bram_en] [get_bd_pins instr_ram/ram_en] -boundary_type upper
+connect_bd_net [get_bd_pins peripherals/bram_we] [get_bd_pins instr_ram/ram_we] -boundary_type upper
+connect_bd_net [get_bd_pins peripherals/bram_addr] [get_bd_pins instr_ram/ram_addr] -boundary_type upper
+connect_bd_net [get_bd_pins peripherals/bram_d] [get_bd_pins instr_ram/ram_din] -boundary_type upper
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+move_bd_cells [get_bd_cells peripherals] [get_bd_cells axi_gpio_0]
+move_bd_cells [get_bd_cells /] [get_bd_cells peripherals/axi_gpio_0]
+move_bd_cells [get_bd_cells peripherals] [get_bd_cells axi_gpio_0]
+regenerate_bd_layout
+connect_bd_intf_net [get_bd_intf_pins peripherals/axi_gpio_0/S_AXI] [get_bd_intf_pins peripherals/smartconnect_1/M03_AXI]
+connect_bd_net [get_bd_pins peripherals/axi_clk] [get_bd_pins peripherals/axi_gpio_0/s_axi_aclk]
+connect_bd_net [get_bd_pins peripherals/axi_resetn] [get_bd_pins peripherals/axi_gpio_0/s_axi_aresetn]
+startgroup
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {0} \
+  CONFIG.C_INTERRUPT_PRESENT {0} \
+] [get_bd_cells peripherals/axi_gpio_0]
+endgroup
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs peripherals/axi_uart_bootloader_0/s_axi/reg0] -force
+Slave segment '/peripherals/axi_uart_bootloader_0/s_axi/reg0' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x8000_0000 [ 2G ]>.
+set_property range 1K [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_uart_bootloader_0_reg0}]
+set_property offset 0x20002000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_uart_bootloader_0_reg0}]
+assign_bd_address -target_address_space /VexRiscvMcuAxi_0/dBusAxi [get_bd_addr_segs peripherals/axi_gpio_0/S_AXI/Reg] -force
+Slave segment '/peripherals/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/VexRiscvMcuAxi_0/dBusAxi' at <0x4000_0000 [ 64K ]>.
+set_property range 4K [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_gpio_0_Reg}]
+set_property offset 0x20003000 [get_bd_addr_segs {VexRiscvMcuAxi_0/dBusAxi/SEG_axi_gpio_0_Reg}]
+startgroup
+set_property CONFIG.C_INTERRUPT_PRESENT {1} [get_bd_cells peripherals/axi_gpio_0]
+endgroup
+connect_bd_net [get_bd_pins peripherals/axi_gpio_0/ip2intc_irpt] [get_bd_pins peripherals/xlconcat_0/In2]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Thu Sep  3 23:41:56 2026
+| Date         : Sat Sep  5 21:30:16 2026
 | Host         : ryan-21k8s14n00 running 64-bit EndeavourOS Linux
 | Command      : report_utilization -file VexRiscvMcuAxi_utilization_synth.rpt -pb VexRiscvMcuAxi_utilization_synth.pb
 | Design       : VexRiscvMcuAxi

@@ -1,0 +1,23 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-233,-482",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port S00_AXI -pg 1 -lvl 0 -x -50 -y 70 -defaultsOSRD
+preplace port port-id_ext_intr -pg 1 -lvl 3 -x 780 -y -220 -defaultsOSRD
+preplace port port-id_IRQ -pg 1 -lvl 3 -x 780 -y -60 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 1 -x 110 -y 90 -defaultsOSRD
+preplace inst plic_axil_wrapper_0 -pg 1 -lvl 2 -x 630 -y -220 -defaultsOSRD
+preplace inst axil_timer_64_0 -pg 1 -lvl 2 -x 630 -y -60 -defaultsOSRD
+preplace netloc plic_axil_wrapper_0_ext_intr 1 2 1 N -220
+preplace netloc axil_timer_64_0_IRQ 1 2 1 N -60
+preplace netloc Conn3 1 0 1 N 70
+preplace netloc smartconnect_1_M00_AXI 1 1 1 250J -250n
+preplace netloc smartconnect_1_M01_AXI 1 1 1 260J -90n
+levelinfo -pg 1 -50 110 630 780
+pagesize -pg 1 -db -bbox -sgen -150 -310 880 330
+"
+}
+

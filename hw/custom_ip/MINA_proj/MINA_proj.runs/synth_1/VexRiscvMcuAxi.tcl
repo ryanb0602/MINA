@@ -57,6 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -83,6 +84,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
