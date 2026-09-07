@@ -1,0 +1,365 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /opt/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_datamover_v5_1_37 -L axi_sg_v4_1_21 -L axi_cdma_v4_1_35 -L proc_sys_reset_v5_0_17 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_36 -L axi_vip_v1_1_22 -L axi_bram_ctrl_v4_1_13 -L xlslice_v1_0_5 -L xlconcat_v2_1_7 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_5 -L axi_gpio_v2_0_37 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_design_1_wrapper_behav xil_defaultlib.tb_design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 's_axis_tkeep' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:389]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 's_axis_tid' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:393]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 's_axis_tdest' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:394]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 's_axis_tkeep' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:433]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 's_axis_tid' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:437]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 's_axis_tdest' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:438]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 's_axis_tkeep' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:473]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 's_axis_tid' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:477]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 's_axis_tdest' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:478]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 's_axis_tuser' [/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v:479]
+WARNING: [VRFC 10-5021] port 'cdma_tvect_out' is not connected on this instance [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/sim/design_1.v:353]
+WARNING: [VRFC 10-5021] port 's_axi_awready' is not connected on this instance [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/sim/design_1.v:963]
+WARNING: [VRFC 10-5021] port 'bram_rst_a' is not connected on this instance [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/sim/design_1.v:1001]
+WARNING: [VRFC 10-5021] port 'gpio_io_o' is not connected on this instance [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/sim/design_1.v:1342]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/sim/bd_88fd.v:2410]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/sim/bd_48ac.v:2648]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package axi_cdma_v4_1_35.axi_cdma_pkg
+Compiling package xpm.vcomponents
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_datamover_v5_1_37.axi_datamover_pkg
+Compiling package axi_bram_ctrl_v4_1_13.axi_bram_ctrl_funcs
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.DataCache
+Compiling module xil_defaultlib.VexRiscvMcuAxi
+Compiling module xil_defaultlib.design_1_VexRiscvMcuAxi_0_0
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_reset [axi_datamover_reset_default]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=71,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_stsc...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_rd_status_cntl [axi_datamover_rd_status_cntl_def...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_strb_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_op_mo...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_pcc [\axi_datamover_pcc(c_is_mm2s=1,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=59,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=59,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_famil...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=29,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=29,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_rdmux [\axi_datamover_rdmux(c_sel_addr_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_rddata_cntl [\axi_datamover_rddata_cntl(c_ali...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_mm2s_full_wrap [\axi_datamover_mm2s_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_pcc [\axi_datamover_pcc(c_dre_align_w...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=7,c_depth=6)\]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=7,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=2,c_depth=6)\]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=2,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wr_status_cntl [\axi_datamover_wr_status_cntl(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.srl_fifo [\srl_fifo(c_dwidth=27,c_depth=4)...]
+Compiling architecture imp of entity axi_datamover_v5_1_37.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=27,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wrdata_cntl [\axi_datamover_wrdata_cntl(c_sf_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_wr_demux [\axi_datamover_wr_demux(c_sel_ad...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_skid2mm_buf [\axi_datamover_skid2mm_buf(c_add...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover_s2mm_full_wrap [\axi_datamover_s2mm_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_37.axi_datamover [\axi_datamover(c_include_mm2s=1,...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_pulse_gen [\axi_cdma_pulse_gen(c_pulse_widt...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_pulse_gen [\axi_cdma_pulse_gen(c_pos_edge_t...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_pulse_gen [\axi_cdma_pulse_gen(c_pulse_widt...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_reset [axi_cdma_reset_default]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_lite_if [\axi_cdma_lite_if(c_num_ce=16,c_...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_register [\axi_cdma_register(c_num_registe...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_reg_module [axi_cdma_reg_module_default]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_simple_cntlr [\axi_cdma_simple_cntlr(c_dm_cmd_...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma_simple_wrap [\axi_cdma_simple_wrap(c_include_...]
+Compiling architecture implementation of entity axi_cdma_v4_1_35.axi_cdma [\axi_cdma(c_include_sf=0,c_dlytm...]
+Compiling architecture design_1_axi_cdma_0_0_arch of entity xil_defaultlib.design_1_axi_cdma_0_0 [design_1_axi_cdma_0_0_default]
+Compiling module xil_defaultlib.axi_ram(STRB_WIDTH=4)
+Compiling module xil_defaultlib.design_1_axi_ram_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_2_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_2
+Compiling architecture behavioral of entity xil_defaultlib.basic_or [basic_or_default]
+Compiling module xil_defaultlib.design_1_basic_or_0_0
+Compiling architecture behavioral of entity xil_defaultlib.negation [negation_default]
+Compiling module xil_defaultlib.design_1_negation_0_0
+Compiling module xil_defaultlib.design_1_negation_0_1
+Compiling module xil_defaultlib.cpu_reset_controller_imp_Y312CB
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.sng_port_arb [\sng_port_arb(c_s_axi_addr_width...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.ua_narrow [\ua_narrow(c_bram_addr_adjust_fa...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.wrap_brst [\wrap_brst(c_axi_addr_width=14,c...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture imp of entity axi_bram_ctrl_v4_1_13.SRL_FIFO [\SRL_FIFO(c_data_bits=1,c_depth=...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.wr_chnl [\wr_chnl(c_axi_addr_width=14,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.rd_chnl [\rd_chnl(c_axi_addr_width=14,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.full_axi [\full_axi(c_s_axi_addr_width=14,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_s_axi_addr_...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.axi_bram_ctrl [\axi_bram_ctrl(c_s_axi_addr_widt...]
+Compiling architecture design_1_axi_bram_ctrl_0_1_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_1 [design_1_axi_bram_ctrl_0_1_defau...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.wr_chnl [\wr_chnl(c_axi_addr_width=14,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.rd_chnl [\rd_chnl(c_axi_addr_width=14,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.full_axi [\full_axi(c_s_axi_addr_width=14,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_s_axi_addr_...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_13.axi_bram_ctrl [\axi_bram_ctrl(c_s_axi_addr_widt...]
+Compiling architecture design_1_axi_bram_ctrl_0_2_arch of entity xil_defaultlib.design_1_axi_bram_ctrl_0_2 [design_1_axi_bram_ctrl_0_2_defau...]
+Compiling module xil_defaultlib.muxed_dual_port_ram(ADDR_WIDTH=1...
+Compiling module xil_defaultlib.design_1_muxed_dual_port_ram_0_0
+Compiling module xlslice_v1_0_5.xlslice_v1_0_5_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.design_1_xlslice_0_0
+Compiling module xil_defaultlib.design_1_xlslice_0_1
+Compiling module xil_defaultlib.instr_ram_imp_1811FLP
+Compiling module xil_defaultlib.design_1_negation_1_0
+Compiling module xil_defaultlib.design_1_negation_1_3
+Compiling architecture implementation of entity interrupt_control_v3_1_5.interrupt_control [\interrupt_control(c_num_ce=16,c...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=1,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling architecture imp of entity axi_gpio_v2_0_37.GPIO_Core [\GPIO_Core(c_aw=9,c_interrupt_pr...]
+Compiling architecture imp of entity axi_gpio_v2_0_37.axi_gpio [\axi_gpio(c_family="spartan7",c_...]
+Compiling architecture design_1_axi_gpio_0_0_arch of entity xil_defaultlib.design_1_axi_gpio_0_0 [design_1_axi_gpio_0_0_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_phy [uart_phy_default]
+Compiling architecture rtl of entity xil_defaultlib.axi_uart_bootloader [axi_uart_bootloader_default]
+Compiling module xil_defaultlib.axi_uart_bootloader_wrapper
+Compiling module xil_defaultlib.design_1_axi_uart_bootloader_1_0
+Compiling architecture rtl of entity xil_defaultlib.axil_timer_64 [axil_timer_64_default]
+Compiling module xil_defaultlib.design_1_axil_timer_64_0_0
+Compiling module xil_defaultlib.axis_fifo(DEPTH=32,DATA_WIDTH=12...
+Compiling module xil_defaultlib.axis_fifo(DEPTH=32,KEEP_ENABLE=0...
+Compiling module xil_defaultlib.i2c_master
+Compiling module xil_defaultlib.i2c_master_axil_default
+Compiling module xil_defaultlib.design_1_i2c_master_axil_0_0
+Compiling module xil_defaultlib.design_1_negation_1_2
+Compiling architecture behavioral of entity xil_defaultlib.plic [plic_default]
+Compiling architecture behavioral of entity xil_defaultlib.plic_axil_wrapper [plic_axil_wrapper_default]
+Compiling module xil_defaultlib.design_1_plic_axil_wrapper_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=4,IN...
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_17.proc_sys_reset [\proc_sys_reset(c_family="sparta...]
+Compiling architecture bd_88fd_psr_aclk_0_arch of entity xil_defaultlib.bd_88fd_psr_aclk_0 [bd_88fd_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_LEUOAK
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_88fd_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_1ED2SVB
+Compiling module xil_defaultlib.bd_88fd_m00arn_0
+Compiling module xil_defaultlib.bd_88fd_m00awn_0
+Compiling module xil_defaultlib.bd_88fd_m00bn_0
+Compiling module xil_defaultlib.bd_88fd_m00rn_0
+Compiling module xil_defaultlib.bd_88fd_m00wn_0
+Compiling module xil_defaultlib.m00_nodes_imp_1RQJ53F
+Compiling module xil_defaultlib.bd_88fd_m00s2a_0
+Compiling module xil_defaultlib.bd_88fd_m01e_0
+Compiling module xil_defaultlib.m01_exit_pipeline_imp_194UWDJ
+Compiling module xil_defaultlib.bd_88fd_m01arn_0
+Compiling module xil_defaultlib.bd_88fd_m01awn_0
+Compiling module xil_defaultlib.bd_88fd_m01bn_0
+Compiling module xil_defaultlib.bd_88fd_m01rn_0
+Compiling module xil_defaultlib.bd_88fd_m01wn_0
+Compiling module xil_defaultlib.m01_nodes_imp_XHW5BX
+Compiling module xil_defaultlib.bd_88fd_m01s2a_0
+Compiling module xil_defaultlib.bd_88fd_m02e_0
+Compiling module xil_defaultlib.m02_exit_pipeline_imp_178ITK7
+Compiling module xil_defaultlib.bd_88fd_m02arn_0
+Compiling module xil_defaultlib.bd_88fd_m02awn_0
+Compiling module xil_defaultlib.bd_88fd_m02bn_0
+Compiling module xil_defaultlib.bd_88fd_m02rn_0
+Compiling module xil_defaultlib.bd_88fd_m02wn_0
+Compiling module xil_defaultlib.m02_nodes_imp_1CEL2E
+Compiling module xil_defaultlib.bd_88fd_m02s2a_0
+Compiling module xil_defaultlib.bd_88fd_m03e_0
+Compiling module xil_defaultlib.m03_exit_pipeline_imp_1348LIF
+Compiling module xil_defaultlib.bd_88fd_m03arn_0
+Compiling module xil_defaultlib.bd_88fd_m03awn_0
+Compiling module xil_defaultlib.bd_88fd_m03bn_0
+Compiling module xil_defaultlib.bd_88fd_m03rn_0
+Compiling module xil_defaultlib.bd_88fd_m03wn_0
+Compiling module xil_defaultlib.m03_nodes_imp_16OOIFK
+Compiling module xil_defaultlib.bd_88fd_m03s2a_0
+Compiling module xil_defaultlib.bd_88fd_m04e_0
+Compiling module xil_defaultlib.m04_exit_pipeline_imp_1SOQ17R
+Compiling module xil_defaultlib.bd_88fd_m04arn_0
+Compiling module xil_defaultlib.bd_88fd_m04awn_0
+Compiling module xil_defaultlib.bd_88fd_m04bn_0
+Compiling module xil_defaultlib.bd_88fd_m04rn_0
+Compiling module xil_defaultlib.bd_88fd_m04wn_0
+Compiling module xil_defaultlib.m04_nodes_imp_1XY7E6O
+Compiling module xil_defaultlib.bd_88fd_m04s2a_0
+Compiling module xil_defaultlib.bd_88fd_s00a2s_0
+Compiling module xil_defaultlib.bd_88fd_s00mmu_0
+Compiling module xil_defaultlib.bd_88fd_s00sic_0
+Compiling module xil_defaultlib.bd_88fd_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_F6210K
+Compiling module xil_defaultlib.bd_88fd_sarn_0
+Compiling module xil_defaultlib.bd_88fd_sawn_0
+Compiling module xil_defaultlib.bd_88fd_sbn_0
+Compiling module xil_defaultlib.bd_88fd_srn_0
+Compiling module xil_defaultlib.bd_88fd_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_9QDCJI
+Compiling module xil_defaultlib.bd_88fd_arinsw_0
+Compiling module xil_defaultlib.bd_88fd_aroutsw_0
+Compiling module xil_defaultlib.bd_88fd_awinsw_0
+Compiling module xil_defaultlib.bd_88fd_awoutsw_0
+Compiling module xil_defaultlib.bd_88fd_binsw_0
+Compiling module xil_defaultlib.bd_88fd_boutsw_0
+Compiling module xil_defaultlib.bd_88fd_arni_0
+Compiling module xil_defaultlib.bd_88fd_awni_0
+Compiling module xil_defaultlib.bd_88fd_bni_0
+Compiling module xil_defaultlib.bd_88fd_rni_0
+Compiling module xil_defaultlib.bd_88fd_wni_0
+Compiling module xil_defaultlib.i_nodes_imp_1320MTU
+Compiling module xil_defaultlib.bd_88fd_rinsw_0
+Compiling module xil_defaultlib.bd_88fd_routsw_0
+Compiling module xil_defaultlib.bd_88fd_winsw_0
+Compiling module xil_defaultlib.bd_88fd_woutsw_0
+Compiling module xil_defaultlib.switchboards_imp_K834X6
+Compiling module xil_defaultlib.bd_88fd
+Compiling module xil_defaultlib.design_1_smartconnect_1_0
+Compiling module xlconcat_v2_1_7.xlconcat_v2_1_7_xlconcat(dout_wi...
+Compiling module xil_defaultlib.design_1_xlconcat_0_0
+Compiling module xil_defaultlib.peripherals_imp_1BOSXT5
+Compiling architecture bd_48ac_psr_aclk_0_arch of entity xil_defaultlib.bd_48ac_psr_aclk_0 [bd_48ac_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_1NMB928
+Compiling module xil_defaultlib.bd_48ac_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_CVVFJV
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=32...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=51...
+Compiling module xil_defaultlib.bd_48ac_m00arn_0
+Compiling module xil_defaultlib.bd_48ac_m00awn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=60...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=22...
+Compiling module xil_defaultlib.bd_48ac_m00bn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=16...
+Compiling module xil_defaultlib.bd_48ac_m00rn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=4,...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=23...
+Compiling module xil_defaultlib.bd_48ac_m00wn_0
+Compiling module xil_defaultlib.m00_nodes_imp_Z1B1P3
+Compiling module xil_defaultlib.bd_48ac_m00s2a_0
+Compiling module xil_defaultlib.bd_48ac_m01e_0
+Compiling module xil_defaultlib.m01_exit_pipeline_imp_FWTRCR
+Compiling module xil_defaultlib.bd_48ac_m01arn_0
+Compiling module xil_defaultlib.bd_48ac_m01awn_0
+Compiling module xil_defaultlib.bd_48ac_m01bn_0
+Compiling module xil_defaultlib.bd_48ac_m01rn_0
+Compiling module xil_defaultlib.bd_48ac_m01wn_0
+Compiling module xil_defaultlib.m01_nodes_imp_1R2BU3L
+Compiling module xil_defaultlib.bd_48ac_m01s2a_0
+Compiling module xil_defaultlib.bd_48ac_m02e_0
+Compiling module xil_defaultlib.m02_exit_pipeline_imp_19C6Z
+Compiling module xil_defaultlib.bd_48ac_m02arn_0
+Compiling module xil_defaultlib.bd_48ac_m02awn_0
+Compiling module xil_defaultlib.bd_48ac_m02bn_0
+Compiling module xil_defaultlib.bd_48ac_m02rn_0
+Compiling module xil_defaultlib.bd_48ac_m02wn_0
+Compiling module xil_defaultlib.m02_nodes_imp_185W3JU
+Compiling module xil_defaultlib.bd_48ac_m02s2a_0
+Compiling module xil_defaultlib.bd_48ac_m03e_0
+Compiling module xil_defaultlib.m03_exit_pipeline_imp_6E233V
+Compiling module xil_defaultlib.bd_48ac_m03arn_0
+Compiling module xil_defaultlib.bd_48ac_m03awn_0
+Compiling module xil_defaultlib.bd_48ac_m03bn_0
+Compiling module xil_defaultlib.bd_48ac_m03rn_0
+Compiling module xil_defaultlib.bd_48ac_m03wn_0
+Compiling module xil_defaultlib.m03_nodes_imp_LEW7G
+Compiling module xil_defaultlib.bd_48ac_m03s2a_0
+Compiling module xil_defaultlib.bd_48ac_s00a2s_0
+Compiling module xil_defaultlib.bd_48ac_s00mmu_0
+Compiling module xil_defaultlib.bd_48ac_s00sic_0
+Compiling module xil_defaultlib.bd_48ac_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_1C3JDRS
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=70...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=46...
+Compiling module xil_defaultlib.bd_48ac_sarn_0
+Compiling module xil_defaultlib.bd_48ac_sawn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=86...
+Compiling module xil_defaultlib.bd_48ac_sbn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=23...
+Compiling module xil_defaultlib.bd_48ac_srn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=17...
+Compiling module xil_defaultlib.bd_48ac_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_1FAO4F6
+Compiling module xil_defaultlib.bd_48ac_s01a2s_0
+Compiling module xil_defaultlib.bd_48ac_s01mmu_0
+Compiling module xil_defaultlib.bd_48ac_s01sic_0
+Compiling module xil_defaultlib.bd_48ac_s01tr_0
+Compiling module xil_defaultlib.s01_entry_pipeline_imp_F11SX8
+Compiling module xil_defaultlib.bd_48ac_sarn_1
+Compiling module xil_defaultlib.bd_48ac_sawn_1
+Compiling module xil_defaultlib.bd_48ac_sbn_1
+Compiling module xil_defaultlib.bd_48ac_srn_1
+Compiling module xil_defaultlib.bd_48ac_swn_1
+Compiling module xil_defaultlib.s01_nodes_imp_AIXRF8
+Compiling module xil_defaultlib.bd_48ac_arsw_0
+Compiling module xil_defaultlib.bd_48ac_awsw_0
+Compiling module xil_defaultlib.bd_48ac_bsw_0
+Compiling module xil_defaultlib.bd_48ac_rsw_0
+Compiling module xil_defaultlib.bd_48ac_wsw_0
+Compiling module xil_defaultlib.switchboards_imp_1MKJLH2
+Compiling module xil_defaultlib.bd_48ac
+Compiling module xil_defaultlib.design_1_smartconnect_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling architecture behavioral of entity xil_defaultlib.tb_design_1_wrapper
+Built simulation snapshot tb_design_1_wrapper_behav

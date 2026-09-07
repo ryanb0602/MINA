@@ -58,3 +58,4 @@ Time: 4189866880 ps  Iteration: 0  Process: /tb_design_1_wrapper/stimulus  File:
 Failure: CPU EXECUTION TEST COMPLETE
 Time: 4190866880 ps  Iteration: 0  Process: /tb_design_1_wrapper/stimulus  File: /home/ryanb/Documents/MINA/hw/custom_ip/bootloader_tb.vhd
 $finish called at time : 4190866880 ps : File "/home/ryanb/Documents/MINA/hw/custom_ip/bootloader_tb.vhd" Line 492
+INFO: xsimkernel Simulation Memory Usage: 317564 KB (Peak: 364356 KB), Simulation CPU Usage: 131870 ms
