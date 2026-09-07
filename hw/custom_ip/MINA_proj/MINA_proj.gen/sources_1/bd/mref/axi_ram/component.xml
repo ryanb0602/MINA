@@ -363,7 +363,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7bb54ff0</spirit:value>
+            <spirit:value>0c5c96a2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -376,7 +376,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7bb54ff0</spirit:value>
+            <spirit:value>0c5c96a2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1048,11 +1048,6 @@
         <spirit:displayName>Pipeline Output</spirit:displayName>
         <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.PIPELINE_OUTPUT">0</spirit:value>
       </spirit:modelParameter>
-      <spirit:modelParameter spirit:dataType="integer">
-        <spirit:name>VALID_ADDR_WIDTH</spirit:name>
-        <spirit:displayName>Valid Addr Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.VALID_ADDR_WIDTH" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.ADDR_WIDTH&apos;)) - spirit:ceil(spirit:log(2,spirit:decode(id(&apos;MODELPARAM_VALUE.STRB_WIDTH&apos;)))))">14</spirit:value>
-      </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
   <spirit:fileSets>
@@ -1061,7 +1056,7 @@
       <spirit:file>
         <spirit:name>xgui/axi_ram_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_6cf33dbf</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_332ffe60</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1094,11 +1089,6 @@
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PIPELINE_OUTPUT">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
-      <spirit:name>VALID_ADDR_WIDTH</spirit:name>
-      <spirit:displayName>Valid Addr Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VALID_ADDR_WIDTH">14</spirit:value>
-    </spirit:parameter>
-    <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">axi_ram_v1_0</spirit:value>
     </spirit:parameter>
@@ -1118,7 +1108,7 @@
         <xilinx:designToolContext>IPI</xilinx:designToolContext>
       </xilinx:designToolContexts>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-09-05T03:55:06Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2026-09-06T22:27:47Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>

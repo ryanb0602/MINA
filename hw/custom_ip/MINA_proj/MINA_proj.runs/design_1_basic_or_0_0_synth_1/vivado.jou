@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Sep  6 16:33:48 2026
+# Process ID         : 177868
+# Current directory  : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_basic_or_0_0_synth_1
+# Command line       : vivado -log design_1_basic_or_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_basic_or_0_0.tcl
+# Log file           : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_basic_or_0_0_synth_1/design_1_basic_or_0_0.vds
+# Journal file       : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_basic_or_0_0_synth_1/vivado.jou
+# Running On         : ryan-21k8s14n00
+# Platform           : EndeavourOS
+# Operating System   : EndeavourOS Linux
+# Processor Detail   : AMD Ryzen 7 PRO 7840U w/ Radeon 780M Graphics
+# CPU Frequency      : 3698.771 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 32211 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 32211 MB
+# Available Virtual  : 7521 MB
+#-----------------------------------------------------------
+source design_1_basic_or_0_0.tcl -notrace

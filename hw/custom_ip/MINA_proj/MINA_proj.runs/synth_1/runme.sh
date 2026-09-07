@@ -37,4 +37,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log VexRiscvMcuAxi.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VexRiscvMcuAxi.tcl
+EAStep vivado -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl

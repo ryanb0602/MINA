@@ -1,23 +1,69 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-233,-482",
+   "Default View_ScaleFactor":"0.546919",
+   "Default View_TopLeft":"-750,4",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port S00_AXI -pg 1 -lvl 0 -x -50 -y 70 -defaultsOSRD
-preplace port port-id_ext_intr -pg 1 -lvl 3 -x 780 -y -220 -defaultsOSRD
-preplace port port-id_IRQ -pg 1 -lvl 3 -x 780 -y -60 -defaultsOSRD
-preplace inst smartconnect_1 -pg 1 -lvl 1 -x 110 -y 90 -defaultsOSRD
-preplace inst plic_axil_wrapper_0 -pg 1 -lvl 2 -x 630 -y -220 -defaultsOSRD
-preplace inst axil_timer_64_0 -pg 1 -lvl 2 -x 630 -y -60 -defaultsOSRD
-preplace netloc plic_axil_wrapper_0_ext_intr 1 2 1 N -220
-preplace netloc axil_timer_64_0_IRQ 1 2 1 N -60
-preplace netloc Conn3 1 0 1 N 70
-preplace netloc smartconnect_1_M00_AXI 1 1 1 250J -250n
-preplace netloc smartconnect_1_M01_AXI 1 1 1 260J -90n
-levelinfo -pg 1 -50 110 630 780
-pagesize -pg 1 -db -bbox -sgen -150 -310 880 330
+preplace port S00_AXI -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
+preplace port port-id_ext_irq -pg 1 -lvl 3 -x 720 -y 360 -defaultsOSRD
+preplace port port-id_timer_irq -pg 1 -lvl 3 -x 720 -y 970 -defaultsOSRD
+preplace port port-id_axi_resetn -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace port port-id_axi_clk -pg 1 -lvl 0 -x 0 -y 770 -defaultsOSRD
+preplace port port-id_timer_clk_in -pg 1 -lvl 0 -x 0 -y 1000 -defaultsOSRD
+preplace port port-id_boot_mode -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_cdma_irq -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace port port-id_uart_tx_0 -pg 1 -lvl 3 -x 720 -y 60 -defaultsOSRD
+preplace port port-id_uart_rx_0 -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port port-id_bram_en -pg 1 -lvl 3 -x 720 -y 90 -defaultsOSRD
+preplace port port-id_i2c_scl_i_0 -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
+preplace port port-id_i2c_sda_i_0 -pg 1 -lvl 0 -x 0 -y 710 -defaultsOSRD
+preplace port port-id_i2c_sda_t_0 -pg 1 -lvl 3 -x 720 -y 690 -defaultsOSRD
+preplace port port-id_i2c_sda_o_0 -pg 1 -lvl 3 -x 720 -y 660 -defaultsOSRD
+preplace port port-id_i2c_scl_t_0 -pg 1 -lvl 3 -x 720 -y 630 -defaultsOSRD
+preplace port port-id_i2c_scl_o_0 -pg 1 -lvl 3 -x 720 -y 600 -defaultsOSRD
+preplace portBus bram_we -pg 1 -lvl 3 -x 720 -y 120 -defaultsOSRD
+preplace portBus bram_addr -pg 1 -lvl 3 -x 720 -y 150 -defaultsOSRD
+preplace portBus bram_d -pg 1 -lvl 3 -x 720 -y 180 -defaultsOSRD
+preplace inst smartconnect_1 -pg 1 -lvl 1 -x 180 -y 570 -defaultsOSRD
+preplace inst plic_axil_wrapper_0 -pg 1 -lvl 2 -x 540 -y 360 -defaultsOSRD
+preplace inst axil_timer_64_0 -pg 1 -lvl 2 -x 540 -y 970 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 180 -y 350 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 540 -y 800 -defaultsOSRD
+preplace inst i2c_master_axil_0 -pg 1 -lvl 2 -x 540 -y 640 -defaultsOSRD
+preplace inst negation_1 -pg 1 -lvl 1 -x 180 -y 810 -defaultsOSRD
+preplace inst axi_uart_bootloader_1 -pg 1 -lvl 2 -x 540 -y 110 -defaultsOSRD
+preplace netloc axi_clk1_1 1 0 1 NJ 300
+preplace netloc axi_clk_1 1 0 2 20 720 350
+preplace netloc axi_gpio_0_ip2intc_irpt 1 0 3 40 740 320J 880 690
+preplace netloc axi_resetn_1 1 0 2 30 730 360
+preplace netloc axil_timer_64_0_IRQ 1 2 1 NJ 970
+preplace netloc i2c_master_axil_0_i2c_scl_o 1 2 1 690J 600n
+preplace netloc i2c_master_axil_0_i2c_scl_t 1 2 1 NJ 630
+preplace netloc i2c_master_axil_0_i2c_sda_o 1 2 1 700J 650n
+preplace netloc i2c_master_axil_0_i2c_sda_t 1 2 1 690J 670n
+preplace netloc i2c_scl_i_0_1 1 0 2 NJ 680 370J
+preplace netloc i2c_sda_i_0_1 1 0 2 NJ 710 390J
+preplace netloc negation_1_b 1 1 1 380 640n
+preplace netloc plic_axil_wrapper_0_ext_intr 1 2 1 NJ 360
+preplace netloc timer_clk_in_1 1 0 2 NJ 1000 NJ
+preplace netloc xlconcat_0_dout 1 1 1 N 350
+preplace netloc axi_uart_bootloader_1_uart_tx 1 2 1 NJ 60
+preplace netloc axi_uart_bootloader_1_uart_irq 1 0 3 40 220 NJ 220 690
+preplace netloc axi_uart_bootloader_1_bram_en 1 2 1 700J 90n
+preplace netloc axi_uart_bootloader_1_bram_we 1 2 1 NJ 120
+preplace netloc axi_uart_bootloader_1_bram_addr 1 2 1 700J 140n
+preplace netloc axi_uart_bootloader_1_bram_din 1 2 1 700J 160n
+preplace netloc boot_mode_1 1 0 2 NJ 120 390J
+preplace netloc uart_rx_0_1 1 0 2 NJ 150 NJ
+preplace netloc Conn3 1 0 1 NJ 550
+preplace netloc smartconnect_1_M00_AXI 1 1 1 330 330n
+preplace netloc smartconnect_1_M01_AXI 1 1 1 330 540n
+preplace netloc smartconnect_1_M03_AXI 1 1 1 340 580n
+preplace netloc smartconnect_1_M04_AXI 1 1 1 N 600
+preplace netloc smartconnect_1_M02_AXI 1 1 1 320 70n
+levelinfo -pg 1 0 180 540 720
+pagesize -pg 1 -db -bbox -sgen -130 0 880 1060
 "
 }
-
+0
