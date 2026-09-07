@@ -1,0 +1,318 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VexRiscvMcuAxi
+INFO: [VRFC 10-311] analyzing module DataCache
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/ip/verilog-axi/rtl/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/muxed_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module muxed_dual_port_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/axis_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/ip/verilog-i2c/rtl/i2c_master_axil.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master_axil
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/axi_uart_bootloader_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_bootloader_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_VexRiscvMcuAxi_0_0/sim/design_1_VexRiscvMcuAxi_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_VexRiscvMcuAxi_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_axi_ram_0_0/sim/design_1_axi_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/sim/bd_48ac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1NMB928
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_CVVFJV
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_Z1B1P3
+INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_FWTRCR
+INFO: [VRFC 10-311] analyzing module m01_nodes_imp_1R2BU3L
+INFO: [VRFC 10-311] analyzing module m02_exit_pipeline_imp_19C6Z
+INFO: [VRFC 10-311] analyzing module m02_nodes_imp_185W3JU
+INFO: [VRFC 10-311] analyzing module m03_exit_pipeline_imp_6E233V
+INFO: [VRFC 10-311] analyzing module m03_nodes_imp_LEW7G
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_1C3JDRS
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_1FAO4F6
+INFO: [VRFC 10-311] analyzing module s01_entry_pipeline_imp_F11SX8
+INFO: [VRFC 10-311] analyzing module s01_nodes_imp_AIXRF8
+INFO: [VRFC 10-311] analyzing module switchboards_imp_1MKJLH2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_48ac_arsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_arsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_48ac_rsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_rsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_48ac_awsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_awsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_48ac_wsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_wsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_48ac_bsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_bsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_48ac_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_48ac_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_48ac_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_48ac_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_48ac_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_48ac_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_48ac_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_48ac_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_48ac_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_48ac_s01mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_48ac_s01tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_48ac_s01sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_48ac_s01a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_48ac_sarn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sarn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_48ac_srn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_srn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_48ac_sawn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sawn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_48ac_swn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_swn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_48ac_sbn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sbn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_48ac_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_48ac_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_48ac_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_48ac_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_48ac_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_48ac_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_48ac_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_48ac_m01s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m01s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_48ac_m01arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m01arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_48ac_m01rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m01rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_48ac_m01awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m01awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_36/sim/bd_48ac_m01wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m01wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_48ac_m01bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m01bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_48ac_m01e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m01e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_39/sim/bd_48ac_m02s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m02s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_40/sim/bd_48ac_m02arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m02arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_41/sim/bd_48ac_m02rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m02rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_42/sim/bd_48ac_m02awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m02awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_43/sim/bd_48ac_m02wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m02wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_44/sim/bd_48ac_m02bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m02bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_45/sim/bd_48ac_m02e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m02e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_46/sim/bd_48ac_m03s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m03s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_47/sim/bd_48ac_m03arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m03arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_48/sim/bd_48ac_m03rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m03rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_49/sim/bd_48ac_m03awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m03awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_50/sim/bd_48ac_m03wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m03wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_51/sim/bd_48ac_m03bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m03bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_52/sim/bd_48ac_m03e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m03e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/sim/design_1_smartconnect_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_smartconnect_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_muxed_dual_port_ram_0_0/sim/design_1_muxed_dual_port_ram_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_muxed_dual_port_ram_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/sim/bd_88fd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd
+INFO: [VRFC 10-311] analyzing module clk_map_imp_LEUOAK
+INFO: [VRFC 10-311] analyzing module i_nodes_imp_1320MTU
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1ED2SVB
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_1RQJ53F
+INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_194UWDJ
+INFO: [VRFC 10-311] analyzing module m01_nodes_imp_XHW5BX
+INFO: [VRFC 10-311] analyzing module m02_exit_pipeline_imp_178ITK7
+INFO: [VRFC 10-311] analyzing module m02_nodes_imp_1CEL2E
+INFO: [VRFC 10-311] analyzing module m03_exit_pipeline_imp_1348LIF
+INFO: [VRFC 10-311] analyzing module m03_nodes_imp_16OOIFK
+INFO: [VRFC 10-311] analyzing module m04_exit_pipeline_imp_1SOQ17R
+INFO: [VRFC 10-311] analyzing module m04_nodes_imp_1XY7E6O
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_F6210K
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_9QDCJI
+INFO: [VRFC 10-311] analyzing module switchboards_imp_K834X6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_2/sim/bd_88fd_arinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_arinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_3/sim/bd_88fd_rinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_rinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_4/sim/bd_88fd_awinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_awinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_5/sim/bd_88fd_winsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_winsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_6/sim/bd_88fd_binsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_binsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_7/sim/bd_88fd_aroutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_aroutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_8/sim/bd_88fd_routsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_routsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_9/sim/bd_88fd_awoutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_awoutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_10/sim/bd_88fd_woutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_woutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_11/sim/bd_88fd_boutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_boutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_12/sim/bd_88fd_arni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_arni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_13/sim/bd_88fd_rni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_rni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_14/sim/bd_88fd_awni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_awni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_15/sim/bd_88fd_wni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_wni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_16/sim/bd_88fd_bni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_bni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_17/sim/bd_88fd_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_18/sim/bd_88fd_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_19/sim/bd_88fd_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_20/sim/bd_88fd_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_21/sim/bd_88fd_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_22/sim/bd_88fd_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_23/sim/bd_88fd_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_24/sim/bd_88fd_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_25/sim/bd_88fd_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_26/sim/bd_88fd_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_27/sim/bd_88fd_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_28/sim/bd_88fd_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_29/sim/bd_88fd_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_30/sim/bd_88fd_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_31/sim/bd_88fd_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_32/sim/bd_88fd_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m00e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_33/sim/bd_88fd_m01s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m01s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_34/sim/bd_88fd_m01arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m01arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_35/sim/bd_88fd_m01rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m01rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_36/sim/bd_88fd_m01awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m01awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_37/sim/bd_88fd_m01wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m01wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_38/sim/bd_88fd_m01bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m01bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_39/sim/bd_88fd_m01e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m01e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_40/sim/bd_88fd_m02s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m02s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_41/sim/bd_88fd_m02arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m02arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_42/sim/bd_88fd_m02rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m02rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_43/sim/bd_88fd_m02awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m02awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_44/sim/bd_88fd_m02wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m02wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_45/sim/bd_88fd_m02bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m02bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_46/sim/bd_88fd_m02e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m02e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_47/sim/bd_88fd_m03s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m03s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_48/sim/bd_88fd_m03arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m03arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_49/sim/bd_88fd_m03rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m03rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_50/sim/bd_88fd_m03awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m03awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_51/sim/bd_88fd_m03wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m03wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_52/sim/bd_88fd_m03bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m03bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_53/sim/bd_88fd_m03e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m03e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_54/sim/bd_88fd_m04s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m04s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_55/sim/bd_88fd_m04arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m04arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_56/sim/bd_88fd_m04rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m04rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_57/sim/bd_88fd_m04awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m04awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_58/sim/bd_88fd_m04wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m04wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_59/sim/bd_88fd_m04bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m04bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_60/sim/bd_88fd_m04e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_88fd_m04e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_smartconnect_1_0/sim/design_1_smartconnect_1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_smartconnect_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_plic_axil_wrapper_0_0/sim/design_1_plic_axil_wrapper_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_plic_axil_wrapper_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_axil_timer_64_0_0/sim/design_1_axil_timer_64_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axil_timer_64_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_i2c_master_axil_0_0/sim/design_1_i2c_master_axil_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_i2c_master_axil_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_negation_1_2/sim/design_1_negation_1_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_negation_1_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_axi_uart_bootloader_1_0/sim/design_1_axi_uart_bootloader_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_uart_bootloader_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_negation_0_0/sim/design_1_negation_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_negation_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_negation_0_1/sim/design_1_negation_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_negation_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_basic_or_0_0/sim/design_1_basic_or_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_basic_or_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_negation_1_0/sim/design_1_negation_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_negation_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_2_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/ip/design_1_negation_1_3/sim/design_1_negation_1_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_negation_1_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_reset_controller_imp_Y312CB
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module instr_ram_imp_1811FLP
+INFO: [VRFC 10-311] analyzing module peripherals_imp_1BOSXT5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.sim/bootloader_tb/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Sep  6 20:52:32 2026
+# Process ID         : 224933
+# Current directory  : /home/ryanb/Documents/MINA/hw/custom_ip
+# Command line       : vivado
+# Log file           : /home/ryanb/Documents/MINA/hw/custom_ip/vivado.log
+# Journal file       : /home/ryanb/Documents/MINA/hw/custom_ip/vivado.jou
+# Running On         : ryan-21k8s14n00
+# Platform           : EndeavourOS
+# Operating System   : EndeavourOS Linux
+# Processor Detail   : AMD Ryzen 7 PRO 7840U w/ Radeon 780M Graphics
+# CPU Frequency      : 5063.560 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 32211 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 32211 MB
+# Available Virtual  : 19470 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.xpr
+launch_simulation -simset [get_filesets bootloader_tb ]
+open_wave_config /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/tb_design_1_wrapper_behav.wcfg
+source tb_design_1_wrapper.tcl
+update_compile_order -fileset sources_1
+run 5 ms
+relaunch_sim
+run 5 ms
+relaunch_sim
+run 5 ms
+open_bd_design {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd}
+set_property name sys_rst_n [get_bd_ports sys_rst]
+delete_bd_objs [get_bd_nets sys_rst_1]
+undo
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets sys_rst_1]
+set_property location {-190 1066} [get_bd_ports sys_rst_n]
+connect_bd_net [get_bd_ports sys_rst_n] [get_bd_pins negation_1/a]
+connect_bd_net [get_bd_ports sys_rst_n] [get_bd_pins axi_cdma_0/s_axi_lite_aresetn]
+connect_bd_net [get_bd_pins negation_1/b] [get_bd_pins clk_wiz_0/reset]
+connect_bd_net [get_bd_ports sys_rst_n] [get_bd_pins peripherals/axi_resetn]
+connect_bd_net [get_bd_ports sys_rst_n] [get_bd_pins instr_ram/s_axi_aresetn]
+regenerate_bd_layout
+connect_bd_net [get_bd_ports sys_rst_n] [get_bd_pins smartconnect_0/aresetn]
+regenerate_bd_layout
+save_bd_design
+set_property name sys_rst [get_bd_ports sys_rst_n]
+regenerate_bd_layout
+save_bd_design
+close_bd_design [get_bd_designs design_1]
+relaunch_sim
+save_wave_config {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/tb_design_1_wrapper_behav.wcfg}
+close_sim

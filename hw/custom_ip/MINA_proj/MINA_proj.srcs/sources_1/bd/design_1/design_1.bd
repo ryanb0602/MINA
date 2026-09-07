@@ -18,7 +18,9 @@
       "instr_ram": {
         "muxed_dual_port_ram_0": "",
         "axi_bram_ctrl_1": "",
-        "axi_bram_ctrl_0": ""
+        "axi_bram_ctrl_0": "",
+        "xlslice_0": "",
+        "xlslice_1": ""
       },
       "peripherals": {
         "smartconnect_1": "",
@@ -36,7 +38,8 @@
         "basic_or_0": ""
       },
       "negation_1": "",
-      "clk_wiz_0": ""
+      "clk_wiz_0": "",
+      "negation_2": ""
     },
     "ports": {
       "uart_tx_0": {
@@ -698,21 +701,6 @@
           "softwareInterrupt": {
             "direction": "I"
           },
-          "debug_resetOut": {
-            "direction": "O"
-          },
-          "jtag_tms": {
-            "direction": "I"
-          },
-          "jtag_tdi": {
-            "direction": "I"
-          },
-          "jtag_tdo": {
-            "direction": "O"
-          },
-          "jtag_tck": {
-            "direction": "I"
-          },
           "clk": {
             "type": "clk",
             "direction": "I",
@@ -741,9 +729,6 @@
           },
           "reset": {
             "type": "rst",
-            "direction": "I"
-          },
-          "debugReset": {
             "direction": "I"
           }
         },
@@ -1610,6 +1595,44 @@
                 }
               }
             }
+          },
+          "xlslice_0": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "ip_revision": "5",
+            "xci_name": "design_1_xlslice_0_0",
+            "xci_path": "ip/design_1_xlslice_0_0/design_1_xlslice_0_0.xci",
+            "inst_hier_path": "instr_ram/xlslice_0",
+            "has_run_ip_tcl": "true",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "13"
+              },
+              "DIN_TO": {
+                "value": "2"
+              },
+              "DIN_WIDTH": {
+                "value": "14"
+              }
+            }
+          },
+          "xlslice_1": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "ip_revision": "5",
+            "xci_name": "design_1_xlslice_0_1",
+            "xci_path": "ip/design_1_xlslice_0_1/design_1_xlslice_0_1.xci",
+            "inst_hier_path": "instr_ram/xlslice_1",
+            "has_run_ip_tcl": "true",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "13"
+              },
+              "DIN_TO": {
+                "value": "2"
+              },
+              "DIN_WIDTH": {
+                "value": "14"
+              }
+            }
           }
         },
         "interface_nets": {
@@ -1630,7 +1653,7 @@
           "axi_bram_ctrl_0_bram_addr_a": {
             "ports": [
               "axi_bram_ctrl_0/bram_addr_a",
-              "muxed_dual_port_ram_0/axi_a_addr"
+              "xlslice_0/Din"
             ]
           },
           "axi_bram_ctrl_0_bram_en_a": {
@@ -1654,7 +1677,7 @@
           "axi_bram_ctrl_1_bram_addr_a": {
             "ports": [
               "axi_bram_ctrl_1/bram_addr_a",
-              "muxed_dual_port_ram_0/axi_b_addr"
+              "xlslice_1/Din"
             ]
           },
           "axi_bram_ctrl_1_bram_en_a": {
@@ -1741,6 +1764,18 @@
               "s_axi_aresetn",
               "axi_bram_ctrl_0/s_axi_aresetn",
               "axi_bram_ctrl_1/s_axi_aresetn"
+            ]
+          },
+          "xlslice_0_Dout": {
+            "ports": [
+              "xlslice_0/Dout",
+              "muxed_dual_port_ram_0/axi_a_addr"
+            ]
+          },
+          "xlslice_1_Dout": {
+            "ports": [
+              "xlslice_1/Dout",
+              "muxed_dual_port_ram_0/axi_b_addr"
             ]
           }
         }
@@ -3705,6 +3740,49 @@
             "parameters": {
               "FREQ_HZ": {
                 "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_in_clk",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "17",
+        "xci_name": "design_1_clk_wiz_0_2",
+        "xci_path": "ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "has_run_ip_tcl": "true"
+      },
+      "negation_2": {
+        "vlnv": "xilinx.com:module_ref:negation:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_negation_1_3",
+        "xci_path": "ip/design_1_negation_1_3/design_1_negation_1_3.xci",
+        "inst_hier_path": "negation_2",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "negation",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -3718,14 +3796,6 @@
             }
           }
         }
-      },
-      "clk_wiz_0": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "ip_revision": "17",
-        "xci_name": "design_1_clk_wiz_0_2",
-        "xci_path": "ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xci",
-        "inst_hier_path": "clk_wiz_0",
-        "has_run_ip_tcl": "true"
       }
     },
     "interface_nets": {
@@ -3783,16 +3853,16 @@
         "ports": [
           "clk_wiz_0/clk_out1",
           "smartconnect_0/aclk",
-          "VexRiscvMcuAxi_0/clk",
           "axi_cdma_0/m_axi_aclk",
           "instr_ram/s_axi_aclk",
           "peripherals/axi_clk",
           "cpu_reset_controller/clk",
-          "negation_1/clk",
           "axi_cdma_0/s_axi_lite_aclk",
           "peripherals/timer_clk_in",
           "instr_ram/ram_clk",
-          "axi_ram_0/clk"
+          "axi_ram_0/clk",
+          "negation_2/clk",
+          "VexRiscvMcuAxi_0/clk"
         ]
       },
       "cpu_reset_controller_c": {
@@ -3804,7 +3874,8 @@
       "cpu_rst_1": {
         "ports": [
           "cpu_rst",
-          "cpu_reset_controller/cpu_reset"
+          "cpu_reset_controller/cpu_reset",
+          "negation_2/a"
         ]
       },
       "i2c_scl_i_0_1": {
@@ -3822,15 +3893,22 @@
       "in_clk_1": {
         "ports": [
           "in_clk",
-          "clk_wiz_0/clk_in1"
+          "clk_wiz_0/clk_in1",
+          "negation_1/clk"
         ]
       },
       "negation_1_b": {
         "ports": [
           "negation_1/b",
-          "instr_ram/ram_mux_select",
+          "axi_ram_0/rst",
+          "clk_wiz_0/reset"
+        ]
+      },
+      "negation_2_b": {
+        "ports": [
+          "negation_2/b",
           "peripherals/boot_mode",
-          "axi_ram_0/rst"
+          "instr_ram/ram_mux_select"
         ]
       },
       "peripherals_IRQ": {
@@ -3899,16 +3977,15 @@
           "uart_tx_0"
         ]
       },
-      "sys_rst_1": {
+      "sys_rst_n_1": {
         "ports": [
           "sys_rst",
-          "cpu_reset_controller/sys_reset",
           "negation_1/a",
+          "axi_cdma_0/s_axi_lite_aresetn",
           "peripherals/axi_resetn",
           "instr_ram/s_axi_aresetn",
-          "axi_cdma_0/s_axi_lite_aresetn",
           "smartconnect_0/aresetn",
-          "clk_wiz_0/reset"
+          "cpu_reset_controller/sys_reset"
         ]
       },
       "uart_rx_0_1": {

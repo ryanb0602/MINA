@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7s50csga324-1" LaunchTime="1788733697" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp">
-  <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="design_1_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="design_1_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
+  <File Type="RDS-UTIL" Name="design_1_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="design_1_wrapper_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../ip/verilog-axi/rtl/axi_register_wr.v">
@@ -824,26 +821,24 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_muxed_dual_port_ram_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_negation_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_i2c_master_axil_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_ram_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_negation_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_basic_or_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_cdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uart_bootloader_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_VexRiscvMcuAxi_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_negation_1_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_negation_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_plic_axil_wrapper_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_negation_1_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_VexRiscvMcuAxi_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_muxed_dual_port_ram_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_i2c_master_axil_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_negation_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axil_timer_64_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_bram_ctrl_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uart_bootloader_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_cdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_basic_or_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_ram_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_negation_0_0"/>
 </GenRun>

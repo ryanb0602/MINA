@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_cdma_pkg" />
+            <top_module name="axi_datamover_pkg" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="tb_design_1_wrapper" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.698477813 ms"></ZoomStartTime>
+      <ZoomEndTime time="4.889344694 ms"></ZoomEndTime>
+      <Cursor1Time time="4.181285000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="170"></NameColumnWidth>
+      <ValueColumnWidth column_width="131"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/cpu_rst">
+      <obj_property name="ElementShortName">cpu_rst</obj_property>
+      <obj_property name="ObjectShortName">cpu_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/i2c_scl_i_0">
+      <obj_property name="ElementShortName">i2c_scl_i_0</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl_i_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/i2c_scl_o_0">
+      <obj_property name="ElementShortName">i2c_scl_o_0</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl_o_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/i2c_scl_t_0">
+      <obj_property name="ElementShortName">i2c_scl_t_0</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl_t_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/i2c_sda_i_0">
+      <obj_property name="ElementShortName">i2c_sda_i_0</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda_i_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/i2c_sda_o_0">
+      <obj_property name="ElementShortName">i2c_sda_o_0</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda_o_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/i2c_sda_t_0">
+      <obj_property name="ElementShortName">i2c_sda_t_0</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda_t_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/in_clk">
+      <obj_property name="ElementShortName">in_clk</obj_property>
+      <obj_property name="ObjectShortName">in_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/sys_rst">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/uart_rx_0">
+      <obj_property name="ElementShortName">uart_rx_0</obj_property>
+      <obj_property name="ObjectShortName">uart_rx_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/uart_tx_0">
+      <obj_property name="ElementShortName">uart_tx_0</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_0</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_design_1_wrapper/CLK_PERIOD">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/tb_design_1_wrapper/BIT_PERIOD">
+      <obj_property name="ElementShortName">BIT_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">BIT_PERIOD</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/UART_ACK">
+      <obj_property name="ElementShortName">UART_ACK[7:0]</obj_property>
+      <obj_property name="ObjectShortName">UART_ACK[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/UART_NACK">
+      <obj_property name="ElementShortName">UART_NACK[7:0]</obj_property>
+      <obj_property name="ObjectShortName">UART_NACK[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/CMD_WRITE">
+      <obj_property name="ElementShortName">CMD_WRITE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CMD_WRITE[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/SYNC_BYTE">
+      <obj_property name="ElementShortName">SYNC_BYTE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SYNC_BYTE[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/peripherals/axi_uart_bootloader_1/boot_mode">
+      <obj_property name="ElementShortName">boot_mode</obj_property>
+      <obj_property name="ObjectShortName">boot_mode</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/peripherals/axi_uart_bootloader_1/inst/u_axi_uart_bootloader/uart_inst/rx_data">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/peripherals/axi_uart_bootloader_1/inst/u_axi_uart_bootloader/uart_inst/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/peripherals/axi_uart_bootloader_1/inst/u_axi_uart_bootloader/uart_inst/reset_n">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/peripherals/axi_uart_bootloader_1/inst/u_axi_uart_bootloader/uart_inst/uart_rx">
+      <obj_property name="ElementShortName">uart_rx</obj_property>
+      <obj_property name="ObjectShortName">uart_rx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/peripherals/axi_uart_bootloader_1/inst/u_axi_uart_bootloader/uart_inst/rx_valid">
+      <obj_property name="ElementShortName">rx_valid</obj_property>
+      <obj_property name="ObjectShortName">rx_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/peripherals/axi_uart_bootloader_1/inst/u_axi_uart_bootloader/uart_inst/rx_shift">
+      <obj_property name="ElementShortName">rx_shift[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_shift[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/clk_wiz_0/clk_out1">
+      <obj_property name="ElementShortName">clk_out1</obj_property>
+      <obj_property name="ObjectShortName">clk_out1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/clk_wiz_0/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/smartconnect_0/S00_AXI_wdata">
+      <obj_property name="ElementShortName">S00_AXI_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S00_AXI_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/tb_design_1_wrapper/dut/design_1_i/smartconnect_0/S00_AXI">
+      <obj_property name="children_use_element_short_name">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank 1=#D399FF 2=pink</obj_property>
+      <obj_property name="EnumTransactionValueTable">0=blank;1=Read;2=Write;3=Read/Write</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">turquoise</obj_property>
+      <obj_property name="Render_Data">/tb_design_1_wrapper/dut/design_1_i/smartconnect_0/S00_AXI.readWriteSummary</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">36</obj_property>
+      <obj_property name="ElementShortName">S00_AXI</obj_property>
+      <obj_property name="ObjectShortName">S00_AXI</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/iBusAxi">
+      <obj_property name="children_use_element_short_name">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank 1=#D399FF 2=pink</obj_property>
+      <obj_property name="EnumTransactionValueTable">0=blank;1=Read;2=Write;3=Read/Write</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">turquoise</obj_property>
+      <obj_property name="Render_Data">/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/iBusAxi.readWriteSummary</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">36</obj_property>
+      <obj_property name="ElementShortName">iBusAxi</obj_property>
+      <obj_property name="ObjectShortName">iBusAxi</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/dBusAxi">
+      <obj_property name="ElementShortName">dBusAxi</obj_property>
+      <obj_property name="ObjectShortName">dBusAxi</obj_property>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/tb_design_1_wrapper/dut/design_1_i/smartconnect_0/M00_AXI">
+      <obj_property name="ElementShortName">M00_AXI</obj_property>
+      <obj_property name="ObjectShortName">M00_AXI</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/decode_arbitration_isValid">
+      <obj_property name="ElementShortName">decode_arbitration_isValid</obj_property>
+      <obj_property name="ObjectShortName">decode_arbitration_isValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/decode_arbitration_isStuck">
+      <obj_property name="ElementShortName">decode_arbitration_isStuck</obj_property>
+      <obj_property name="ObjectShortName">decode_arbitration_isStuck</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/execute_arbitration_isValid">
+      <obj_property name="ElementShortName">execute_arbitration_isValid</obj_property>
+      <obj_property name="ObjectShortName">execute_arbitration_isValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/execute_arbitration_isStuck">
+      <obj_property name="ElementShortName">execute_arbitration_isStuck</obj_property>
+      <obj_property name="ObjectShortName">execute_arbitration_isStuck</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/memory_arbitration_isValid">
+      <obj_property name="ElementShortName">memory_arbitration_isValid</obj_property>
+      <obj_property name="ObjectShortName">memory_arbitration_isValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/memory_arbitration_isStuck">
+      <obj_property name="ElementShortName">memory_arbitration_isStuck</obj_property>
+      <obj_property name="ObjectShortName">memory_arbitration_isStuck</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/writeBack_arbitration_isValid">
+      <obj_property name="ElementShortName">writeBack_arbitration_isValid</obj_property>
+      <obj_property name="ObjectShortName">writeBack_arbitration_isValid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/writeBack_arbitration_isStuck">
+      <obj_property name="ElementShortName">writeBack_arbitration_isStuck</obj_property>
+      <obj_property name="ObjectShortName">writeBack_arbitration_isStuck</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/IBusCachedPlugin_fetchPc_pcReg">
+      <obj_property name="ElementShortName">IBusCachedPlugin_fetchPc_pcReg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IBusCachedPlugin_fetchPc_pcReg[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/execute_INSTRUCTION">
+      <obj_property name="ElementShortName">execute_INSTRUCTION[31:0]</obj_property>
+      <obj_property name="ObjectShortName">execute_INSTRUCTION[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/CsrPlugin_mcause_exceptionCode">
+      <obj_property name="ElementShortName">CsrPlugin_mcause_exceptionCode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CsrPlugin_mcause_exceptionCode[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/inst/CsrPlugin_mepc">
+      <obj_property name="ElementShortName">CsrPlugin_mepc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CsrPlugin_mepc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/iBusAxi_arburst">
+      <obj_property name="ElementShortName">iBusAxi_arburst[1:0]</obj_property>
+      <obj_property name="ObjectShortName">iBusAxi_arburst[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/iBusAxi_arlen">
+      <obj_property name="ElementShortName">iBusAxi_arlen[7:0]</obj_property>
+      <obj_property name="ObjectShortName">iBusAxi_arlen[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/VexRiscvMcuAxi_0/iBusAxi_arsize">
+      <obj_property name="ElementShortName">iBusAxi_arsize[2:0]</obj_property>
+      <obj_property name="ObjectShortName">iBusAxi_arsize[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/instr_ram/muxed_dual_port_ram_0/inst/axi_a_addr">
+      <obj_property name="ElementShortName">axi_a_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_a_addr[11:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_design_1_wrapper/dut/design_1_i/instr_ram/muxed_dual_port_ram_0/axi_a_dout">
+      <obj_property name="ElementShortName">axi_a_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_a_dout[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sun Sep  6 18:28:10 2026
+//Date        : Sun Sep  6 23:13:48 2026
 //Host        : ryan-21k8s14n00 running 64-bit EndeavourOS Linux
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -42,7 +42,7 @@ module cpu_reset_controller_imp_Y312CB
         .clk(clk));
 endmodule
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=23,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=3,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=12,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=3,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (cpu_rst,
     i2c_scl_i_0,
@@ -192,6 +192,7 @@ module design_1
   wire i2c_sda_t_0;
   wire in_clk;
   wire negation_1_b;
+  wire negation_2_b;
   wire peripherals_IRQ;
   wire [13:0]peripherals_bram_addr;
   wire [31:0]peripherals_bram_d;
@@ -329,7 +330,6 @@ module design_1
         .dBusAxi_wready(VexRiscvMcuAxi_0_dBusAxi_WREADY),
         .dBusAxi_wstrb(VexRiscvMcuAxi_0_dBusAxi_WSTRB),
         .dBusAxi_wvalid(VexRiscvMcuAxi_0_dBusAxi_WVALID),
-        .debugReset(1'b0),
         .externalInterrupt(peripherals_ext_intr),
         .iBusAxi_araddr(S_AXI_INST_1_ARADDR),
         .iBusAxi_arburst(S_AXI_INST_1_ARBURST),
@@ -347,9 +347,6 @@ module design_1
         .iBusAxi_rready(S_AXI_INST_1_RREADY),
         .iBusAxi_rresp(S_AXI_INST_1_RRESP),
         .iBusAxi_rvalid(S_AXI_INST_1_RVALID),
-        .jtag_tck(1'b0),
-        .jtag_tdi(1'b0),
-        .jtag_tms(1'b0),
         .reset(cpu_reset_controller_c),
         .softwareInterrupt(1'b0),
         .timerInterrupt(peripherals_IRQ));
@@ -442,7 +439,7 @@ module design_1
   design_1_clk_wiz_0_2 clk_wiz_0
        (.clk_in1(in_clk),
         .clk_out1(clk_wiz_0_clk_out1),
-        .reset(sys_rst));
+        .reset(negation_1_b));
   cpu_reset_controller_imp_Y312CB cpu_reset_controller
        (.clk(clk_wiz_0_clk_out1),
         .cpu_reset(cpu_rst),
@@ -500,13 +497,17 @@ module design_1
         .ram_clk(clk_wiz_0_clk_out1),
         .ram_din(peripherals_bram_d),
         .ram_en(peripherals_bram_en),
-        .ram_mux_select(negation_1_b),
+        .ram_mux_select(negation_2_b),
         .ram_we(peripherals_bram_we),
         .s_axi_aclk(clk_wiz_0_clk_out1),
         .s_axi_aresetn(sys_rst));
   design_1_negation_1_0 negation_1
        (.a(sys_rst),
         .b(negation_1_b),
+        .clk(in_clk));
+  design_1_negation_1_3 negation_2
+       (.a(cpu_rst),
+        .b(negation_2_b),
         .clk(clk_wiz_0_clk_out1));
   peripherals_imp_1BOSXT5 peripherals
        (.S00_AXI_araddr(smartconnect_0_M02_AXI_ARADDR),
@@ -552,7 +553,7 @@ module design_1
         .S00_AXI_wvalid(smartconnect_0_M02_AXI_WVALID),
         .axi_clk(clk_wiz_0_clk_out1),
         .axi_resetn(sys_rst),
-        .boot_mode(negation_1_b),
+        .boot_mode(negation_2_b),
         .bram_addr(peripherals_bram_addr),
         .bram_d(peripherals_bram_d),
         .bram_en(peripherals_bram_en),
@@ -956,6 +957,8 @@ module instr_ram_imp_1811FLP
   wire [3:0]ram_we;
   wire s_axi_aclk;
   wire s_axi_aresetn;
+  wire [11:0]xlslice_0_Dout;
+  wire [11:0]xlslice_1_Dout;
 
   design_1_axi_bram_ctrl_0_1 axi_bram_ctrl_0
        (.bram_addr_a(axi_bram_ctrl_0_bram_addr_a),
@@ -1035,12 +1038,12 @@ module instr_ram_imp_1811FLP
         .s_axi_wstrb(S_AXI_DATA_wstrb),
         .s_axi_wvalid(S_AXI_DATA_wvalid));
   design_1_muxed_dual_port_ram_0_0 muxed_dual_port_ram_0
-       (.axi_a_addr(axi_bram_ctrl_0_bram_addr_a[11:0]),
+       (.axi_a_addr(xlslice_0_Dout),
         .axi_a_din(axi_bram_ctrl_0_bram_wrdata_a),
         .axi_a_dout(muxed_dual_port_ram_0_axi_a_dout),
         .axi_a_en(axi_bram_ctrl_0_bram_en_a),
         .axi_a_we(axi_bram_ctrl_0_bram_we_a),
-        .axi_b_addr(axi_bram_ctrl_1_bram_addr_a[11:0]),
+        .axi_b_addr(xlslice_1_Dout),
         .axi_b_din(axi_bram_ctrl_1_bram_wrdata_a),
         .axi_b_dout(muxed_dual_port_ram_0_axi_b_dout),
         .axi_b_en(axi_bram_ctrl_1_bram_en_a),
@@ -1052,6 +1055,12 @@ module instr_ram_imp_1811FLP
         .raw_b_dout(ram_dout),
         .raw_b_en(ram_en),
         .raw_b_we(ram_we));
+  design_1_xlslice_0_0 xlslice_0
+       (.Din(axi_bram_ctrl_0_bram_addr_a),
+        .Dout(xlslice_0_Dout));
+  design_1_xlslice_0_1 xlslice_1
+       (.Din(axi_bram_ctrl_1_bram_addr_a),
+        .Dout(xlslice_1_Dout));
 endmodule
 
 module peripherals_imp_1BOSXT5

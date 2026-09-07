@@ -8,8 +8,8 @@
    "Color Coded_Layers":"/cdma_irq_1:true|/peripherals/axil_timer_64_0_IRQ:true|/peripherals/axi_gpio_0_ip2intc_irpt:true|/peripherals/plic_axil_wrapper_0_ext_intr:true|/peripherals/axi_uart_bootloader_0_uart_irq:true|",
    "Color Coded_ScaleFactor":"0.556413",
    "Color Coded_TopLeft":"-397,4",
-   "Default View_ScaleFactor":"0.591795",
-   "Default View_TopLeft":"-270,3",
+   "Default View_ScaleFactor":"0.590583",
+   "Default View_TopLeft":"-163,3",
    "Display-IntfAXI4Lite":"true",
    "Display-IntfTypeAXIMM":"true",
    "Display-PortTypeClock":"true",
@@ -22,56 +22,58 @@
    "Interrupt and AXI-4 Lite_TopLeft":"-179,-6",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port port-id_uart_tx_0 -pg 1 -lvl 6 -x 1540 -y 590 -defaultsOSRD
-preplace port port-id_uart_rx_0 -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
-preplace port port-id_i2c_scl_i_0 -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
-preplace port port-id_i2c_sda_i_0 -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
-preplace port port-id_i2c_sda_t_0 -pg 1 -lvl 6 -x 1540 -y 670 -defaultsOSRD
-preplace port port-id_i2c_sda_o_0 -pg 1 -lvl 6 -x 1540 -y 700 -defaultsOSRD
-preplace port port-id_i2c_scl_t_0 -pg 1 -lvl 6 -x 1540 -y 730 -defaultsOSRD
-preplace port port-id_i2c_scl_o_0 -pg 1 -lvl 6 -x 1540 -y 760 -defaultsOSRD
-preplace port port-id_cpu_rst -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
-preplace port port-id_sys_rst -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
-preplace port port-id_in_clk -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
-preplace inst VexRiscvMcuAxi_0 -pg 1 -lvl 3 -x 600 -y 250 -defaultsOSRD
-preplace inst axi_ram_0 -pg 1 -lvl 5 -x 1320 -y 900 -defaultsOSRD
-preplace inst axi_cdma_0 -pg 1 -lvl 5 -x 1320 -y 90 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 4 -x 920 -y 340 -defaultsOSRD
-preplace inst instr_ram -pg 1 -lvl 5 -x 1320 -y 310 -defaultsOSRD
-preplace inst peripherals -pg 1 -lvl 5 -x 1320 -y 650 -defaultsOSRD
-preplace inst cpu_reset_controller -pg 1 -lvl 2 -x 310 -y 470 -defaultsOSRD
-preplace inst negation_1 -pg 1 -lvl 4 -x 920 -y 520 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 400 -defaultsOSRD
-preplace netloc cdma_irq_1 1 4 2 1180 490 1470
-preplace netloc clk_wiz_0_clk_out1 1 1 4 200 380 440 390 760 230 1100
-preplace netloc cpu_reset_controller_c 1 2 1 420 310n
-preplace netloc cpu_rst_1 1 0 2 NJ 470 NJ
-preplace netloc i2c_scl_i_0_1 1 0 5 NJ 860 NJ 860 NJ 860 NJ 860 1130J
-preplace netloc i2c_sda_i_0_1 1 0 5 NJ 890 NJ 890 NJ 890 NJ 890 1140J
-preplace netloc in_clk_1 1 0 1 NJ 410
-preplace netloc negation_1_b 1 4 1 1120 300n
-preplace netloc peripherals_IRQ 1 2 4 420 100 NJ 100 1070J 470 1490
-preplace netloc peripherals_bram_addr 1 4 2 1180 480 1500
-preplace netloc peripherals_bram_d 1 4 2 1170 800 1460
-preplace netloc peripherals_bram_en 1 4 2 1160 810 1490
-preplace netloc peripherals_bram_we 1 4 2 1150 820 1480
-preplace netloc peripherals_ext_intr 1 2 4 440 110 NJ 110 1110J 460 1460
-preplace netloc peripherals_i2c_scl_o_0 1 5 1 1500J 750n
-preplace netloc peripherals_i2c_scl_t_0 1 5 1 NJ 730
-preplace netloc peripherals_i2c_sda_o_0 1 5 1 1500J 700n
-preplace netloc peripherals_i2c_sda_t_0 1 5 1 1500J 670n
-preplace netloc peripherals_uart_tx_0 1 5 1 NJ 590
-preplace netloc sys_rst_1 1 0 5 20 480 210 390 410J 400 770 440 1140
-preplace netloc uart_rx_0_1 1 0 5 NJ 830 NJ 830 NJ 830 NJ 830 1110J
-preplace netloc S_AXI_DATA_1 1 4 1 1080 220n
-preplace netloc S_AXI_INST_1 1 3 2 NJ 240 N
-preplace netloc VexRiscvMcuAxi_0_dBusAxi 1 3 1 780 220n
-preplace netloc axi_cdma_0_M_AXI 1 3 3 780 450 NJ 450 1460
-preplace netloc smartconnect_0_M01_AXI 1 4 1 1080 320n
-preplace netloc smartconnect_0_M02_AXI 1 4 1 1090 340n
-preplace netloc smartconnect_0_M03_AXI 1 4 1 1060 60n
-levelinfo -pg 1 0 110 310 600 920 1320 1540
-pagesize -pg 1 -db -bbox -sgen -130 0 1670 980
+preplace port port-id_uart_tx_0 -pg 1 -lvl 7 -x 1770 -y 590 -defaultsOSRD
+preplace port port-id_uart_rx_0 -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace port port-id_i2c_scl_i_0 -pg 1 -lvl 0 -x -10 -y 290 -defaultsOSRD
+preplace port port-id_i2c_sda_i_0 -pg 1 -lvl 0 -x -10 -y 350 -defaultsOSRD
+preplace port port-id_i2c_sda_t_0 -pg 1 -lvl 7 -x 1770 -y 670 -defaultsOSRD
+preplace port port-id_i2c_sda_o_0 -pg 1 -lvl 7 -x 1770 -y 700 -defaultsOSRD
+preplace port port-id_i2c_scl_t_0 -pg 1 -lvl 7 -x 1770 -y 730 -defaultsOSRD
+preplace port port-id_i2c_scl_o_0 -pg 1 -lvl 7 -x 1770 -y 760 -defaultsOSRD
+preplace port port-id_cpu_rst -pg 1 -lvl 0 -x -10 -y 550 -defaultsOSRD
+preplace port port-id_sys_rst -pg 1 -lvl 0 -x -10 -y 410 -defaultsOSRD
+preplace port port-id_in_clk -pg 1 -lvl 0 -x -10 -y 440 -defaultsOSRD
+preplace inst VexRiscvMcuAxi_0 -pg 1 -lvl 4 -x 770 -y 460 -defaultsOSRD
+preplace inst axi_ram_0 -pg 1 -lvl 6 -x 1560 -y 880 -defaultsOSRD
+preplace inst axi_cdma_0 -pg 1 -lvl 6 -x 1560 -y 90 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 5 -x 1130 -y 570 -defaultsOSRD
+preplace inst instr_ram -pg 1 -lvl 6 -x 1560 -y 310 -defaultsOSRD
+preplace inst peripherals -pg 1 -lvl 6 -x 1560 -y 650 -defaultsOSRD
+preplace inst cpu_reset_controller -pg 1 -lvl 3 -x 500 -y 500 -defaultsOSRD
+preplace inst negation_1 -pg 1 -lvl 1 -x 110 -y 420 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 290 -y 480 -defaultsOSRD
+preplace inst negation_2 -pg 1 -lvl 5 -x 1130 -y 870 -defaultsOSRD
+preplace netloc cdma_irq_1 1 5 2 1420 490 1710
+preplace netloc clk_wiz_0_clk_out1 1 2 4 400 420 600 340 930 420 1360
+preplace netloc cpu_reset_controller_c 1 3 1 N 500
+preplace netloc cpu_rst_1 1 0 5 NJ 550 NJ 550 400 860 NJ 860 N
+preplace netloc i2c_scl_i_0_1 1 0 6 NJ 290 NJ 290 NJ 290 NJ 290 990J 380 1370J
+preplace netloc i2c_sda_i_0_1 1 0 6 10J 310 NJ 310 NJ 310 NJ 310 980J 390 1340J
+preplace netloc in_clk_1 1 0 2 30 350 190J
+preplace netloc negation_1_b 1 1 5 200 320 NJ 320 NJ 320 970J 400 1280J
+preplace netloc negation_2_b 1 5 1 1380 300n
+preplace netloc peripherals_IRQ 1 3 4 610 350 940J 430 1350J 460 1720
+preplace netloc peripherals_bram_addr 1 5 2 1420 470 1750
+preplace netloc peripherals_bram_d 1 5 2 1410 800 1720
+preplace netloc peripherals_bram_en 1 5 2 1400 960 1740
+preplace netloc peripherals_bram_we 1 5 2 1390 970 1730
+preplace netloc peripherals_ext_intr 1 3 4 620 360 920J 440 1310J 480 1700
+preplace netloc peripherals_i2c_scl_o_0 1 6 1 1750J 750n
+preplace netloc peripherals_i2c_scl_t_0 1 6 1 NJ 730
+preplace netloc peripherals_i2c_sda_o_0 1 6 1 1750J 700n
+preplace netloc peripherals_i2c_sda_t_0 1 6 1 1750J 670n
+preplace netloc peripherals_uart_tx_0 1 6 1 NJ 590
+preplace netloc sys_rst_n_1 1 0 6 20 340 NJ 340 390 870 NJ 870 990 670 1320
+preplace netloc uart_rx_0_1 1 0 6 NJ 320 190J 330 NJ 330 NJ 330 960J 410 1330J
+preplace netloc S_AXI_DATA_1 1 5 1 1300 220n
+preplace netloc S_AXI_INST_1 1 4 2 950J 370 1310
+preplace netloc VexRiscvMcuAxi_0_dBusAxi 1 4 1 920 450n
+preplace netloc axi_cdma_0_M_AXI 1 4 3 990 450 NJ 450 1720
+preplace netloc smartconnect_0_M01_AXI 1 5 1 1270 550n
+preplace netloc smartconnect_0_M02_AXI 1 5 1 N 570
+preplace netloc smartconnect_0_M03_AXI 1 5 1 1290 60n
+levelinfo -pg 1 -10 110 290 500 770 1130 1560 1770
+pagesize -pg 1 -db -bbox -sgen -140 0 1900 980
 "
 }
 0
