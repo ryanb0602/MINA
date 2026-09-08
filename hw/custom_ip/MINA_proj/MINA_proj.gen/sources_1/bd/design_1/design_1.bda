@@ -466,6 +466,42 @@
             },
             "V18": {
                 "VT": "AC",
+                "BA": "0x20005000",
+                "HA": "0x20005FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "dBusAxi",
+                "MX": "/VexRiscvMcuAxi_0",
+                "MI": "dBusAxi",
+                "MS": "SEG_axi_quad_spi_0_Reg",
+                "MV": "xilinx.com:module_ref:VexRiscvMcuAxi:1.0",
+                "SX": "/peripherals/axi_quad_spi_0",
+                "SI": "AXI_LITE",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_quad_spi:3.2",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V19": {
+                "VT": "AC",
+                "BA": "0x20005000",
+                "HA": "0x20005FFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/axi_cdma_0",
+                "MI": "M_AXI",
+                "MS": "SEG_axi_quad_spi_0_Reg",
+                "MV": "xilinx.com:ip:axi_cdma:4.1",
+                "SX": "/peripherals/axi_quad_spi_0",
+                "SI": "AXI_LITE",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_quad_spi:3.2",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V20": {
+                "VT": "AC",
                 "BA": "0x30000000",
                 "HA": "0x3000FFFF",
                 "BP": "C_BASEADDR",
@@ -482,7 +518,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V19": {
+            "V21": {
                 "VT": "AC",
                 "BA": "0x30000000",
                 "HA": "0x3000FFFF",
@@ -592,6 +628,16 @@
             },
             {
                 "src": "V19",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V20",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V21",
                 "trg": "V2",
                 "EH": "2"
             }

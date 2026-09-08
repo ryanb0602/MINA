@@ -54,6 +54,36 @@
 
 module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
+  input wire [31:0] GPIO_0_tri_i,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire [31:0] GPIO_0_tri_o,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire [31:0] GPIO_0_tri_t,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire SPI_0_0_io0_i,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire SPI_0_0_io0_o,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire SPI_0_0_io0_t,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire SPI_0_0_io1_i,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire SPI_0_0_io1_o,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire SPI_0_0_io1_t,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire SPI_0_0_sck_i,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire SPI_0_0_sck_o,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire SPI_0_0_sck_t,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire [0:0] SPI_0_0_ss_i,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire [0:0] SPI_0_0_ss_o,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire SPI_0_0_ss_t,
+  (* X_INTERFACE_IGNORE = "true" *)
   output wire uart_tx_0,
   (* X_INTERFACE_IGNORE = "true" *)
   input wire uart_rx_0,
@@ -78,6 +108,21 @@ module design_1_sv (
 );
 
   design_1 inst (
+    .GPIO_0_tri_i(GPIO_0_tri_i),
+    .GPIO_0_tri_o(GPIO_0_tri_o),
+    .GPIO_0_tri_t(GPIO_0_tri_t),
+    .SPI_0_0_io0_i(SPI_0_0_io0_i),
+    .SPI_0_0_io0_o(SPI_0_0_io0_o),
+    .SPI_0_0_io0_t(SPI_0_0_io0_t),
+    .SPI_0_0_io1_i(SPI_0_0_io1_i),
+    .SPI_0_0_io1_o(SPI_0_0_io1_o),
+    .SPI_0_0_io1_t(SPI_0_0_io1_t),
+    .SPI_0_0_sck_i(SPI_0_0_sck_i),
+    .SPI_0_0_sck_o(SPI_0_0_sck_o),
+    .SPI_0_0_sck_t(SPI_0_0_sck_t),
+    .SPI_0_0_ss_i(SPI_0_0_ss_i),
+    .SPI_0_0_ss_o(SPI_0_0_ss_o),
+    .SPI_0_0_ss_t(SPI_0_0_ss_t),
     .uart_tx_0(uart_tx_0),
     .uart_rx_0(uart_rx_0),
     .i2c_scl_i_0(i2c_scl_i_0),

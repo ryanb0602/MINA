@@ -66,6 +66,21 @@
 
 // INST_TAG     ------ Begin cut for WRAPPER INSTANTIATION Template ------
 design_1_sv your_instance_name (
+  .GPIO_0_tri_i(GPIO_0_tri_i), // input wire [31:0] GPIO_0_tri_i
+  .GPIO_0_tri_o(GPIO_0_tri_o), // output wire [31:0] GPIO_0_tri_o
+  .GPIO_0_tri_t(GPIO_0_tri_t), // output wire [31:0] GPIO_0_tri_t
+  .SPI_0_0_io0_i(SPI_0_0_io0_i), // input wire SPI_0_0_io0_i
+  .SPI_0_0_io0_o(SPI_0_0_io0_o), // output wire SPI_0_0_io0_o
+  .SPI_0_0_io0_t(SPI_0_0_io0_t), // output wire SPI_0_0_io0_t
+  .SPI_0_0_io1_i(SPI_0_0_io1_i), // input wire SPI_0_0_io1_i
+  .SPI_0_0_io1_o(SPI_0_0_io1_o), // output wire SPI_0_0_io1_o
+  .SPI_0_0_io1_t(SPI_0_0_io1_t), // output wire SPI_0_0_io1_t
+  .SPI_0_0_sck_i(SPI_0_0_sck_i), // input wire SPI_0_0_sck_i
+  .SPI_0_0_sck_o(SPI_0_0_sck_o), // output wire SPI_0_0_sck_o
+  .SPI_0_0_sck_t(SPI_0_0_sck_t), // output wire SPI_0_0_sck_t
+  .SPI_0_0_ss_i(SPI_0_0_ss_i), // input wire [0:0] SPI_0_0_ss_i
+  .SPI_0_0_ss_o(SPI_0_0_ss_o), // output wire [0:0] SPI_0_0_ss_o
+  .SPI_0_0_ss_t(SPI_0_0_ss_t), // output wire SPI_0_0_ss_t
   .uart_tx_0(uart_tx_0), // output wire uart_tx_0
   .uart_rx_0(uart_rx_0), // input wire uart_rx_0
   .i2c_scl_i_0(i2c_scl_i_0), // input wire i2c_scl_i_0

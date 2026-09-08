@@ -53,6 +53,21 @@
 -- COMP_TAG     ------ Begin cut for COMPONENT Declaration ------
 COMPONENT design_1
   PORT (
+    GPIO_0_tri_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    GPIO_0_tri_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    GPIO_0_tri_t : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    SPI_0_0_io0_i : IN STD_LOGIC;
+    SPI_0_0_io0_o : OUT STD_LOGIC;
+    SPI_0_0_io0_t : OUT STD_LOGIC;
+    SPI_0_0_io1_i : IN STD_LOGIC;
+    SPI_0_0_io1_o : OUT STD_LOGIC;
+    SPI_0_0_io1_t : OUT STD_LOGIC;
+    SPI_0_0_sck_i : IN STD_LOGIC;
+    SPI_0_0_sck_o : OUT STD_LOGIC;
+    SPI_0_0_sck_t : OUT STD_LOGIC;
+    SPI_0_0_ss_i : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    SPI_0_0_ss_o : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    SPI_0_0_ss_t : OUT STD_LOGIC;
     uart_tx_0 : OUT STD_LOGIC;
     uart_rx_0 : IN STD_LOGIC;
     i2c_scl_i_0 : IN STD_LOGIC;
@@ -74,6 +89,21 @@ END COMPONENT;
 -- INST_TAG     ------ Begin cut for INSTANTIATION Template ------
 your_instance_name : design_1
   PORT MAP (
+    GPIO_0_tri_i => GPIO_0_tri_i,
+    GPIO_0_tri_o => GPIO_0_tri_o,
+    GPIO_0_tri_t => GPIO_0_tri_t,
+    SPI_0_0_io0_i => SPI_0_0_io0_i,
+    SPI_0_0_io0_o => SPI_0_0_io0_o,
+    SPI_0_0_io0_t => SPI_0_0_io0_t,
+    SPI_0_0_io1_i => SPI_0_0_io1_i,
+    SPI_0_0_io1_o => SPI_0_0_io1_o,
+    SPI_0_0_io1_t => SPI_0_0_io1_t,
+    SPI_0_0_sck_i => SPI_0_0_sck_i,
+    SPI_0_0_sck_o => SPI_0_0_sck_o,
+    SPI_0_0_sck_t => SPI_0_0_sck_t,
+    SPI_0_0_ss_i => SPI_0_0_ss_i,
+    SPI_0_0_ss_o => SPI_0_0_ss_o,
+    SPI_0_0_ss_t => SPI_0_0_ss_t,
     uart_tx_0 => uart_tx_0,
     uart_rx_0 => uart_rx_0,
     i2c_scl_i_0 => i2c_scl_i_0,

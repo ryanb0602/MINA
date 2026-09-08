@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sun Sep  6 23:13:48 2026
+//Date        : Tue Sep  8 14:18:21 2026
 //Host        : ryan-21k8s14n00 running 64-bit EndeavourOS Linux
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -42,9 +42,24 @@ module cpu_reset_controller_imp_Y312CB
         .clk(clk));
 endmodule
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=26,numReposBlks=23,numNonXlnxBlks=0,numHierBlks=3,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=3,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
-   (cpu_rst,
+   (GPIO_0_tri_i,
+    GPIO_0_tri_o,
+    GPIO_0_tri_t,
+    SPI_0_0_io0_i,
+    SPI_0_0_io0_o,
+    SPI_0_0_io0_t,
+    SPI_0_0_io1_i,
+    SPI_0_0_io1_o,
+    SPI_0_0_io1_t,
+    SPI_0_0_sck_i,
+    SPI_0_0_sck_o,
+    SPI_0_0_sck_t,
+    SPI_0_0_ss_i,
+    SPI_0_0_ss_o,
+    SPI_0_0_ss_t,
+    cpu_rst,
     i2c_scl_i_0,
     i2c_scl_o_0,
     i2c_scl_t_0,
@@ -55,6 +70,21 @@ module design_1
     sys_rst,
     uart_rx_0,
     uart_tx_0);
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I" *) (* X_INTERFACE_MODE = "Master" *) input [31:0]GPIO_0_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) output [31:0]GPIO_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *) output [31:0]GPIO_0_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_0_0_io0_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO0_O" *) output SPI_0_0_io0_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO0_T" *) output SPI_0_0_io0_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO1_I" *) input SPI_0_0_io1_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO1_O" *) output SPI_0_0_io1_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO1_T" *) output SPI_0_0_io1_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SCK_I" *) input SPI_0_0_sck_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SCK_O" *) output SPI_0_0_sck_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SCK_T" *) output SPI_0_0_sck_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_I" *) input [0:0]SPI_0_0_ss_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_O" *) output [0:0]SPI_0_0_ss_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_T" *) output SPI_0_0_ss_t;
   input cpu_rst;
   input i2c_scl_i_0;
   output i2c_scl_o_0;
@@ -67,6 +97,21 @@ module design_1
   input uart_rx_0;
   output uart_tx_0;
 
+  wire [31:0]GPIO_0_tri_i;
+  wire [31:0]GPIO_0_tri_o;
+  wire [31:0]GPIO_0_tri_t;
+  wire SPI_0_0_io0_i;
+  wire SPI_0_0_io0_o;
+  wire SPI_0_0_io0_t;
+  wire SPI_0_0_io1_i;
+  wire SPI_0_0_io1_o;
+  wire SPI_0_0_io1_t;
+  wire SPI_0_0_sck_i;
+  wire SPI_0_0_sck_o;
+  wire SPI_0_0_sck_t;
+  wire [0:0]SPI_0_0_ss_i;
+  wire [0:0]SPI_0_0_ss_o;
+  wire SPI_0_0_ss_t;
   wire [13:0]S_AXI_DATA_1_ARADDR;
   wire [1:0]S_AXI_DATA_1_ARBURST;
   wire [3:0]S_AXI_DATA_1_ARCACHE;
@@ -510,7 +555,10 @@ module design_1
         .b(negation_2_b),
         .clk(clk_wiz_0_clk_out1));
   peripherals_imp_1BOSXT5 peripherals
-       (.S00_AXI_araddr(smartconnect_0_M02_AXI_ARADDR),
+       (.GPIO_0_tri_i(GPIO_0_tri_i),
+        .GPIO_0_tri_o(GPIO_0_tri_o),
+        .GPIO_0_tri_t(GPIO_0_tri_t),
+        .S00_AXI_araddr(smartconnect_0_M02_AXI_ARADDR),
         .S00_AXI_arburst(smartconnect_0_M02_AXI_ARBURST),
         .S00_AXI_arcache(smartconnect_0_M02_AXI_ARCACHE),
         .S00_AXI_arid(smartconnect_0_M02_AXI_ARID),
@@ -551,6 +599,18 @@ module design_1
         .S00_AXI_wstrb(smartconnect_0_M02_AXI_WSTRB),
         .S00_AXI_wuser(smartconnect_0_M02_AXI_WUSER),
         .S00_AXI_wvalid(smartconnect_0_M02_AXI_WVALID),
+        .SPI_0_0_io0_i(SPI_0_0_io0_i),
+        .SPI_0_0_io0_o(SPI_0_0_io0_o),
+        .SPI_0_0_io0_t(SPI_0_0_io0_t),
+        .SPI_0_0_io1_i(SPI_0_0_io1_i),
+        .SPI_0_0_io1_o(SPI_0_0_io1_o),
+        .SPI_0_0_io1_t(SPI_0_0_io1_t),
+        .SPI_0_0_sck_i(SPI_0_0_sck_i),
+        .SPI_0_0_sck_o(SPI_0_0_sck_o),
+        .SPI_0_0_sck_t(SPI_0_0_sck_t),
+        .SPI_0_0_ss_i(SPI_0_0_ss_i),
+        .SPI_0_0_ss_o(SPI_0_0_ss_o),
+        .SPI_0_0_ss_t(SPI_0_0_ss_t),
         .axi_clk(clk_wiz_0_clk_out1),
         .axi_resetn(sys_rst),
         .boot_mode(negation_2_b),
@@ -1064,7 +1124,10 @@ module instr_ram_imp_1811FLP
 endmodule
 
 module peripherals_imp_1BOSXT5
-   (S00_AXI_araddr,
+   (GPIO_0_tri_i,
+    GPIO_0_tri_o,
+    GPIO_0_tri_t,
+    S00_AXI_araddr,
     S00_AXI_arburst,
     S00_AXI_arcache,
     S00_AXI_arid,
@@ -1105,6 +1168,18 @@ module peripherals_imp_1BOSXT5
     S00_AXI_wstrb,
     S00_AXI_wuser,
     S00_AXI_wvalid,
+    SPI_0_0_io0_i,
+    SPI_0_0_io0_o,
+    SPI_0_0_io0_t,
+    SPI_0_0_io1_i,
+    SPI_0_0_io1_o,
+    SPI_0_0_io1_t,
+    SPI_0_0_sck_i,
+    SPI_0_0_sck_o,
+    SPI_0_0_sck_t,
+    SPI_0_0_ss_i,
+    SPI_0_0_ss_o,
+    SPI_0_0_ss_t,
     axi_clk,
     axi_resetn,
     boot_mode,
@@ -1124,6 +1199,9 @@ module peripherals_imp_1BOSXT5
     timer_irq,
     uart_rx_0,
     uart_tx_0);
+  input [31:0]GPIO_0_tri_i;
+  output [31:0]GPIO_0_tri_o;
+  output [31:0]GPIO_0_tri_t;
   input [31:0]S00_AXI_araddr;
   input [1:0]S00_AXI_arburst;
   input [3:0]S00_AXI_arcache;
@@ -1165,6 +1243,18 @@ module peripherals_imp_1BOSXT5
   input [3:0]S00_AXI_wstrb;
   input [13:0]S00_AXI_wuser;
   input S00_AXI_wvalid;
+  input SPI_0_0_io0_i;
+  output SPI_0_0_io0_o;
+  output SPI_0_0_io0_t;
+  input SPI_0_0_io1_i;
+  output SPI_0_0_io1_o;
+  output SPI_0_0_io1_t;
+  input SPI_0_0_sck_i;
+  output SPI_0_0_sck_o;
+  output SPI_0_0_sck_t;
+  input [0:0]SPI_0_0_ss_i;
+  output [0:0]SPI_0_0_ss_o;
+  output SPI_0_0_ss_t;
   input axi_clk;
   input axi_resetn;
   input boot_mode;
@@ -1185,6 +1275,9 @@ module peripherals_imp_1BOSXT5
   input uart_rx_0;
   output uart_tx_0;
 
+  wire [31:0]GPIO_0_tri_i;
+  wire [31:0]GPIO_0_tri_o;
+  wire [31:0]GPIO_0_tri_t;
   wire [31:0]S00_AXI_araddr;
   wire [1:0]S00_AXI_arburst;
   wire [3:0]S00_AXI_arcache;
@@ -1226,8 +1319,21 @@ module peripherals_imp_1BOSXT5
   wire [3:0]S00_AXI_wstrb;
   wire [13:0]S00_AXI_wuser;
   wire S00_AXI_wvalid;
+  wire SPI_0_0_io0_i;
+  wire SPI_0_0_io0_o;
+  wire SPI_0_0_io0_t;
+  wire SPI_0_0_io1_i;
+  wire SPI_0_0_io1_o;
+  wire SPI_0_0_io1_t;
+  wire SPI_0_0_sck_i;
+  wire SPI_0_0_sck_o;
+  wire SPI_0_0_sck_t;
+  wire [0:0]SPI_0_0_ss_i;
+  wire [0:0]SPI_0_0_ss_o;
+  wire SPI_0_0_ss_t;
   wire axi_clk;
   wire axi_gpio_0_ip2intc_irpt;
+  wire axi_quad_spi_0_ip2intc_irpt;
   wire axi_resetn;
   wire axi_uart_bootloader_1_uart_irq;
   wire boot_mode;
@@ -1333,6 +1439,23 @@ module peripherals_imp_1BOSXT5
   wire smartconnect_1_M04_AXI_WREADY;
   wire [3:0]smartconnect_1_M04_AXI_WSTRB;
   wire smartconnect_1_M04_AXI_WVALID;
+  wire [6:0]smartconnect_1_M05_AXI_ARADDR;
+  wire smartconnect_1_M05_AXI_ARREADY;
+  wire smartconnect_1_M05_AXI_ARVALID;
+  wire [6:0]smartconnect_1_M05_AXI_AWADDR;
+  wire smartconnect_1_M05_AXI_AWREADY;
+  wire smartconnect_1_M05_AXI_AWVALID;
+  wire smartconnect_1_M05_AXI_BREADY;
+  wire [1:0]smartconnect_1_M05_AXI_BRESP;
+  wire smartconnect_1_M05_AXI_BVALID;
+  wire [31:0]smartconnect_1_M05_AXI_RDATA;
+  wire smartconnect_1_M05_AXI_RREADY;
+  wire [1:0]smartconnect_1_M05_AXI_RRESP;
+  wire smartconnect_1_M05_AXI_RVALID;
+  wire [31:0]smartconnect_1_M05_AXI_WDATA;
+  wire smartconnect_1_M05_AXI_WREADY;
+  wire [3:0]smartconnect_1_M05_AXI_WSTRB;
+  wire smartconnect_1_M05_AXI_WVALID;
   wire timer_clk_in;
   wire timer_irq;
   wire uart_rx_0;
@@ -1340,7 +1463,9 @@ module peripherals_imp_1BOSXT5
   wire [7:0]xlconcat_0_dout;
 
   design_1_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+       (.gpio_io_i(GPIO_0_tri_i),
+        .gpio_io_o(GPIO_0_tri_o),
+        .gpio_io_t(GPIO_0_tri_t),
         .ip2intc_irpt(axi_gpio_0_ip2intc_irpt),
         .s_axi_aclk(axi_clk),
         .s_axi_araddr(smartconnect_1_M03_AXI_ARADDR),
@@ -1361,6 +1486,40 @@ module peripherals_imp_1BOSXT5
         .s_axi_wready(smartconnect_1_M03_AXI_WREADY),
         .s_axi_wstrb(smartconnect_1_M03_AXI_WSTRB),
         .s_axi_wvalid(smartconnect_1_M03_AXI_WVALID));
+  design_1_axi_quad_spi_0_0 axi_quad_spi_0
+       (.ext_spi_clk(axi_clk),
+        .io0_i(SPI_0_0_io0_i),
+        .io0_o(SPI_0_0_io0_o),
+        .io0_t(SPI_0_0_io0_t),
+        .io1_i(SPI_0_0_io1_i),
+        .io1_o(SPI_0_0_io1_o),
+        .io1_t(SPI_0_0_io1_t),
+        .ip2intc_irpt(axi_quad_spi_0_ip2intc_irpt),
+        .s_axi_aclk(axi_clk),
+        .s_axi_araddr(smartconnect_1_M05_AXI_ARADDR),
+        .s_axi_aresetn(axi_resetn),
+        .s_axi_arready(smartconnect_1_M05_AXI_ARREADY),
+        .s_axi_arvalid(smartconnect_1_M05_AXI_ARVALID),
+        .s_axi_awaddr(smartconnect_1_M05_AXI_AWADDR),
+        .s_axi_awready(smartconnect_1_M05_AXI_AWREADY),
+        .s_axi_awvalid(smartconnect_1_M05_AXI_AWVALID),
+        .s_axi_bready(smartconnect_1_M05_AXI_BREADY),
+        .s_axi_bresp(smartconnect_1_M05_AXI_BRESP),
+        .s_axi_bvalid(smartconnect_1_M05_AXI_BVALID),
+        .s_axi_rdata(smartconnect_1_M05_AXI_RDATA),
+        .s_axi_rready(smartconnect_1_M05_AXI_RREADY),
+        .s_axi_rresp(smartconnect_1_M05_AXI_RRESP),
+        .s_axi_rvalid(smartconnect_1_M05_AXI_RVALID),
+        .s_axi_wdata(smartconnect_1_M05_AXI_WDATA),
+        .s_axi_wready(smartconnect_1_M05_AXI_WREADY),
+        .s_axi_wstrb(smartconnect_1_M05_AXI_WSTRB),
+        .s_axi_wvalid(smartconnect_1_M05_AXI_WVALID),
+        .sck_i(SPI_0_0_sck_i),
+        .sck_o(SPI_0_0_sck_o),
+        .sck_t(SPI_0_0_sck_t),
+        .ss_i(SPI_0_0_ss_i),
+        .ss_o(SPI_0_0_ss_o),
+        .ss_t(SPI_0_0_ss_t));
   design_1_axi_uart_bootloader_1_0 axi_uart_bootloader_1
        (.boot_mode(boot_mode),
         .bram_addr(bram_addr),
@@ -1557,19 +1716,23 @@ module peripherals_imp_1BOSXT5
         .M04_AXI_wready(smartconnect_1_M04_AXI_WREADY),
         .M04_AXI_wstrb(smartconnect_1_M04_AXI_WSTRB),
         .M04_AXI_wvalid(smartconnect_1_M04_AXI_WVALID),
-        .M05_AXI_arready(1'b0),
-        .M05_AXI_awready(1'b0),
-        .M05_AXI_bid(1'b0),
-        .M05_AXI_bresp({1'b0,1'b0}),
-        .M05_AXI_buser(1'b0),
-        .M05_AXI_bvalid(1'b0),
-        .M05_AXI_rdata(1'b0),
-        .M05_AXI_rid(1'b0),
-        .M05_AXI_rlast(1'b0),
-        .M05_AXI_rresp({1'b0,1'b0}),
-        .M05_AXI_ruser(1'b0),
-        .M05_AXI_rvalid(1'b0),
-        .M05_AXI_wready(1'b0),
+        .M05_AXI_araddr(smartconnect_1_M05_AXI_ARADDR),
+        .M05_AXI_arready(smartconnect_1_M05_AXI_ARREADY),
+        .M05_AXI_arvalid(smartconnect_1_M05_AXI_ARVALID),
+        .M05_AXI_awaddr(smartconnect_1_M05_AXI_AWADDR),
+        .M05_AXI_awready(smartconnect_1_M05_AXI_AWREADY),
+        .M05_AXI_awvalid(smartconnect_1_M05_AXI_AWVALID),
+        .M05_AXI_bready(smartconnect_1_M05_AXI_BREADY),
+        .M05_AXI_bresp(smartconnect_1_M05_AXI_BRESP),
+        .M05_AXI_bvalid(smartconnect_1_M05_AXI_BVALID),
+        .M05_AXI_rdata(smartconnect_1_M05_AXI_RDATA),
+        .M05_AXI_rready(smartconnect_1_M05_AXI_RREADY),
+        .M05_AXI_rresp(smartconnect_1_M05_AXI_RRESP),
+        .M05_AXI_rvalid(smartconnect_1_M05_AXI_RVALID),
+        .M05_AXI_wdata(smartconnect_1_M05_AXI_WDATA),
+        .M05_AXI_wready(smartconnect_1_M05_AXI_WREADY),
+        .M05_AXI_wstrb(smartconnect_1_M05_AXI_WSTRB),
+        .M05_AXI_wvalid(smartconnect_1_M05_AXI_WVALID),
         .S00_AXI_araddr(S00_AXI_araddr),
         .S00_AXI_arburst(S00_AXI_arburst),
         .S00_AXI_arcache(S00_AXI_arcache),
@@ -1617,7 +1780,7 @@ module peripherals_imp_1BOSXT5
        (.In0(axi_uart_bootloader_1_uart_irq),
         .In1(cdma_irq),
         .In2(axi_gpio_0_ip2intc_irpt),
-        .In3(1'b0),
+        .In3(axi_quad_spi_0_ip2intc_irpt),
         .In4(1'b0),
         .In5(1'b0),
         .In6(1'b0),
