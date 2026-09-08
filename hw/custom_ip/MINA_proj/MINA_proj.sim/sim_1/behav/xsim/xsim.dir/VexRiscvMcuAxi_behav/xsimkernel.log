@@ -1,7 +1,0 @@
-Running: xsim.dir/VexRiscvMcuAxi_behav/xsimk -simmode gui -wdb VexRiscvMcuAxi_behav.wdb -simrunnum 0 -socket 55997
-Design successfully loaded
-Design Loading Memory Usage: 198232 KB (Peak: 198240 KB)
-Design Loading CPU Usage: 690 ms
-Simulation completed
-Simulation Memory Usage: 280360 KB (Peak: 337500 KB)
-Simulation CPU Usage: 920 ms

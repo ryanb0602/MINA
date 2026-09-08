@@ -1,6 +1,0 @@
-0.7
-2020.2
-Nov 14 2025
-12:36:23
-/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.sim/sim_1/behav/xsim/glbl.v,1766290857,verilog,,,,glbl,,axi_vip_v1_1_22;smartconnect_v1_0;xilinx_vip,,,,,,
-/home/ryanb/Documents/MINA/hw/ip/VexRiscv/VexRiscvMcuAxi.v,1788740047,verilog,,,,DataCache;InstructionCache;VexRiscvMcuAxi,,axi_vip_v1_1_22;smartconnect_v1_0;xilinx_vip,../../../../../../../../../../../opt/Xilinx/2025.2/data/rsb/busdef;../../../../MINA_proj.gen/sources_1/bd/design_1/ipshared/00fe/hdl/verilog;../../../../MINA_proj.gen/sources_1/bd/design_1/ipshared/a415;../../../../MINA_proj.gen/sources_1/bd/design_1/ipshared/ec67/hdl;../../../../MINA_proj.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog;/opt/Xilinx/2025.2/data/xilinx_vip/include,,,,,
