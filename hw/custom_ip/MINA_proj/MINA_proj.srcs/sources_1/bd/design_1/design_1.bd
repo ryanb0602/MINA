@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x38574F091D21E132",
+      "boundary_crc": "0x9D0647E30F6889CC",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../MINA_proj.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -31,7 +31,9 @@
         "i2c_master_axil_0": "",
         "negation_1": "",
         "axi_uart_bootloader_1": "",
-        "axi_quad_spi_0": ""
+        "axi_quad_spi_0": "",
+        "util_ds_buf_0": "",
+        "util_ds_buf_1": ""
       },
       "cpu_reset_controller": {
         "negation_0": "",
@@ -57,19 +59,19 @@
           "TRI_I": {
             "physical_name": "GPIO_0_tri_i",
             "direction": "I",
-            "left": "31",
+            "left": "3",
             "right": "0"
           },
           "TRI_O": {
             "physical_name": "GPIO_0_tri_o",
             "direction": "O",
-            "left": "31",
+            "left": "3",
             "right": "0"
           },
           "TRI_T": {
             "physical_name": "GPIO_0_tri_t",
             "direction": "O",
-            "left": "31",
+            "left": "3",
             "right": "0"
           }
         }
@@ -147,24 +149,6 @@
       "uart_rx_0": {
         "direction": "I"
       },
-      "i2c_scl_i_0": {
-        "direction": "I"
-      },
-      "i2c_sda_i_0": {
-        "direction": "I"
-      },
-      "i2c_sda_t_0": {
-        "direction": "O"
-      },
-      "i2c_sda_o_0": {
-        "direction": "O"
-      },
-      "i2c_scl_t_0": {
-        "direction": "O"
-      },
-      "i2c_scl_o_0": {
-        "direction": "O"
-      },
       "cpu_rst": {
         "direction": "I"
       },
@@ -195,6 +179,16 @@
             "value_src": "default"
           }
         }
+      },
+      "IOBUF_scl": {
+        "direction": "IO",
+        "left": "0",
+        "right": "0"
+      },
+      "IOBUF_sda": {
+        "direction": "IO",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -1963,23 +1957,15 @@
             "left": "31",
             "right": "0"
           },
-          "i2c_scl_i_0": {
-            "direction": "I"
+          "IOBUF_scl": {
+            "direction": "IO",
+            "left": "0",
+            "right": "0"
           },
-          "i2c_sda_i_0": {
-            "direction": "I"
-          },
-          "i2c_sda_t_0": {
-            "direction": "O"
-          },
-          "i2c_sda_o_0": {
-            "direction": "O"
-          },
-          "i2c_scl_t_0": {
-            "direction": "O"
-          },
-          "i2c_scl_o_0": {
-            "direction": "O"
+          "IOBUF_sda": {
+            "direction": "IO",
+            "left": "0",
+            "right": "0"
           }
         },
         "components": {
@@ -2791,23 +2777,6 @@
                   }
                 }
               },
-              "TIMER_CLK_IN": {
-                "direction": "I",
-                "parameters": {
-                  "FREQ_HZ": {
-                    "value": "100000000",
-                    "value_src": "ip_prop"
-                  },
-                  "PHASE": {
-                    "value": "0.0",
-                    "value_src": "ip_prop"
-                  },
-                  "CLK_DOMAIN": {
-                    "value": "/clk_wiz_0_clk_out1",
-                    "value_src": "ip_prop"
-                  }
-                }
-              },
               "IRQ": {
                 "type": "intr",
                 "direction": "O",
@@ -2847,6 +2816,9 @@
             "parameters": {
               "C_ALL_INPUTS": {
                 "value": "0"
+              },
+              "C_GPIO_WIDTH": {
+                "value": "4"
               },
               "C_INTERRUPT_PRESENT": {
                 "value": "1"
@@ -3123,7 +3095,21 @@
                 "direction": "I"
               },
               "i2c_scl_i": {
-                "direction": "I"
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "100000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_1_util_ds_buf_0_1_IOBUF_IO_O",
+                    "value_src": "default_prop"
+                  }
+                }
               },
               "i2c_scl_o": {
                 "direction": "O"
@@ -3132,7 +3118,21 @@
                 "direction": "O"
               },
               "i2c_sda_i": {
-                "direction": "I"
+                "direction": "I",
+                "parameters": {
+                  "FREQ_HZ": {
+                    "value": "100000000",
+                    "value_src": "ip_prop"
+                  },
+                  "PHASE": {
+                    "value": "0.0",
+                    "value_src": "ip_prop"
+                  },
+                  "CLK_DOMAIN": {
+                    "value": "design_1_util_ds_buf_0_0_IOBUF_IO_O",
+                    "value_src": "default_prop"
+                  }
+                }
               },
               "i2c_sda_o": {
                 "direction": "O"
@@ -3499,6 +3499,32 @@
                 "value": "0"
               }
             }
+          },
+          "util_ds_buf_0": {
+            "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
+            "ip_revision": "9",
+            "xci_name": "design_1_util_ds_buf_0_0",
+            "xci_path": "ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.xci",
+            "inst_hier_path": "peripherals/util_ds_buf_0",
+            "has_run_ip_tcl": "true",
+            "parameters": {
+              "C_BUF_TYPE": {
+                "value": "IOBUF"
+              }
+            }
+          },
+          "util_ds_buf_1": {
+            "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
+            "ip_revision": "9",
+            "xci_name": "design_1_util_ds_buf_0_1",
+            "xci_path": "ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1.xci",
+            "inst_hier_path": "peripherals/util_ds_buf_1",
+            "has_run_ip_tcl": "true",
+            "parameters": {
+              "C_BUF_TYPE": {
+                "value": "IOBUF"
+              }
+            }
           }
         },
         "interface_nets": {
@@ -3558,6 +3584,18 @@
           }
         },
         "nets": {
+          "Net": {
+            "ports": [
+              "IOBUF_scl",
+              "util_ds_buf_1/IOBUF_IO_IO"
+            ]
+          },
+          "Net1": {
+            "ports": [
+              "IOBUF_sda",
+              "util_ds_buf_0/IOBUF_IO_IO"
+            ]
+          },
           "axi_clk1_1": {
             "ports": [
               "cdma_irq",
@@ -3568,14 +3606,14 @@
             "ports": [
               "axi_clk",
               "plic_axil_wrapper_0/S_AXI_ACLK",
-              "axil_timer_64_0/S_AXI_ACLK",
               "axi_gpio_0/s_axi_aclk",
               "i2c_master_axil_0/clk",
               "negation_1/clk",
               "smartconnect_1/aclk",
               "axi_uart_bootloader_1/s_axi_aclk",
               "axi_quad_spi_0/s_axi_aclk",
-              "axi_quad_spi_0/ext_spi_clk"
+              "axi_quad_spi_0/ext_spi_clk",
+              "axil_timer_64_0/S_AXI_ACLK"
             ]
           },
           "axi_gpio_0_ip2intc_irpt": {
@@ -3596,10 +3634,10 @@
               "negation_1/a",
               "axi_gpio_0/s_axi_aresetn",
               "plic_axil_wrapper_0/S_AXI_ARESETN",
-              "axil_timer_64_0/S_AXI_ARESETN",
               "smartconnect_1/aresetn",
               "axi_uart_bootloader_1/s_axi_aresetn",
-              "axi_quad_spi_0/s_axi_aresetn"
+              "axi_quad_spi_0/s_axi_aresetn",
+              "axil_timer_64_0/S_AXI_ARESETN"
             ]
           },
           "axi_uart_bootloader_1_bram_addr": {
@@ -3653,37 +3691,25 @@
           "i2c_master_axil_0_i2c_scl_o": {
             "ports": [
               "i2c_master_axil_0/i2c_scl_o",
-              "i2c_scl_o_0"
+              "util_ds_buf_1/IOBUF_IO_I"
             ]
           },
           "i2c_master_axil_0_i2c_scl_t": {
             "ports": [
               "i2c_master_axil_0/i2c_scl_t",
-              "i2c_scl_t_0"
+              "util_ds_buf_1/IOBUF_IO_T"
             ]
           },
           "i2c_master_axil_0_i2c_sda_o": {
             "ports": [
               "i2c_master_axil_0/i2c_sda_o",
-              "i2c_sda_o_0"
+              "util_ds_buf_0/IOBUF_IO_I"
             ]
           },
           "i2c_master_axil_0_i2c_sda_t": {
             "ports": [
               "i2c_master_axil_0/i2c_sda_t",
-              "i2c_sda_t_0"
-            ]
-          },
-          "i2c_scl_i_0_1": {
-            "ports": [
-              "i2c_scl_i_0",
-              "i2c_master_axil_0/i2c_scl_i"
-            ]
-          },
-          "i2c_sda_i_0_1": {
-            "ports": [
-              "i2c_sda_i_0",
-              "i2c_master_axil_0/i2c_sda_i"
+              "util_ds_buf_0/IOBUF_IO_T"
             ]
           },
           "negation_1_b": {
@@ -3700,14 +3726,25 @@
           },
           "timer_clk_in_1": {
             "ports": [
-              "timer_clk_in",
-              "axil_timer_64_0/TIMER_CLK_IN"
+              "timer_clk_in"
             ]
           },
           "uart_rx_0_1": {
             "ports": [
               "uart_rx_0",
               "axi_uart_bootloader_1/uart_rx"
+            ]
+          },
+          "util_ds_buf_0_IOBUF_IO_O": {
+            "ports": [
+              "util_ds_buf_0/IOBUF_IO_O",
+              "i2c_master_axil_0/i2c_sda_i"
+            ]
+          },
+          "util_ds_buf_1_IOBUF_IO_O": {
+            "ports": [
+              "util_ds_buf_1/IOBUF_IO_O",
+              "i2c_master_axil_0/i2c_scl_i"
             ]
           },
           "xlconcat_0_dout": {
@@ -4036,6 +4073,18 @@
       }
     },
     "nets": {
+      "Net": {
+        "ports": [
+          "IOBUF_scl",
+          "peripherals/IOBUF_scl"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "IOBUF_sda",
+          "peripherals/IOBUF_sda"
+        ]
+      },
       "cdma_irq_1": {
         "ports": [
           "axi_cdma_0/cdma_introut",
@@ -4069,18 +4118,6 @@
           "cpu_rst",
           "cpu_reset_controller/cpu_reset",
           "negation_2/a"
-        ]
-      },
-      "i2c_scl_i_0_1": {
-        "ports": [
-          "i2c_scl_i_0",
-          "peripherals/i2c_scl_i_0"
-        ]
-      },
-      "i2c_sda_i_0_1": {
-        "ports": [
-          "i2c_sda_i_0",
-          "peripherals/i2c_sda_i_0"
         ]
       },
       "in_clk_1": {
@@ -4138,30 +4175,6 @@
         "ports": [
           "peripherals/ext_irq",
           "VexRiscvMcuAxi_0/externalInterrupt"
-        ]
-      },
-      "peripherals_i2c_scl_o_0": {
-        "ports": [
-          "peripherals/i2c_scl_o_0",
-          "i2c_scl_o_0"
-        ]
-      },
-      "peripherals_i2c_scl_t_0": {
-        "ports": [
-          "peripherals/i2c_scl_t_0",
-          "i2c_scl_t_0"
-        ]
-      },
-      "peripherals_i2c_sda_o_0": {
-        "ports": [
-          "peripherals/i2c_sda_o_0",
-          "i2c_sda_o_0"
-        ]
-      },
-      "peripherals_i2c_sda_t_0": {
-        "ports": [
-          "peripherals/i2c_sda_t_0",
-          "i2c_sda_t_0"
         ]
       },
       "peripherals_uart_tx_0": {

@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-// Date        : Sun Sep  6 16:33:31 2026
+// Date        : Thu Sep 10 21:40:56 2026
 // Host        : ryan-21k8s14n00 running 64-bit EndeavourOS Linux
 // Command     : write_verilog -force -mode funcsim
 //               /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/design_1_axil_timer_64_0_0_sim_netlist.v
@@ -19,7 +19,6 @@
 module design_1_axil_timer_64_0_0
    (S_AXI_ACLK,
     S_AXI_ARESETN,
-    TIMER_CLK_IN,
     S_AXI_AWADDR,
     S_AXI_AWVALID,
     S_AXI_AWREADY,
@@ -40,7 +39,6 @@ module design_1_axil_timer_64_0_0
     IRQ);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_ACLK, ASSOCIATED_BUSIF S_AXI, ASSOCIATED_RESET S_AXI_ARESETN, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input S_AXI_ACLK;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_ARESETN, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input S_AXI_ARESETN;
-  input TIMER_CLK_IN;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]S_AXI_AWADDR;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWVALID" *) input S_AXI_AWVALID;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI AWREADY" *) output S_AXI_AWREADY;
@@ -78,7 +76,6 @@ module design_1_axil_timer_64_0_0
   wire [31:0]S_AXI_WDATA;
   wire S_AXI_WREADY;
   wire S_AXI_WVALID;
-  wire TIMER_CLK_IN;
 
   assign S_AXI_BRESP[1] = \<const0> ;
   assign S_AXI_BRESP[0] = \<const0> ;
@@ -103,7 +100,6 @@ module design_1_axil_timer_64_0_0
         .S_AXI_WDATA(S_AXI_WDATA),
         .S_AXI_WREADY(S_AXI_WREADY),
         .S_AXI_WVALID(S_AXI_WVALID),
-        .TIMER_CLK_IN(TIMER_CLK_IN),
         .rvalid_int_reg_0(S_AXI_RVALID));
 endmodule
 
@@ -117,7 +113,6 @@ module design_1_axil_timer_64_0_0_axil_timer_64
     IRQ,
     S_AXI_BVALID,
     S_AXI_ACLK,
-    TIMER_CLK_IN,
     S_AXI_WDATA,
     S_AXI_AWADDR,
     S_AXI_WVALID,
@@ -135,7 +130,6 @@ module design_1_axil_timer_64_0_0_axil_timer_64
   output IRQ;
   output S_AXI_BVALID;
   input S_AXI_ACLK;
-  input TIMER_CLK_IN;
   input [31:0]S_AXI_WDATA;
   input [1:0]S_AXI_AWADDR;
   input S_AXI_WVALID;
@@ -257,21 +251,19 @@ module design_1_axil_timer_64_0_0_axil_timer_64
   wire [31:0]S_AXI_WDATA;
   wire S_AXI_WREADY;
   wire S_AXI_WVALID;
-  wire TIMER_CLK_IN;
   wire arready_int0;
   wire awready_int0;
   wire bvalid_int_i_1_n_0;
   wire clear;
-  wire clock_reg0;
-  wire \clock_reg[0]_i_3_n_0 ;
-  wire \clock_reg_reg[0]_i_2_n_0 ;
-  wire \clock_reg_reg[0]_i_2_n_1 ;
-  wire \clock_reg_reg[0]_i_2_n_2 ;
-  wire \clock_reg_reg[0]_i_2_n_3 ;
-  wire \clock_reg_reg[0]_i_2_n_4 ;
-  wire \clock_reg_reg[0]_i_2_n_5 ;
-  wire \clock_reg_reg[0]_i_2_n_6 ;
-  wire \clock_reg_reg[0]_i_2_n_7 ;
+  wire \clock_reg[0]_i_2_n_0 ;
+  wire \clock_reg_reg[0]_i_1_n_0 ;
+  wire \clock_reg_reg[0]_i_1_n_1 ;
+  wire \clock_reg_reg[0]_i_1_n_2 ;
+  wire \clock_reg_reg[0]_i_1_n_3 ;
+  wire \clock_reg_reg[0]_i_1_n_4 ;
+  wire \clock_reg_reg[0]_i_1_n_5 ;
+  wire \clock_reg_reg[0]_i_1_n_6 ;
+  wire \clock_reg_reg[0]_i_1_n_7 ;
   wire \clock_reg_reg[12]_i_1_n_0 ;
   wire \clock_reg_reg[12]_i_1_n_1 ;
   wire \clock_reg_reg[12]_i_1_n_2 ;
@@ -526,9 +518,6 @@ module design_1_axil_timer_64_0_0_axil_timer_64
   wire rvalid_int00_out__0;
   wire rvalid_int_i_1_n_0;
   wire rvalid_int_reg_0;
-  wire timer_clk_meta;
-  wire timer_clk_prev;
-  wire timer_clk_sync;
   wire wready_int0;
   wire [3:0]NLW_IRQ0_carry_O_UNCONNECTED;
   wire [3:0]NLW_IRQ0_carry__0_O_UNCONNECTED;
@@ -1151,8 +1140,8 @@ module design_1_axil_timer_64_0_0_axil_timer_64
   LUT6 #(
     .INIT(64'h0000FFFF80008000)) 
     bvalid_int_i_1
-       (.I0(S_AXI_AWREADY),
-        .I1(S_AXI_WREADY),
+       (.I0(S_AXI_WREADY),
+        .I1(S_AXI_AWREADY),
         .I2(S_AXI_WVALID),
         .I3(S_AXI_AWVALID),
         .I4(S_AXI_BREADY),
@@ -1164,46 +1153,40 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .D(bvalid_int_i_1_n_0),
         .Q(S_AXI_BVALID),
         .R(clear));
-  LUT2 #(
-    .INIT(4'h2)) 
-    \clock_reg[0]_i_1 
-       (.I0(timer_clk_sync),
-        .I1(timer_clk_prev),
-        .O(clock_reg0));
   LUT1 #(
     .INIT(2'h1)) 
-    \clock_reg[0]_i_3 
+    \clock_reg[0]_i_2 
        (.I0(\clock_reg_reg_n_0_[0] ),
-        .O(\clock_reg[0]_i_3_n_0 ));
+        .O(\clock_reg[0]_i_2_n_0 ));
   FDRE \clock_reg_reg[0] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
-        .D(\clock_reg_reg[0]_i_2_n_7 ),
+        .CE(1'b1),
+        .D(\clock_reg_reg[0]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[0] ),
         .R(clear));
   (* ADDER_THRESHOLD = "35" *) 
-  CARRY4 \clock_reg_reg[0]_i_2 
+  CARRY4 \clock_reg_reg[0]_i_1 
        (.CI(1'b0),
-        .CO({\clock_reg_reg[0]_i_2_n_0 ,\clock_reg_reg[0]_i_2_n_1 ,\clock_reg_reg[0]_i_2_n_2 ,\clock_reg_reg[0]_i_2_n_3 }),
+        .CO({\clock_reg_reg[0]_i_1_n_0 ,\clock_reg_reg[0]_i_1_n_1 ,\clock_reg_reg[0]_i_1_n_2 ,\clock_reg_reg[0]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b1}),
-        .O({\clock_reg_reg[0]_i_2_n_4 ,\clock_reg_reg[0]_i_2_n_5 ,\clock_reg_reg[0]_i_2_n_6 ,\clock_reg_reg[0]_i_2_n_7 }),
-        .S({\clock_reg_reg_n_0_[3] ,\clock_reg_reg_n_0_[2] ,\clock_reg_reg_n_0_[1] ,\clock_reg[0]_i_3_n_0 }));
+        .O({\clock_reg_reg[0]_i_1_n_4 ,\clock_reg_reg[0]_i_1_n_5 ,\clock_reg_reg[0]_i_1_n_6 ,\clock_reg_reg[0]_i_1_n_7 }),
+        .S({\clock_reg_reg_n_0_[3] ,\clock_reg_reg_n_0_[2] ,\clock_reg_reg_n_0_[1] ,\clock_reg[0]_i_2_n_0 }));
   FDRE \clock_reg_reg[10] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[8]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[10] ),
         .R(clear));
   FDRE \clock_reg_reg[11] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[8]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[11] ),
         .R(clear));
   FDRE \clock_reg_reg[12] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[12]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[12] ),
         .R(clear));
@@ -1217,25 +1200,25 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S({\clock_reg_reg_n_0_[15] ,\clock_reg_reg_n_0_[14] ,\clock_reg_reg_n_0_[13] ,\clock_reg_reg_n_0_[12] }));
   FDRE \clock_reg_reg[13] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[12]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[13] ),
         .R(clear));
   FDRE \clock_reg_reg[14] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[12]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[14] ),
         .R(clear));
   FDRE \clock_reg_reg[15] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[12]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[15] ),
         .R(clear));
   FDRE \clock_reg_reg[16] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[16]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[16] ),
         .R(clear));
@@ -1249,31 +1232,31 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S({\clock_reg_reg_n_0_[19] ,\clock_reg_reg_n_0_[18] ,\clock_reg_reg_n_0_[17] ,\clock_reg_reg_n_0_[16] }));
   FDRE \clock_reg_reg[17] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[16]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[17] ),
         .R(clear));
   FDRE \clock_reg_reg[18] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[16]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[18] ),
         .R(clear));
   FDRE \clock_reg_reg[19] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[16]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[19] ),
         .R(clear));
   FDRE \clock_reg_reg[1] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
-        .D(\clock_reg_reg[0]_i_2_n_6 ),
+        .CE(1'b1),
+        .D(\clock_reg_reg[0]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[1] ),
         .R(clear));
   FDRE \clock_reg_reg[20] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[20]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[20] ),
         .R(clear));
@@ -1287,25 +1270,25 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S({\clock_reg_reg_n_0_[23] ,\clock_reg_reg_n_0_[22] ,\clock_reg_reg_n_0_[21] ,\clock_reg_reg_n_0_[20] }));
   FDRE \clock_reg_reg[21] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[20]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[21] ),
         .R(clear));
   FDRE \clock_reg_reg[22] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[20]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[22] ),
         .R(clear));
   FDRE \clock_reg_reg[23] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[20]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[23] ),
         .R(clear));
   FDRE \clock_reg_reg[24] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[24]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[24] ),
         .R(clear));
@@ -1319,25 +1302,25 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S({\clock_reg_reg_n_0_[27] ,\clock_reg_reg_n_0_[26] ,\clock_reg_reg_n_0_[25] ,\clock_reg_reg_n_0_[24] }));
   FDRE \clock_reg_reg[25] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[24]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[25] ),
         .R(clear));
   FDRE \clock_reg_reg[26] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[24]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[26] ),
         .R(clear));
   FDRE \clock_reg_reg[27] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[24]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[27] ),
         .R(clear));
   FDRE \clock_reg_reg[28] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[28]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[28] ),
         .R(clear));
@@ -1351,31 +1334,31 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S({\clock_reg_reg_n_0_[31] ,\clock_reg_reg_n_0_[30] ,\clock_reg_reg_n_0_[29] ,\clock_reg_reg_n_0_[28] }));
   FDRE \clock_reg_reg[29] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[28]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[29] ),
         .R(clear));
   FDRE \clock_reg_reg[2] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
-        .D(\clock_reg_reg[0]_i_2_n_5 ),
+        .CE(1'b1),
+        .D(\clock_reg_reg[0]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[2] ),
         .R(clear));
   FDRE \clock_reg_reg[30] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[28]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[30] ),
         .R(clear));
   FDRE \clock_reg_reg[31] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[28]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[31] ),
         .R(clear));
   FDRE \clock_reg_reg[32] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[32]_i_1_n_7 ),
         .Q(p_1_in[0]),
         .R(clear));
@@ -1389,25 +1372,25 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[3:0]));
   FDRE \clock_reg_reg[33] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[32]_i_1_n_6 ),
         .Q(p_1_in[1]),
         .R(clear));
   FDRE \clock_reg_reg[34] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[32]_i_1_n_5 ),
         .Q(p_1_in[2]),
         .R(clear));
   FDRE \clock_reg_reg[35] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[32]_i_1_n_4 ),
         .Q(p_1_in[3]),
         .R(clear));
   FDRE \clock_reg_reg[36] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[36]_i_1_n_7 ),
         .Q(p_1_in[4]),
         .R(clear));
@@ -1421,31 +1404,31 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[7:4]));
   FDRE \clock_reg_reg[37] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[36]_i_1_n_6 ),
         .Q(p_1_in[5]),
         .R(clear));
   FDRE \clock_reg_reg[38] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[36]_i_1_n_5 ),
         .Q(p_1_in[6]),
         .R(clear));
   FDRE \clock_reg_reg[39] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[36]_i_1_n_4 ),
         .Q(p_1_in[7]),
         .R(clear));
   FDRE \clock_reg_reg[3] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
-        .D(\clock_reg_reg[0]_i_2_n_4 ),
+        .CE(1'b1),
+        .D(\clock_reg_reg[0]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[3] ),
         .R(clear));
   FDRE \clock_reg_reg[40] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[40]_i_1_n_7 ),
         .Q(p_1_in[8]),
         .R(clear));
@@ -1459,25 +1442,25 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[11:8]));
   FDRE \clock_reg_reg[41] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[40]_i_1_n_6 ),
         .Q(p_1_in[9]),
         .R(clear));
   FDRE \clock_reg_reg[42] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[40]_i_1_n_5 ),
         .Q(p_1_in[10]),
         .R(clear));
   FDRE \clock_reg_reg[43] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[40]_i_1_n_4 ),
         .Q(p_1_in[11]),
         .R(clear));
   FDRE \clock_reg_reg[44] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[44]_i_1_n_7 ),
         .Q(p_1_in[12]),
         .R(clear));
@@ -1491,25 +1474,25 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[15:12]));
   FDRE \clock_reg_reg[45] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[44]_i_1_n_6 ),
         .Q(p_1_in[13]),
         .R(clear));
   FDRE \clock_reg_reg[46] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[44]_i_1_n_5 ),
         .Q(p_1_in[14]),
         .R(clear));
   FDRE \clock_reg_reg[47] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[44]_i_1_n_4 ),
         .Q(p_1_in[15]),
         .R(clear));
   FDRE \clock_reg_reg[48] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[48]_i_1_n_7 ),
         .Q(p_1_in[16]),
         .R(clear));
@@ -1523,19 +1506,19 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[19:16]));
   FDRE \clock_reg_reg[49] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[48]_i_1_n_6 ),
         .Q(p_1_in[17]),
         .R(clear));
   FDRE \clock_reg_reg[4] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[4]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[4] ),
         .R(clear));
   (* ADDER_THRESHOLD = "35" *) 
   CARRY4 \clock_reg_reg[4]_i_1 
-       (.CI(\clock_reg_reg[0]_i_2_n_0 ),
+       (.CI(\clock_reg_reg[0]_i_1_n_0 ),
         .CO({\clock_reg_reg[4]_i_1_n_0 ,\clock_reg_reg[4]_i_1_n_1 ,\clock_reg_reg[4]_i_1_n_2 ,\clock_reg_reg[4]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
@@ -1543,19 +1526,19 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S({\clock_reg_reg_n_0_[7] ,\clock_reg_reg_n_0_[6] ,\clock_reg_reg_n_0_[5] ,\clock_reg_reg_n_0_[4] }));
   FDRE \clock_reg_reg[50] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[48]_i_1_n_5 ),
         .Q(p_1_in[18]),
         .R(clear));
   FDRE \clock_reg_reg[51] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[48]_i_1_n_4 ),
         .Q(p_1_in[19]),
         .R(clear));
   FDRE \clock_reg_reg[52] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[52]_i_1_n_7 ),
         .Q(p_1_in[20]),
         .R(clear));
@@ -1569,25 +1552,25 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[23:20]));
   FDRE \clock_reg_reg[53] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[52]_i_1_n_6 ),
         .Q(p_1_in[21]),
         .R(clear));
   FDRE \clock_reg_reg[54] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[52]_i_1_n_5 ),
         .Q(p_1_in[22]),
         .R(clear));
   FDRE \clock_reg_reg[55] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[52]_i_1_n_4 ),
         .Q(p_1_in[23]),
         .R(clear));
   FDRE \clock_reg_reg[56] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[56]_i_1_n_7 ),
         .Q(p_1_in[24]),
         .R(clear));
@@ -1601,31 +1584,31 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[27:24]));
   FDRE \clock_reg_reg[57] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[56]_i_1_n_6 ),
         .Q(p_1_in[25]),
         .R(clear));
   FDRE \clock_reg_reg[58] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[56]_i_1_n_5 ),
         .Q(p_1_in[26]),
         .R(clear));
   FDRE \clock_reg_reg[59] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[56]_i_1_n_4 ),
         .Q(p_1_in[27]),
         .R(clear));
   FDRE \clock_reg_reg[5] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[4]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[5] ),
         .R(clear));
   FDRE \clock_reg_reg[60] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[60]_i_1_n_7 ),
         .Q(p_1_in[28]),
         .R(clear));
@@ -1639,37 +1622,37 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S(p_1_in[31:28]));
   FDRE \clock_reg_reg[61] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[60]_i_1_n_6 ),
         .Q(p_1_in[29]),
         .R(clear));
   FDRE \clock_reg_reg[62] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[60]_i_1_n_5 ),
         .Q(p_1_in[30]),
         .R(clear));
   FDRE \clock_reg_reg[63] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[60]_i_1_n_4 ),
         .Q(p_1_in[31]),
         .R(clear));
   FDRE \clock_reg_reg[6] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[4]_i_1_n_5 ),
         .Q(\clock_reg_reg_n_0_[6] ),
         .R(clear));
   FDRE \clock_reg_reg[7] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[4]_i_1_n_4 ),
         .Q(\clock_reg_reg_n_0_[7] ),
         .R(clear));
   FDRE \clock_reg_reg[8] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[8]_i_1_n_7 ),
         .Q(\clock_reg_reg_n_0_[8] ),
         .R(clear));
@@ -1683,7 +1666,7 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .S({\clock_reg_reg_n_0_[11] ,\clock_reg_reg_n_0_[10] ,\clock_reg_reg_n_0_[9] ,\clock_reg_reg_n_0_[8] }));
   FDRE \clock_reg_reg[9] 
        (.C(S_AXI_ACLK),
-        .CE(clock_reg0),
+        .CE(1'b1),
         .D(\clock_reg_reg[8]_i_1_n_6 ),
         .Q(\clock_reg_reg_n_0_[9] ),
         .R(clear));
@@ -2811,36 +2794,18 @@ module design_1_axil_timer_64_0_0_axil_timer_64
         .O(rvalid_int00_out__0));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'h0F88)) 
+    .INIT(16'h08F8)) 
     rvalid_int_i_1
        (.I0(S_AXI_ARREADY),
         .I1(S_AXI_ARVALID),
-        .I2(S_AXI_RREADY),
-        .I3(rvalid_int_reg_0),
+        .I2(rvalid_int_reg_0),
+        .I3(S_AXI_RREADY),
         .O(rvalid_int_i_1_n_0));
   FDRE rvalid_int_reg
        (.C(S_AXI_ACLK),
         .CE(1'b1),
         .D(rvalid_int_i_1_n_0),
         .Q(rvalid_int_reg_0),
-        .R(clear));
-  FDRE timer_clk_meta_reg
-       (.C(S_AXI_ACLK),
-        .CE(1'b1),
-        .D(TIMER_CLK_IN),
-        .Q(timer_clk_meta),
-        .R(clear));
-  FDRE timer_clk_prev_reg
-       (.C(S_AXI_ACLK),
-        .CE(1'b1),
-        .D(timer_clk_sync),
-        .Q(timer_clk_prev),
-        .R(clear));
-  FDRE timer_clk_sync_reg
-       (.C(S_AXI_ACLK),
-        .CE(1'b1),
-        .D(timer_clk_meta),
-        .Q(timer_clk_sync),
         .R(clear));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(

@@ -53,9 +53,9 @@
 -- COMP_TAG     ------ Begin cut for COMPONENT Declaration ------
 COMPONENT design_1
   PORT (
-    GPIO_0_tri_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    GPIO_0_tri_o : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    GPIO_0_tri_t : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    GPIO_0_tri_i : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    GPIO_0_tri_o : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    GPIO_0_tri_t : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     SPI_0_0_io0_i : IN STD_LOGIC;
     SPI_0_0_io0_o : OUT STD_LOGIC;
     SPI_0_0_io0_t : OUT STD_LOGIC;
@@ -70,15 +70,11 @@ COMPONENT design_1
     SPI_0_0_ss_t : OUT STD_LOGIC;
     uart_tx_0 : OUT STD_LOGIC;
     uart_rx_0 : IN STD_LOGIC;
-    i2c_scl_i_0 : IN STD_LOGIC;
-    i2c_sda_i_0 : IN STD_LOGIC;
-    i2c_sda_t_0 : OUT STD_LOGIC;
-    i2c_sda_o_0 : OUT STD_LOGIC;
-    i2c_scl_t_0 : OUT STD_LOGIC;
-    i2c_scl_o_0 : OUT STD_LOGIC;
     cpu_rst : IN STD_LOGIC;
     sys_rst : IN STD_LOGIC;
-    in_clk : IN STD_LOGIC
+    in_clk : IN STD_LOGIC;
+    IOBUF_scl : INOUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    IOBUF_sda : INOUT STD_LOGIC_VECTOR(0 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -106,15 +102,11 @@ your_instance_name : design_1
     SPI_0_0_ss_t => SPI_0_0_ss_t,
     uart_tx_0 => uart_tx_0,
     uart_rx_0 => uart_rx_0,
-    i2c_scl_i_0 => i2c_scl_i_0,
-    i2c_sda_i_0 => i2c_sda_i_0,
-    i2c_sda_t_0 => i2c_sda_t_0,
-    i2c_sda_o_0 => i2c_sda_o_0,
-    i2c_scl_t_0 => i2c_scl_t_0,
-    i2c_scl_o_0 => i2c_scl_o_0,
     cpu_rst => cpu_rst,
     sys_rst => sys_rst,
-    in_clk => in_clk
+    in_clk => in_clk,
+    IOBUF_scl => IOBUF_scl,
+    IOBUF_sda => IOBUF_sda
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

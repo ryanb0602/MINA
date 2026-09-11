@@ -54,9 +54,9 @@
 
 // INST_TAG     ------ Begin cut for INSTANTIATION Template ------
 design_1 your_instance_name (
-  .GPIO_0_tri_i(GPIO_0_tri_i), // input wire [31:0] GPIO_0_tri_i
-  .GPIO_0_tri_o(GPIO_0_tri_o), // output wire [31:0] GPIO_0_tri_o
-  .GPIO_0_tri_t(GPIO_0_tri_t), // output wire [31:0] GPIO_0_tri_t
+  .GPIO_0_tri_i(GPIO_0_tri_i), // input wire [3:0] GPIO_0_tri_i
+  .GPIO_0_tri_o(GPIO_0_tri_o), // output wire [3:0] GPIO_0_tri_o
+  .GPIO_0_tri_t(GPIO_0_tri_t), // output wire [3:0] GPIO_0_tri_t
   .SPI_0_0_io0_i(SPI_0_0_io0_i), // input wire SPI_0_0_io0_i
   .SPI_0_0_io0_o(SPI_0_0_io0_o), // output wire SPI_0_0_io0_o
   .SPI_0_0_io0_t(SPI_0_0_io0_t), // output wire SPI_0_0_io0_t
@@ -71,15 +71,11 @@ design_1 your_instance_name (
   .SPI_0_0_ss_t(SPI_0_0_ss_t), // output wire SPI_0_0_ss_t
   .uart_tx_0(uart_tx_0), // output wire uart_tx_0
   .uart_rx_0(uart_rx_0), // input wire uart_rx_0
-  .i2c_scl_i_0(i2c_scl_i_0), // input wire i2c_scl_i_0
-  .i2c_sda_i_0(i2c_sda_i_0), // input wire i2c_sda_i_0
-  .i2c_sda_t_0(i2c_sda_t_0), // output wire i2c_sda_t_0
-  .i2c_sda_o_0(i2c_sda_o_0), // output wire i2c_sda_o_0
-  .i2c_scl_t_0(i2c_scl_t_0), // output wire i2c_scl_t_0
-  .i2c_scl_o_0(i2c_scl_o_0), // output wire i2c_scl_o_0
   .cpu_rst(cpu_rst), // input wire cpu_rst
   .sys_rst(sys_rst), // input wire sys_rst
-  .in_clk(in_clk) // input wire in_clk
+  .in_clk(in_clk), // input wire in_clk
+  .IOBUF_scl(IOBUF_scl), // inout wire [0:0] IOBUF_scl
+  .IOBUF_sda(IOBUF_sda) // inout wire [0:0] IOBUF_sda
 );
 // INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

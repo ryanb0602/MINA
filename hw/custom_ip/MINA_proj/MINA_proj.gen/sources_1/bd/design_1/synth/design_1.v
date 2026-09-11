@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Tue Sep  8 14:18:20 2026
+//Date        : Thu Sep 10 21:40:28 2026
 //Host        : ryan-21k8s14n00 running 64-bit EndeavourOS Linux
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -42,11 +42,13 @@ module cpu_reset_controller_imp_Y312CB
         .clk(clk));
 endmodule
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=3,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=29,numReposBlks=26,numNonXlnxBlks=0,numHierBlks=3,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=13,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (GPIO_0_tri_i,
     GPIO_0_tri_o,
     GPIO_0_tri_t,
+    IOBUF_scl,
+    IOBUF_sda,
     SPI_0_0_io0_i,
     SPI_0_0_io0_o,
     SPI_0_0_io0_t,
@@ -60,19 +62,15 @@ module design_1
     SPI_0_0_ss_o,
     SPI_0_0_ss_t,
     cpu_rst,
-    i2c_scl_i_0,
-    i2c_scl_o_0,
-    i2c_scl_t_0,
-    i2c_sda_i_0,
-    i2c_sda_o_0,
-    i2c_sda_t_0,
     in_clk,
     sys_rst,
     uart_rx_0,
     uart_tx_0);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I" *) (* X_INTERFACE_MODE = "Master" *) input [31:0]GPIO_0_tri_i;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) output [31:0]GPIO_0_tri_o;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *) output [31:0]GPIO_0_tri_t;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I" *) (* X_INTERFACE_MODE = "Master" *) input [3:0]GPIO_0_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) output [3:0]GPIO_0_tri_o;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *) output [3:0]GPIO_0_tri_t;
+  inout [0:0]IOBUF_scl;
+  inout [0:0]IOBUF_sda;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO0_I" *) (* X_INTERFACE_MODE = "Master" *) input SPI_0_0_io0_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO0_O" *) output SPI_0_0_io0_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 IO0_T" *) output SPI_0_0_io0_t;
@@ -86,20 +84,16 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_O" *) output [0:0]SPI_0_0_ss_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:spi:1.0 SPI_0_0 SS_T" *) output SPI_0_0_ss_t;
   input cpu_rst;
-  input i2c_scl_i_0;
-  output i2c_scl_o_0;
-  output i2c_scl_t_0;
-  input i2c_sda_i_0;
-  output i2c_sda_o_0;
-  output i2c_sda_t_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.IN_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.IN_CLK, CLK_DOMAIN design_1_in_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input in_clk;
   input sys_rst;
   input uart_rx_0;
   output uart_tx_0;
 
-  wire [31:0]GPIO_0_tri_i;
-  wire [31:0]GPIO_0_tri_o;
-  wire [31:0]GPIO_0_tri_t;
+  wire [3:0]GPIO_0_tri_i;
+  wire [3:0]GPIO_0_tri_o;
+  wire [3:0]GPIO_0_tri_t;
+  wire [0:0]IOBUF_scl;
+  wire [0:0]IOBUF_sda;
   wire SPI_0_0_io0_i;
   wire SPI_0_0_io0_o;
   wire SPI_0_0_io0_t;
@@ -229,12 +223,6 @@ module design_1
   wire clk_wiz_0_clk_out1;
   wire cpu_reset_controller_c;
   wire cpu_rst;
-  wire i2c_scl_i_0;
-  wire i2c_scl_o_0;
-  wire i2c_scl_t_0;
-  wire i2c_sda_i_0;
-  wire i2c_sda_o_0;
-  wire i2c_sda_t_0;
   wire in_clk;
   wire negation_1_b;
   wire negation_2_b;
@@ -558,6 +546,8 @@ module design_1
        (.GPIO_0_tri_i(GPIO_0_tri_i),
         .GPIO_0_tri_o(GPIO_0_tri_o),
         .GPIO_0_tri_t(GPIO_0_tri_t),
+        .IOBUF_scl(IOBUF_scl),
+        .IOBUF_sda(IOBUF_sda),
         .S00_AXI_araddr(smartconnect_0_M02_AXI_ARADDR),
         .S00_AXI_arburst(smartconnect_0_M02_AXI_ARBURST),
         .S00_AXI_arcache(smartconnect_0_M02_AXI_ARCACHE),
@@ -620,12 +610,6 @@ module design_1
         .bram_we(peripherals_bram_we),
         .cdma_irq(cdma_irq_1),
         .ext_irq(peripherals_ext_intr),
-        .i2c_scl_i_0(i2c_scl_i_0),
-        .i2c_scl_o_0(i2c_scl_o_0),
-        .i2c_scl_t_0(i2c_scl_t_0),
-        .i2c_sda_i_0(i2c_sda_i_0),
-        .i2c_sda_o_0(i2c_sda_o_0),
-        .i2c_sda_t_0(i2c_sda_t_0),
         .timer_clk_in(clk_wiz_0_clk_out1),
         .timer_irq(peripherals_IRQ),
         .uart_rx_0(uart_rx_0),
@@ -1127,6 +1111,8 @@ module peripherals_imp_1BOSXT5
    (GPIO_0_tri_i,
     GPIO_0_tri_o,
     GPIO_0_tri_t,
+    IOBUF_scl,
+    IOBUF_sda,
     S00_AXI_araddr,
     S00_AXI_arburst,
     S00_AXI_arcache,
@@ -1189,19 +1175,15 @@ module peripherals_imp_1BOSXT5
     bram_we,
     cdma_irq,
     ext_irq,
-    i2c_scl_i_0,
-    i2c_scl_o_0,
-    i2c_scl_t_0,
-    i2c_sda_i_0,
-    i2c_sda_o_0,
-    i2c_sda_t_0,
     timer_clk_in,
     timer_irq,
     uart_rx_0,
     uart_tx_0);
-  input [31:0]GPIO_0_tri_i;
-  output [31:0]GPIO_0_tri_o;
-  output [31:0]GPIO_0_tri_t;
+  input [3:0]GPIO_0_tri_i;
+  output [3:0]GPIO_0_tri_o;
+  output [3:0]GPIO_0_tri_t;
+  inout [0:0]IOBUF_scl;
+  inout [0:0]IOBUF_sda;
   input [31:0]S00_AXI_araddr;
   input [1:0]S00_AXI_arburst;
   input [3:0]S00_AXI_arcache;
@@ -1264,20 +1246,16 @@ module peripherals_imp_1BOSXT5
   output [3:0]bram_we;
   input cdma_irq;
   output ext_irq;
-  input i2c_scl_i_0;
-  output i2c_scl_o_0;
-  output i2c_scl_t_0;
-  input i2c_sda_i_0;
-  output i2c_sda_o_0;
-  output i2c_sda_t_0;
   input timer_clk_in;
   output timer_irq;
   input uart_rx_0;
   output uart_tx_0;
 
-  wire [31:0]GPIO_0_tri_i;
-  wire [31:0]GPIO_0_tri_o;
-  wire [31:0]GPIO_0_tri_t;
+  wire [3:0]GPIO_0_tri_i;
+  wire [3:0]GPIO_0_tri_o;
+  wire [3:0]GPIO_0_tri_t;
+  wire [0:0]IOBUF_scl;
+  wire [0:0]IOBUF_sda;
   wire [31:0]S00_AXI_araddr;
   wire [1:0]S00_AXI_arburst;
   wire [3:0]S00_AXI_arcache;
@@ -1343,12 +1321,10 @@ module peripherals_imp_1BOSXT5
   wire [3:0]bram_we;
   wire cdma_irq;
   wire ext_irq;
-  wire i2c_scl_i_0;
-  wire i2c_scl_o_0;
-  wire i2c_scl_t_0;
-  wire i2c_sda_i_0;
-  wire i2c_sda_o_0;
-  wire i2c_sda_t_0;
+  wire i2c_master_axil_0_i2c_scl_o;
+  wire i2c_master_axil_0_i2c_scl_t;
+  wire i2c_master_axil_0_i2c_sda_o;
+  wire i2c_master_axil_0_i2c_sda_t;
   wire negation_1_b;
   wire [3:0]smartconnect_1_M00_AXI_ARADDR;
   wire [2:0]smartconnect_1_M00_AXI_ARPROT;
@@ -1460,6 +1436,8 @@ module peripherals_imp_1BOSXT5
   wire timer_irq;
   wire uart_rx_0;
   wire uart_tx_0;
+  wire [0:0]util_ds_buf_0_IOBUF_IO_O;
+  wire [0:0]util_ds_buf_1_IOBUF_IO_O;
   wire [7:0]xlconcat_0_dout;
 
   design_1_axi_gpio_0_0 axi_gpio_0
@@ -1568,16 +1546,15 @@ module peripherals_imp_1BOSXT5
         .S_AXI_WDATA(smartconnect_1_M01_AXI_WDATA),
         .S_AXI_WREADY(smartconnect_1_M01_AXI_WREADY),
         .S_AXI_WSTRB(smartconnect_1_M01_AXI_WSTRB),
-        .S_AXI_WVALID(smartconnect_1_M01_AXI_WVALID),
-        .TIMER_CLK_IN(timer_clk_in));
+        .S_AXI_WVALID(smartconnect_1_M01_AXI_WVALID));
   design_1_i2c_master_axil_0_0 i2c_master_axil_0
        (.clk(axi_clk),
-        .i2c_scl_i(i2c_scl_i_0),
-        .i2c_scl_o(i2c_scl_o_0),
-        .i2c_scl_t(i2c_scl_t_0),
-        .i2c_sda_i(i2c_sda_i_0),
-        .i2c_sda_o(i2c_sda_o_0),
-        .i2c_sda_t(i2c_sda_t_0),
+        .i2c_scl_i(util_ds_buf_1_IOBUF_IO_O),
+        .i2c_scl_o(i2c_master_axil_0_i2c_scl_o),
+        .i2c_scl_t(i2c_master_axil_0_i2c_scl_t),
+        .i2c_sda_i(util_ds_buf_0_IOBUF_IO_O),
+        .i2c_sda_o(i2c_master_axil_0_i2c_sda_o),
+        .i2c_sda_t(i2c_master_axil_0_i2c_sda_t),
         .rst(negation_1_b),
         .s_axil_araddr(smartconnect_1_M04_AXI_ARADDR),
         .s_axil_arprot(smartconnect_1_M04_AXI_ARPROT),
@@ -1776,6 +1753,16 @@ module peripherals_imp_1BOSXT5
         .S00_AXI_wvalid(S00_AXI_wvalid),
         .aclk(axi_clk),
         .aresetn(axi_resetn));
+  design_1_util_ds_buf_0_0 util_ds_buf_0
+       (.IOBUF_IO_I(i2c_master_axil_0_i2c_sda_o),
+        .IOBUF_IO_IO(IOBUF_sda),
+        .IOBUF_IO_O(util_ds_buf_0_IOBUF_IO_O),
+        .IOBUF_IO_T(i2c_master_axil_0_i2c_sda_t));
+  design_1_util_ds_buf_0_1 util_ds_buf_1
+       (.IOBUF_IO_I(i2c_master_axil_0_i2c_scl_o),
+        .IOBUF_IO_IO(IOBUF_scl),
+        .IOBUF_IO_O(util_ds_buf_1_IOBUF_IO_O),
+        .IOBUF_IO_T(i2c_master_axil_0_i2c_scl_t));
   design_1_xlconcat_0_0 xlconcat_0
        (.In0(axi_uart_bootloader_1_uart_irq),
         .In1(cdma_irq),

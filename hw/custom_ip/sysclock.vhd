@@ -12,9 +12,6 @@ entity axil_timer_64 is
         S_AXI_ACLK    : in  std_logic;
         S_AXI_ARESETN : in  std_logic;
 
-        -- External Slow Clock Input
-        TIMER_CLK_IN  : in  std_logic;
-
         -- AXI4-Lite Write Address Channel
         S_AXI_AWADDR  : in  std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
         S_AXI_AWVALID : in  std_logic;
@@ -56,12 +53,6 @@ architecture rtl of axil_timer_64 is
     -- Snapshot register for safe 64-bit reading
     signal clock_snap_reg : unsigned(31 downto 0);
 
-    -- Clock Synchronization Signals
-    signal timer_clk_meta : std_logic;
-    signal timer_clk_sync : std_logic;
-    signal timer_clk_prev : std_logic;
-    signal timer_tick     : std_logic;
-
     -- AXI4-Lite Handshake Signals
     signal awready_int : std_logic;
     signal wready_int  : std_logic;
@@ -88,26 +79,16 @@ begin
     IRQ <= '1' when (clock_reg > compare_reg) else '0';
 
     ----------------------------------------------------------------------------
-    -- Timer Counter & Clock Synchronization Process
+    -- Timer Counter Process (Native AXI Clock)
     ----------------------------------------------------------------------------
     process (S_AXI_ACLK)
     begin
         if rising_edge(S_AXI_ACLK) then
             if S_AXI_ARESETN = '0' then
-                clock_reg      <= (others => '0');
-                timer_clk_meta <= '0';
-                timer_clk_sync <= '0';
-                timer_clk_prev <= '0';
+                clock_reg <= (others => '0');
             else
-                -- 2-Flop Synchronizer to bring slow clock into AXI domain safely
-                timer_clk_meta <= TIMER_CLK_IN;
-                timer_clk_sync <= timer_clk_meta;
-                timer_clk_prev <= timer_clk_sync;
-                
-                -- Detect rising edge of the slow clock
-                if (timer_clk_sync = '1' and timer_clk_prev = '0') then
-                    clock_reg <= clock_reg + 1;
-                end if;
+                -- Unconditionally count up every clock cycle
+                clock_reg <= clock_reg + 1;
             end if;
         end if;
     end process;

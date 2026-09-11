@@ -54,11 +54,11 @@
 
 module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
-  input wire [31:0] GPIO_0_tri_i,
+  input wire [3:0] GPIO_0_tri_i,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire [31:0] GPIO_0_tri_o,
+  output wire [3:0] GPIO_0_tri_o,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire [31:0] GPIO_0_tri_t,
+  output wire [3:0] GPIO_0_tri_t,
   (* X_INTERFACE_IGNORE = "true" *)
   input wire SPI_0_0_io0_i,
   (* X_INTERFACE_IGNORE = "true" *)
@@ -88,23 +88,15 @@ module design_1_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   input wire uart_rx_0,
   (* X_INTERFACE_IGNORE = "true" *)
-  input wire i2c_scl_i_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  input wire i2c_sda_i_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire i2c_sda_t_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire i2c_sda_o_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire i2c_scl_t_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire i2c_scl_o_0,
-  (* X_INTERFACE_IGNORE = "true" *)
   input wire cpu_rst,
   (* X_INTERFACE_IGNORE = "true" *)
   input wire sys_rst,
   (* X_INTERFACE_IGNORE = "true" *)
-  input wire in_clk
+  input wire in_clk,
+  (* X_INTERFACE_IGNORE = "true" *)
+  inout wire [0:0] IOBUF_scl,
+  (* X_INTERFACE_IGNORE = "true" *)
+  inout wire [0:0] IOBUF_sda
 );
 
   design_1 inst (
@@ -125,15 +117,11 @@ module design_1_sv (
     .SPI_0_0_ss_t(SPI_0_0_ss_t),
     .uart_tx_0(uart_tx_0),
     .uart_rx_0(uart_rx_0),
-    .i2c_scl_i_0(i2c_scl_i_0),
-    .i2c_sda_i_0(i2c_sda_i_0),
-    .i2c_sda_t_0(i2c_sda_t_0),
-    .i2c_sda_o_0(i2c_sda_o_0),
-    .i2c_scl_t_0(i2c_scl_t_0),
-    .i2c_scl_o_0(i2c_scl_o_0),
     .cpu_rst(cpu_rst),
     .sys_rst(sys_rst),
-    .in_clk(in_clk)
+    .in_clk(in_clk),
+    .IOBUF_scl(IOBUF_scl),
+    .IOBUF_sda(IOBUF_sda)
   );
 
 endmodule

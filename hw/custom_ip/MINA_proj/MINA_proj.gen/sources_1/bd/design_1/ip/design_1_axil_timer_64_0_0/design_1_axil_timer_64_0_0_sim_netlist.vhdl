@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Sun Sep  6 16:33:31 2026
+-- Date        : Thu Sep 10 21:40:56 2026
 -- Host        : ryan-21k8s14n00 running 64-bit EndeavourOS Linux
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/design_1_axil_timer_64_0_0_sim_netlist.vhdl
@@ -25,7 +25,6 @@ entity design_1_axil_timer_64_0_0_axil_timer_64 is
     IRQ : out STD_LOGIC;
     S_AXI_BVALID : out STD_LOGIC;
     S_AXI_ACLK : in STD_LOGIC;
-    TIMER_CLK_IN : in STD_LOGIC;
     S_AXI_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
     S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 1 downto 0 );
     S_AXI_WVALID : in STD_LOGIC;
@@ -144,16 +143,15 @@ architecture STRUCTURE of design_1_axil_timer_64_0_0_axil_timer_64 is
   signal awready_int0 : STD_LOGIC;
   signal bvalid_int_i_1_n_0 : STD_LOGIC;
   signal clear : STD_LOGIC;
-  signal clock_reg0 : STD_LOGIC;
-  signal \clock_reg[0]_i_3_n_0\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_0\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_1\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_2\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_3\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_4\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_5\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_6\ : STD_LOGIC;
-  signal \clock_reg_reg[0]_i_2_n_7\ : STD_LOGIC;
+  signal \clock_reg[0]_i_2_n_0\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_0\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_1\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_2\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_3\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_4\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_5\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_6\ : STD_LOGIC;
+  signal \clock_reg_reg[0]_i_1_n_7\ : STD_LOGIC;
   signal \clock_reg_reg[12]_i_1_n_0\ : STD_LOGIC;
   signal \clock_reg_reg[12]_i_1_n_1\ : STD_LOGIC;
   signal \clock_reg_reg[12]_i_1_n_2\ : STD_LOGIC;
@@ -408,9 +406,6 @@ architecture STRUCTURE of design_1_axil_timer_64_0_0_axil_timer_64 is
   signal \rvalid_int00_out__0\ : STD_LOGIC;
   signal rvalid_int_i_1_n_0 : STD_LOGIC;
   signal \^rvalid_int_reg_0\ : STD_LOGIC;
-  signal timer_clk_meta : STD_LOGIC;
-  signal timer_clk_prev : STD_LOGIC;
-  signal timer_clk_sync : STD_LOGIC;
   signal wready_int0 : STD_LOGIC;
   signal NLW_IRQ0_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_IRQ0_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -434,7 +429,7 @@ architecture STRUCTURE of design_1_axil_timer_64_0_0_axil_timer_64 is
   attribute SOFT_HLUTNM of arready_int_i_1 : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of awready_int_i_2 : label is "soft_lutpair1";
   attribute ADDER_THRESHOLD : integer;
-  attribute ADDER_THRESHOLD of \clock_reg_reg[0]_i_2\ : label is 35;
+  attribute ADDER_THRESHOLD of \clock_reg_reg[0]_i_1\ : label is 35;
   attribute ADDER_THRESHOLD of \clock_reg_reg[12]_i_1\ : label is 35;
   attribute ADDER_THRESHOLD of \clock_reg_reg[16]_i_1\ : label is 35;
   attribute ADDER_THRESHOLD of \clock_reg_reg[20]_i_1\ : label is 35;
@@ -1354,8 +1349,8 @@ bvalid_int_i_1: unisim.vcomponents.LUT6
       INIT => X"0000FFFF80008000"
     )
         port map (
-      I0 => \^s_axi_awready\,
-      I1 => \^s_axi_wready\,
+      I0 => \^s_axi_wready\,
+      I1 => \^s_axi_awready\,
       I2 => S_AXI_WVALID,
       I3 => S_AXI_AWVALID,
       I4 => S_AXI_BREADY,
@@ -1370,53 +1365,44 @@ bvalid_int_reg: unisim.vcomponents.FDRE
       Q => \^s_axi_bvalid\,
       R => clear
     );
-\clock_reg[0]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => timer_clk_sync,
-      I1 => timer_clk_prev,
-      O => clock_reg0
-    );
-\clock_reg[0]_i_3\: unisim.vcomponents.LUT1
+\clock_reg[0]_i_2\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => \clock_reg_reg_n_0_[0]\,
-      O => \clock_reg[0]_i_3_n_0\
+      O => \clock_reg[0]_i_2_n_0\
     );
 \clock_reg_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
-      D => \clock_reg_reg[0]_i_2_n_7\,
+      CE => '1',
+      D => \clock_reg_reg[0]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[0]\,
       R => clear
     );
-\clock_reg_reg[0]_i_2\: unisim.vcomponents.CARRY4
+\clock_reg_reg[0]_i_1\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \clock_reg_reg[0]_i_2_n_0\,
-      CO(2) => \clock_reg_reg[0]_i_2_n_1\,
-      CO(1) => \clock_reg_reg[0]_i_2_n_2\,
-      CO(0) => \clock_reg_reg[0]_i_2_n_3\,
+      CO(3) => \clock_reg_reg[0]_i_1_n_0\,
+      CO(2) => \clock_reg_reg[0]_i_1_n_1\,
+      CO(1) => \clock_reg_reg[0]_i_1_n_2\,
+      CO(0) => \clock_reg_reg[0]_i_1_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0001",
-      O(3) => \clock_reg_reg[0]_i_2_n_4\,
-      O(2) => \clock_reg_reg[0]_i_2_n_5\,
-      O(1) => \clock_reg_reg[0]_i_2_n_6\,
-      O(0) => \clock_reg_reg[0]_i_2_n_7\,
+      O(3) => \clock_reg_reg[0]_i_1_n_4\,
+      O(2) => \clock_reg_reg[0]_i_1_n_5\,
+      O(1) => \clock_reg_reg[0]_i_1_n_6\,
+      O(0) => \clock_reg_reg[0]_i_1_n_7\,
       S(3) => \clock_reg_reg_n_0_[3]\,
       S(2) => \clock_reg_reg_n_0_[2]\,
       S(1) => \clock_reg_reg_n_0_[1]\,
-      S(0) => \clock_reg[0]_i_3_n_0\
+      S(0) => \clock_reg[0]_i_2_n_0\
     );
 \clock_reg_reg[10]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[8]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[10]\,
       R => clear
@@ -1424,7 +1410,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[11]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[8]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[11]\,
       R => clear
@@ -1432,7 +1418,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[12]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[12]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[12]\,
       R => clear
@@ -1458,7 +1444,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[13]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[12]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[13]\,
       R => clear
@@ -1466,7 +1452,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[14]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[12]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[14]\,
       R => clear
@@ -1474,7 +1460,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[15]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[12]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[15]\,
       R => clear
@@ -1482,7 +1468,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[16]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[16]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[16]\,
       R => clear
@@ -1508,7 +1494,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[17]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[16]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[17]\,
       R => clear
@@ -1516,7 +1502,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[18]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[16]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[18]\,
       R => clear
@@ -1524,7 +1510,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[19]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[16]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[19]\,
       R => clear
@@ -1532,15 +1518,15 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[1]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
-      D => \clock_reg_reg[0]_i_2_n_6\,
+      CE => '1',
+      D => \clock_reg_reg[0]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[1]\,
       R => clear
     );
 \clock_reg_reg[20]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[20]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[20]\,
       R => clear
@@ -1566,7 +1552,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[21]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[20]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[21]\,
       R => clear
@@ -1574,7 +1560,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[22]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[20]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[22]\,
       R => clear
@@ -1582,7 +1568,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[23]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[20]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[23]\,
       R => clear
@@ -1590,7 +1576,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[24]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[24]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[24]\,
       R => clear
@@ -1616,7 +1602,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[25]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[24]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[25]\,
       R => clear
@@ -1624,7 +1610,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[26]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[24]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[26]\,
       R => clear
@@ -1632,7 +1618,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[27]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[24]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[27]\,
       R => clear
@@ -1640,7 +1626,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[28]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[28]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[28]\,
       R => clear
@@ -1666,7 +1652,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[29]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[28]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[29]\,
       R => clear
@@ -1674,15 +1660,15 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
-      D => \clock_reg_reg[0]_i_2_n_5\,
+      CE => '1',
+      D => \clock_reg_reg[0]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[2]\,
       R => clear
     );
 \clock_reg_reg[30]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[28]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[30]\,
       R => clear
@@ -1690,7 +1676,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[31]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[28]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[31]\,
       R => clear
@@ -1698,7 +1684,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[32]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[32]_i_1_n_7\,
       Q => p_1_in(0),
       R => clear
@@ -1721,7 +1707,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[33]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[32]_i_1_n_6\,
       Q => p_1_in(1),
       R => clear
@@ -1729,7 +1715,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[34]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[32]_i_1_n_5\,
       Q => p_1_in(2),
       R => clear
@@ -1737,7 +1723,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[35]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[32]_i_1_n_4\,
       Q => p_1_in(3),
       R => clear
@@ -1745,7 +1731,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[36]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[36]_i_1_n_7\,
       Q => p_1_in(4),
       R => clear
@@ -1768,7 +1754,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[37]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[36]_i_1_n_6\,
       Q => p_1_in(5),
       R => clear
@@ -1776,7 +1762,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[38]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[36]_i_1_n_5\,
       Q => p_1_in(6),
       R => clear
@@ -1784,7 +1770,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[39]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[36]_i_1_n_4\,
       Q => p_1_in(7),
       R => clear
@@ -1792,15 +1778,15 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
-      D => \clock_reg_reg[0]_i_2_n_4\,
+      CE => '1',
+      D => \clock_reg_reg[0]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[3]\,
       R => clear
     );
 \clock_reg_reg[40]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[40]_i_1_n_7\,
       Q => p_1_in(8),
       R => clear
@@ -1823,7 +1809,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[41]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[40]_i_1_n_6\,
       Q => p_1_in(9),
       R => clear
@@ -1831,7 +1817,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[42]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[40]_i_1_n_5\,
       Q => p_1_in(10),
       R => clear
@@ -1839,7 +1825,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[43]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[40]_i_1_n_4\,
       Q => p_1_in(11),
       R => clear
@@ -1847,7 +1833,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[44]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[44]_i_1_n_7\,
       Q => p_1_in(12),
       R => clear
@@ -1870,7 +1856,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[45]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[44]_i_1_n_6\,
       Q => p_1_in(13),
       R => clear
@@ -1878,7 +1864,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[46]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[44]_i_1_n_5\,
       Q => p_1_in(14),
       R => clear
@@ -1886,7 +1872,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[47]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[44]_i_1_n_4\,
       Q => p_1_in(15),
       R => clear
@@ -1894,7 +1880,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[48]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[48]_i_1_n_7\,
       Q => p_1_in(16),
       R => clear
@@ -1917,7 +1903,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[49]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[48]_i_1_n_6\,
       Q => p_1_in(17),
       R => clear
@@ -1925,14 +1911,14 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[4]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[4]\,
       R => clear
     );
 \clock_reg_reg[4]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \clock_reg_reg[0]_i_2_n_0\,
+      CI => \clock_reg_reg[0]_i_1_n_0\,
       CO(3) => \clock_reg_reg[4]_i_1_n_0\,
       CO(2) => \clock_reg_reg[4]_i_1_n_1\,
       CO(1) => \clock_reg_reg[4]_i_1_n_2\,
@@ -1951,7 +1937,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[50]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[48]_i_1_n_5\,
       Q => p_1_in(18),
       R => clear
@@ -1959,7 +1945,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[51]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[48]_i_1_n_4\,
       Q => p_1_in(19),
       R => clear
@@ -1967,7 +1953,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[52]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[52]_i_1_n_7\,
       Q => p_1_in(20),
       R => clear
@@ -1990,7 +1976,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[53]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[52]_i_1_n_6\,
       Q => p_1_in(21),
       R => clear
@@ -1998,7 +1984,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[54]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[52]_i_1_n_5\,
       Q => p_1_in(22),
       R => clear
@@ -2006,7 +1992,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[55]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[52]_i_1_n_4\,
       Q => p_1_in(23),
       R => clear
@@ -2014,7 +2000,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[56]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[56]_i_1_n_7\,
       Q => p_1_in(24),
       R => clear
@@ -2037,7 +2023,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[57]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[56]_i_1_n_6\,
       Q => p_1_in(25),
       R => clear
@@ -2045,7 +2031,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[58]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[56]_i_1_n_5\,
       Q => p_1_in(26),
       R => clear
@@ -2053,7 +2039,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[59]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[56]_i_1_n_4\,
       Q => p_1_in(27),
       R => clear
@@ -2061,7 +2047,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[5]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[4]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[5]\,
       R => clear
@@ -2069,7 +2055,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[60]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[60]_i_1_n_7\,
       Q => p_1_in(28),
       R => clear
@@ -2092,7 +2078,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[61]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[60]_i_1_n_6\,
       Q => p_1_in(29),
       R => clear
@@ -2100,7 +2086,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[62]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[60]_i_1_n_5\,
       Q => p_1_in(30),
       R => clear
@@ -2108,7 +2094,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[63]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[60]_i_1_n_4\,
       Q => p_1_in(31),
       R => clear
@@ -2116,7 +2102,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[6]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[4]_i_1_n_5\,
       Q => \clock_reg_reg_n_0_[6]\,
       R => clear
@@ -2124,7 +2110,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[7]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[4]_i_1_n_4\,
       Q => \clock_reg_reg_n_0_[7]\,
       R => clear
@@ -2132,7 +2118,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[8]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[8]_i_1_n_7\,
       Q => \clock_reg_reg_n_0_[8]\,
       R => clear
@@ -2158,7 +2144,7 @@ bvalid_int_reg: unisim.vcomponents.FDRE
 \clock_reg_reg[9]\: unisim.vcomponents.FDRE
      port map (
       C => S_AXI_ACLK,
-      CE => clock_reg0,
+      CE => '1',
       D => \clock_reg_reg[8]_i_1_n_6\,
       Q => \clock_reg_reg_n_0_[9]\,
       R => clear
@@ -3651,13 +3637,13 @@ rvalid_int00_out: unisim.vcomponents.LUT3
     );
 rvalid_int_i_1: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0F88"
+      INIT => X"08F8"
     )
         port map (
       I0 => \^s_axi_arready\,
       I1 => S_AXI_ARVALID,
-      I2 => S_AXI_RREADY,
-      I3 => \^rvalid_int_reg_0\,
+      I2 => \^rvalid_int_reg_0\,
+      I3 => S_AXI_RREADY,
       O => rvalid_int_i_1_n_0
     );
 rvalid_int_reg: unisim.vcomponents.FDRE
@@ -3666,30 +3652,6 @@ rvalid_int_reg: unisim.vcomponents.FDRE
       CE => '1',
       D => rvalid_int_i_1_n_0,
       Q => \^rvalid_int_reg_0\,
-      R => clear
-    );
-timer_clk_meta_reg: unisim.vcomponents.FDRE
-     port map (
-      C => S_AXI_ACLK,
-      CE => '1',
-      D => TIMER_CLK_IN,
-      Q => timer_clk_meta,
-      R => clear
-    );
-timer_clk_prev_reg: unisim.vcomponents.FDRE
-     port map (
-      C => S_AXI_ACLK,
-      CE => '1',
-      D => timer_clk_sync,
-      Q => timer_clk_prev,
-      R => clear
-    );
-timer_clk_sync_reg: unisim.vcomponents.FDRE
-     port map (
-      C => S_AXI_ACLK,
-      CE => '1',
-      D => timer_clk_meta,
-      Q => timer_clk_sync,
       R => clear
     );
 wready_int_i_1: unisim.vcomponents.LUT3
@@ -3719,7 +3681,6 @@ entity design_1_axil_timer_64_0_0 is
   port (
     S_AXI_ACLK : in STD_LOGIC;
     S_AXI_ARESETN : in STD_LOGIC;
-    TIMER_CLK_IN : in STD_LOGIC;
     S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S_AXI_AWVALID : in STD_LOGIC;
     S_AXI_AWREADY : out STD_LOGIC;
@@ -3811,7 +3772,6 @@ inst: entity work.design_1_axil_timer_64_0_0_axil_timer_64
       S_AXI_WDATA(31 downto 0) => S_AXI_WDATA(31 downto 0),
       S_AXI_WREADY => S_AXI_WREADY,
       S_AXI_WVALID => S_AXI_WVALID,
-      TIMER_CLK_IN => TIMER_CLK_IN,
       rvalid_int_reg_0 => S_AXI_RVALID
     );
 end STRUCTURE;

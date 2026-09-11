@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Sun Sep  6 16:33:30 2026
+-- Date        : Thu Sep 10 21:40:56 2026
 -- Host        : ryan-21k8s14n00 running 64-bit EndeavourOS Linux
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/design_1_axil_timer_64_0_0_stub.vhdl
@@ -17,7 +17,6 @@ entity design_1_axil_timer_64_0_0 is
   Port ( 
     S_AXI_ACLK : in STD_LOGIC;
     S_AXI_ARESETN : in STD_LOGIC;
-    TIMER_CLK_IN : in STD_LOGIC;
     S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S_AXI_AWVALID : in STD_LOGIC;
     S_AXI_AWREADY : out STD_LOGIC;
@@ -52,7 +51,7 @@ architecture stub of design_1_axil_timer_64_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "S_AXI_ACLK,S_AXI_ARESETN,TIMER_CLK_IN,S_AXI_AWADDR[3:0],S_AXI_AWVALID,S_AXI_AWREADY,S_AXI_WDATA[31:0],S_AXI_WSTRB[3:0],S_AXI_WVALID,S_AXI_WREADY,S_AXI_BRESP[1:0],S_AXI_BVALID,S_AXI_BREADY,S_AXI_ARADDR[3:0],S_AXI_ARVALID,S_AXI_ARREADY,S_AXI_RDATA[31:0],S_AXI_RRESP[1:0],S_AXI_RVALID,S_AXI_RREADY,IRQ";
+  attribute black_box_pad_pin of stub : architecture is "S_AXI_ACLK,S_AXI_ARESETN,S_AXI_AWADDR[3:0],S_AXI_AWVALID,S_AXI_AWREADY,S_AXI_WDATA[31:0],S_AXI_WSTRB[3:0],S_AXI_WVALID,S_AXI_WREADY,S_AXI_BRESP[1:0],S_AXI_BVALID,S_AXI_BREADY,S_AXI_ARADDR[3:0],S_AXI_ARVALID,S_AXI_ARREADY,S_AXI_RDATA[31:0],S_AXI_RRESP[1:0],S_AXI_RVALID,S_AXI_RREADY,IRQ";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of S_AXI_ACLK : signal is "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK";
   attribute X_INTERFACE_MODE : string;

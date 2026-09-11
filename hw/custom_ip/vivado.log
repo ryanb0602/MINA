@@ -1784,3 +1784,1278 @@ Failure: UART NORMAL MODE TEST COMPLETE
 Time: 10606690560 ps  Iteration: 0  Process: /tb_design_1_wrapper/stimulus  File: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd
 $finish called at time : 10606690560 ps : File "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd" Line 556
 run: Time (s): cpu = 00:01:12 ; elapsed = 00:06:34 . Memory (MB): peak = 11693.023 ; gain = 0.000 ; free physical = 4955 ; free virtual = 13953
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 321804 KB (Peak: 367200 KB), Simulation CPU Usage: 392720 ms
+INFO: [Simtcl 6-16] Simulation closed
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+close_bd_design [get_bd_designs design_1]
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_ec15ec3b.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+make_wrapper -files [get_files /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/VexRiscvMcuAxi_0'.
+Given inputs for module-source, Top-module name : VexRiscvMcuAxi, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/axi_ram_0'.
+Given inputs for module-source, Top-module name : axi_ram, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/instr_ram/muxed_dual_port_ram_0'.
+Given inputs for module-source, Top-module name : muxed_dual_port_ram, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/peripherals/plic_axil_wrapper_0'.
+Given inputs for module-source, Top-module name : plic_axil_wrapper, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/peripherals/axil_timer_64_0'.
+Given inputs for module-source, Top-module name : axil_timer_64, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/peripherals/i2c_master_axil_0'.
+Given inputs for module-source, Top-module name : i2c_master_axil, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/peripherals/negation_1'.
+Given inputs for module-source, Top-module name : negation, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/peripherals/axi_uart_bootloader_1'.
+Given inputs for module-source, Top-module name : axi_uart_bootloader_wrapper, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/cpu_reset_controller/negation_0'.
+Given inputs for module-source, Top-module name : negation, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/cpu_reset_controller/negation_1'.
+Given inputs for module-source, Top-module name : negation, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/cpu_reset_controller/basic_or_0'.
+Given inputs for module-source, Top-module name : basic_or, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/negation_1'.
+Given inputs for module-source, Top-module name : negation, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [BD 41-1726] Unable to resolve module-source for block '/negation_2'.
+Given inputs for module-source, Top-module name : negation, Module Type : RTL.
+Please review and update or add design-sources to this project to resolve this module-reference.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VexRiscvMcuAxi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block instr_ram/xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block instr_ram/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/smartconnect_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block negation_2 .
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 11693.023 ; gain = 0.000 ; free physical = 2239 ; free virtual = 12295
+ERROR: [Vivado 12-3280] Incremental checkpoint file '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp' set on run 'synth_1' does not exist.
+launch_runs synth_1 -jobs 8
+ERROR: [Vivado 12-3280] Incremental checkpoint file '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp' set on run 'synth_1' does not exist.
+launch_runs synth_1 -jobs 8
+ERROR: [Vivado 12-3280] Incremental checkpoint file '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp' set on run 'synth_1' does not exist.
+launch_runs synth_1 -jobs 8
+ERROR: [Vivado 12-3280] Incremental checkpoint file '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp' set on run 'synth_1' does not exist.
+set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs synth_1]
+INFO: [Vivado 12-7078] The incremental_compile property on the run reflects the DCP used to generate the current run results. If you do not want to use "/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp" for future runs, please clear the incremental_compile DCP run property.
+set_property incremental_checkpoint {} [get_runs synth_1]
+launch_runs synth_1 -jobs 8
+ERROR: [filemgmt 56-587] Failed to resolve reference. Nothing was found in the project to match the name VexRiscvMcuAxi Try changing the compile order from manual to automatic. 
+ERROR: [Runs 36-346] File '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ip/design_1_VexRiscvMcuAxi_0_0/design_1_VexRiscvMcuAxi_0_0.xci' needed for run contains invalid reference(s).
+export_ip_user_files -of_objects  [get_files /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/utils_1/imports/synth_1/VexRiscvMcuAxi.dcp
+launch_runs synth_1 -jobs 8
+ERROR: [filemgmt 56-587] Failed to resolve reference. Nothing was found in the project to match the name VexRiscvMcuAxi Try changing the compile order from manual to automatic. 
+ERROR: [Runs 36-346] File '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ip/design_1_VexRiscvMcuAxi_0_0/design_1_VexRiscvMcuAxi_0_0.xci' needed for run contains invalid reference(s).
+set_property source_mgmt_mode All [current_project]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+launch_runs synth_1 -jobs 8
+[Thu Sep 10 20:52:27 2026] Launched design_1_axi_cdma_0_0_synth_1, design_1_axi_bram_ctrl_0_1_synth_1, design_1_axil_timer_64_0_0_synth_1, design_1_muxed_dual_port_ram_0_0_synth_1, design_1_axi_bram_ctrl_0_2_synth_1, design_1_plic_axil_wrapper_0_0_synth_1, design_1_axi_gpio_0_0_synth_1, design_1_negation_0_1_synth_1, design_1_basic_or_0_0_synth_1, design_1_negation_0_0_synth_1, design_1_i2c_master_axil_0_0_synth_1, design_1_negation_1_2_synth_1, design_1_negation_1_0_synth_1, design_1_clk_wiz_0_2_synth_1, design_1_axi_uart_bootloader_1_0_synth_1, design_1_axi_ram_0_0_synth_1, design_1_VexRiscvMcuAxi_0_0_synth_1, design_1_smartconnect_0_0_synth_1, design_1_smartconnect_1_0_synth_1, design_1_axi_quad_spi_0_0_synth_1, design_1_negation_1_3_synth_1...
+Run output will be captured here:
+design_1_axi_cdma_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_cdma_0_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_1_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_bram_ctrl_0_1_synth_1/runme.log
+design_1_axil_timer_64_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axil_timer_64_0_0_synth_1/runme.log
+design_1_muxed_dual_port_ram_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_muxed_dual_port_ram_0_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_2_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_bram_ctrl_0_2_synth_1/runme.log
+design_1_plic_axil_wrapper_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_plic_axil_wrapper_0_0_synth_1/runme.log
+design_1_axi_gpio_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+design_1_negation_0_1_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_0_1_synth_1/runme.log
+design_1_basic_or_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_basic_or_0_0_synth_1/runme.log
+design_1_negation_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_0_0_synth_1/runme.log
+design_1_i2c_master_axil_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_i2c_master_axil_0_0_synth_1/runme.log
+design_1_negation_1_2_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_1_2_synth_1/runme.log
+design_1_negation_1_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_1_0_synth_1/runme.log
+design_1_clk_wiz_0_2_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_clk_wiz_0_2_synth_1/runme.log
+design_1_axi_uart_bootloader_1_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_uart_bootloader_1_0_synth_1/runme.log
+design_1_axi_ram_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_ram_0_0_synth_1/runme.log
+design_1_VexRiscvMcuAxi_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_VexRiscvMcuAxi_0_0_synth_1/runme.log
+design_1_smartconnect_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_smartconnect_0_0_synth_1/runme.log
+design_1_smartconnect_1_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_smartconnect_1_0_synth_1/runme.log
+design_1_axi_quad_spi_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_quad_spi_0_0_synth_1/runme.log
+design_1_negation_1_3_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_1_3_synth_1/runme.log
+[Thu Sep 10 20:52:28 2026] Launched synth_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/synth_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+open_bd_design {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:VexRiscvMcuAxi:1.0 - VexRiscvMcuAxi_0
+Adding component instance block -- xilinx.com:module_ref:axi_ram:1.0 - axi_ram_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:module_ref:muxed_dual_port_ram:1.0 - muxed_dual_port_ram_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:module_ref:plic_axil_wrapper:1.0 - plic_axil_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:axil_timer_64:1.0 - axil_timer_64_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:i2c_master_axil:1.0 - i2c_master_axil_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:axi_uart_bootloader_wrapper:1.0 - axi_uart_bootloader_1
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:basic_or:1.0 - basic_or_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_2
+Successfully read diagram <design_1> from block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>
+regenerate_bd_layout -routing
+regenerate_bd_layout
+validate_bd_design -force
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/VexRiscvMcuAxi_0/dBusAxi' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_cdma_0/Data' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_1_0: SmartConnect design_1_smartconnect_1_0 is in Low-Area Mode.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /peripherals/axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_1: PORT /instr_ram/axi_bram_ctrl_1/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_0: PORT /instr_ram/axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 12282.723 ; gain = 0.000 ; free physical = 8250 ; free virtual = 13558
+reset_run design_1_axi_cdma_0_0_synth_1
+reset_run design_1_axi_bram_ctrl_0_1_synth_1
+reset_run design_1_axil_timer_64_0_0_synth_1
+reset_run design_1_muxed_dual_port_ram_0_0_synth_1
+reset_run design_1_axi_bram_ctrl_0_2_synth_1
+reset_run design_1_plic_axil_wrapper_0_0_synth_1
+reset_run design_1_negation_0_1_synth_1
+reset_run design_1_basic_or_0_0_synth_1
+reset_run design_1_negation_0_0_synth_1
+reset_run design_1_i2c_master_axil_0_0_synth_1
+reset_run design_1_negation_1_2_synth_1
+reset_run design_1_negation_1_0_synth_1
+reset_run design_1_axi_uart_bootloader_1_0_synth_1
+reset_run design_1_axi_ram_0_0_synth_1
+save_bd_design
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+reset_run design_1_smartconnect_1_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/hw_handoff/design_1_smartconnect_1_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/synth/design_1_smartconnect_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/smartconnect_1 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1_sv.sveo
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_1_0, cache-ID = fb27a3751864a53f; cache size = 47.824 MB.
+[Thu Sep 10 20:55:26 2026] Launched design_1_axi_cdma_0_0_synth_1, design_1_axi_bram_ctrl_0_1_synth_1, design_1_axil_timer_64_0_0_synth_1, design_1_muxed_dual_port_ram_0_0_synth_1, design_1_axi_bram_ctrl_0_2_synth_1, design_1_plic_axil_wrapper_0_0_synth_1, design_1_negation_0_1_synth_1, design_1_basic_or_0_0_synth_1, design_1_negation_0_0_synth_1, design_1_i2c_master_axil_0_0_synth_1, design_1_negation_1_2_synth_1, design_1_negation_1_0_synth_1, design_1_axi_uart_bootloader_1_0_synth_1, design_1_axi_ram_0_0_synth_1...
+Run output will be captured here:
+design_1_axi_cdma_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_cdma_0_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_1_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_bram_ctrl_0_1_synth_1/runme.log
+design_1_axil_timer_64_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axil_timer_64_0_0_synth_1/runme.log
+design_1_muxed_dual_port_ram_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_muxed_dual_port_ram_0_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_2_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_bram_ctrl_0_2_synth_1/runme.log
+design_1_plic_axil_wrapper_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_plic_axil_wrapper_0_0_synth_1/runme.log
+design_1_negation_0_1_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_0_1_synth_1/runme.log
+design_1_basic_or_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_basic_or_0_0_synth_1/runme.log
+design_1_negation_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_0_0_synth_1/runme.log
+design_1_i2c_master_axil_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_i2c_master_axil_0_0_synth_1/runme.log
+design_1_negation_1_2_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_1_2_synth_1/runme.log
+design_1_negation_1_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_negation_1_0_synth_1/runme.log
+design_1_axi_uart_bootloader_1_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_uart_bootloader_1_0_synth_1/runme.log
+design_1_axi_ram_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_ram_0_0_synth_1/runme.log
+[Thu Sep 10 20:55:26 2026] Launched synth_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 12282.723 ; gain = 0.000 ; free physical = 10541 ; free virtual = 15941
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/uart_sim/new/uart_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-1
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_VexRiscvMcuAxi_0_0/design_1_VexRiscvMcuAxi_0_0.dcp' for cell 'design_1_i/VexRiscvMcuAxi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0.dcp' for cell 'design_1_i/axi_cdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/design_1_axi_ram_0_0.dcp' for cell 'design_1_i/axi_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_1_0/design_1_negation_1_0.dcp' for cell 'design_1_i/negation_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_1_3/design_1_negation_1_3.dcp' for cell 'design_1_i/negation_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp' for cell 'design_1_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_basic_or_0_0/design_1_basic_or_0_0.dcp' for cell 'design_1_i/cpu_reset_controller/basic_or_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_0_0/design_1_negation_0_0.dcp' for cell 'design_1_i/cpu_reset_controller/negation_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_0_1/design_1_negation_0_1.dcp' for cell 'design_1_i/cpu_reset_controller/negation_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1.dcp' for cell 'design_1_i/instr_ram/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_2/design_1_axi_bram_ctrl_0_2.dcp' for cell 'design_1_i/instr_ram/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_muxed_dual_port_ram_0_0/design_1_muxed_dual_port_ram_0_0.dcp' for cell 'design_1_i/instr_ram/muxed_dual_port_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/peripherals/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp' for cell 'design_1_i/peripherals/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_uart_bootloader_1_0/design_1_axi_uart_bootloader_1_0.dcp' for cell 'design_1_i/peripherals/axi_uart_bootloader_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/design_1_axil_timer_64_0_0.dcp' for cell 'design_1_i/peripherals/axil_timer_64_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_i2c_master_axil_0_0/design_1_i2c_master_axil_0_0.dcp' for cell 'design_1_i/peripherals/i2c_master_axil_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_1_2/design_1_negation_1_2.dcp' for cell 'design_1_i/peripherals/negation_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_plic_axil_wrapper_0_0/design_1_plic_axil_wrapper_0_0.dcp' for cell 'design_1_i/peripherals/plic_axil_wrapper_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/design_1_smartconnect_1_0.dcp' for cell 'design_1_i/peripherals/smartconnect_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.34 . Memory (MB): peak = 12282.723 ; gain = 0.000 ; free physical = 12113 ; free virtual = 16232
+INFO: [Netlist 29-17] Analyzing 605 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_1/bd_88fd_psr_aclk_0_board.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_1/bd_88fd_psr_aclk_0_board.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/smartconnect.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/smartconnect.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_gpio_0/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc:54]
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 232 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 12284.301 ; gain = 0.000 ; free physical = 11583 ; free virtual = 15719
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 362 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 36 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 295 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 23 instances
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 12637.922 ; gain = 355.199 ; free physical = 11084 ; free virtual = 15227
+close_design
+close_bd_design [get_bd_designs design_1]
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+file mkdir /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/constrs_1
+close [ open /home/ryanb/Documents/MINA/hw/custom_ip/constraints.xdc w ]
+add_files -fileset constrs_1 /home/ryanb/Documents/MINA/hw/custom_ip/constraints.xdc
+open_bd_design {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:VexRiscvMcuAxi:1.0 - VexRiscvMcuAxi_0
+Adding component instance block -- xilinx.com:module_ref:axi_ram:1.0 - axi_ram_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:module_ref:muxed_dual_port_ram:1.0 - muxed_dual_port_ram_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:module_ref:plic_axil_wrapper:1.0 - plic_axil_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:axil_timer_64:1.0 - axil_timer_64_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:i2c_master_axil:1.0 - i2c_master_axil_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:axi_uart_bootloader_wrapper:1.0 - axi_uart_bootloader_1
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:basic_or:1.0 - basic_or_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_2
+Successfully read diagram <design_1> from block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>
+delete_bd_objs [get_bd_nets peripherals_i2c_scl_o_0] [get_bd_ports i2c_scl_o_0]
+delete_bd_objs [get_bd_nets peripherals_i2c_scl_t_0] [get_bd_ports i2c_scl_t_0]
+delete_bd_objs [get_bd_nets peripherals_i2c_sda_o_0] [get_bd_ports i2c_sda_o_0]
+delete_bd_objs [get_bd_nets peripherals_i2c_sda_t_0] [get_bd_ports i2c_sda_t_0]
+delete_bd_objs [get_bd_nets i2c_sda_i_0_1]
+delete_bd_objs [get_bd_nets i2c_scl_i_0_1]
+delete_bd_objs [get_bd_ports i2c_sda_i_0]
+delete_bd_objs [get_bd_ports i2c_scl_i_0]
+create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 i2c
+set_property location {1825 554} [get_bd_intf_ports i2c]
+delete_bd_objs [get_bd_intf_ports i2c]
+startgroup
+delete_bd_objs [get_bd_nets peripherals/i2c_master_axil_0_i2c_scl_o] [get_bd_nets peripherals/i2c_master_axil_0_i2c_scl_t] [get_bd_nets peripherals/i2c_master_axil_0_i2c_sda_o] [get_bd_nets peripherals/i2c_master_axil_0_i2c_sda_t]
+delete_bd_objs [get_bd_pins peripherals/i2c_scl_o_0] [get_bd_pins peripherals/i2c_scl_t_0] [get_bd_pins peripherals/i2c_sda_o_0] [get_bd_pins peripherals/i2c_sda_t_0]
+endgroup
+startgroup
+delete_bd_objs [get_bd_nets peripherals/i2c_scl_i_0_1] [get_bd_nets peripherals/i2c_sda_i_0_1]
+delete_bd_objs [get_bd_pins peripherals/i2c_scl_i_0] [get_bd_pins peripherals/i2c_sda_i_0]
+endgroup
+startgroup
+set_property CONFIG.C_GPIO_WIDTH {4} [get_bd_cells peripherals/axi_gpio_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 peripherals/util_ds_buf_0
+endgroup
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+set_property CONFIG.C_BUF_TYPE {IOBUF} [get_bd_cells peripherals/util_ds_buf_0]
+connect_bd_net [get_bd_pins peripherals/i2c_master_axil_0/i2c_sda_o] [get_bd_pins peripherals/util_ds_buf_0/IOBUF_IO_I]
+connect_bd_net [get_bd_pins peripherals/i2c_master_axil_0/i2c_sda_i] [get_bd_pins peripherals/util_ds_buf_0/IOBUF_IO_O]
+connect_bd_net [get_bd_pins peripherals/i2c_master_axil_0/i2c_sda_t] [get_bd_pins peripherals/util_ds_buf_0/IOBUF_IO_T]
+copy_bd_objs peripherals  [get_bd_cells {peripherals/util_ds_buf_0}]
+connect_bd_net [get_bd_pins peripherals/util_ds_buf_1/IOBUF_IO_O] [get_bd_pins peripherals/i2c_master_axil_0/i2c_scl_i]
+connect_bd_net [get_bd_pins peripherals/util_ds_buf_1/IOBUF_IO_I] [get_bd_pins peripherals/i2c_master_axil_0/i2c_scl_o]
+connect_bd_net [get_bd_pins peripherals/i2c_master_axil_0/i2c_scl_t] [get_bd_pins peripherals/util_ds_buf_1/IOBUF_IO_T]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals] -routing
+startgroup
+make_bd_pins_external  [get_bd_pins peripherals/util_ds_buf_1/IOBUF_IO_IO]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins peripherals/util_ds_buf_0/IOBUF_IO_IO]
+endgroup
+set_property name IOBUF_sda [get_bd_pins peripherals/IOBUF_IO_IO_1]
+set_property name IOBUF_scl [get_bd_pins peripherals/IOBUF_IO_IO_0]
+save_bd_design
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals] -routing
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+open_bd_design {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd}
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_cdma_0/Data' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/VexRiscvMcuAxi_0/dBusAxi' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+srcPin /peripherals/util_ds_buf_0/IOBUF_IO_I dstPin /peripherals/util_ds_buf_0/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+srcPin /peripherals/util_ds_buf_1/IOBUF_IO_I dstPin /peripherals/util_ds_buf_1/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_1_0: SmartConnect design_1_smartconnect_1_0 is in Low-Area Mode.
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_0: PORT /instr_ram/axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_1: PORT /instr_ram/axi_bram_ctrl_1/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /peripherals/axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 13473.164 ; gain = 0.000 ; free physical = 9841 ; free virtual = 14185
+make_wrapper -files [get_files /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+close_bd_design [get_bd_designs design_1]
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_ec15ec3b.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+reset_run design_1_axi_gpio_0_0_synth_1
+reset_run design_1_smartconnect_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/hw_handoff/design_1_smartconnect_1_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/synth/design_1_smartconnect_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/smartconnect_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/util_ds_buf_1 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1_sv.sveo
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 651615fa47eae80b; cache size = 51.226 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_1_0, cache-ID = fb27a3751864a53f; cache size = 51.226 MB.
+[Thu Sep 10 21:15:01 2026] Launched design_1_axi_gpio_0_0_synth_1, design_1_util_ds_buf_0_1_synth_1, design_1_util_ds_buf_0_0_synth_1...
+Run output will be captured here:
+design_1_axi_gpio_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+design_1_util_ds_buf_0_1_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_util_ds_buf_0_1_synth_1/runme.log
+design_1_util_ds_buf_0_0_synth_1: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_util_ds_buf_0_0_synth_1/runme.log
+[Thu Sep 10 21:15:01 2026] Launched synth_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 13615.242 ; gain = 0.000 ; free physical = 9484 ; free virtual = 13944
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_VexRiscvMcuAxi_0_0/design_1_VexRiscvMcuAxi_0_0.dcp' for cell 'design_1_i/VexRiscvMcuAxi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_cdma_0_0/design_1_axi_cdma_0_0.dcp' for cell 'design_1_i/axi_cdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_ram_0_0/design_1_axi_ram_0_0.dcp' for cell 'design_1_i/axi_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_1_0/design_1_negation_1_0.dcp' for cell 'design_1_i/negation_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_1_3/design_1_negation_1_3.dcp' for cell 'design_1_i/negation_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0.dcp' for cell 'design_1_i/smartconnect_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_basic_or_0_0/design_1_basic_or_0_0.dcp' for cell 'design_1_i/cpu_reset_controller/basic_or_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_0_0/design_1_negation_0_0.dcp' for cell 'design_1_i/cpu_reset_controller/negation_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_0_1/design_1_negation_0_1.dcp' for cell 'design_1_i/cpu_reset_controller/negation_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_1/design_1_axi_bram_ctrl_0_1.dcp' for cell 'design_1_i/instr_ram/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_2/design_1_axi_bram_ctrl_0_2.dcp' for cell 'design_1_i/instr_ram/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_muxed_dual_port_ram_0_0/design_1_muxed_dual_port_ram_0_0.dcp' for cell 'design_1_i/instr_ram/muxed_dual_port_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/peripherals/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp' for cell 'design_1_i/peripherals/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_uart_bootloader_1_0/design_1_axi_uart_bootloader_1_0.dcp' for cell 'design_1_i/peripherals/axi_uart_bootloader_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/design_1_axil_timer_64_0_0.dcp' for cell 'design_1_i/peripherals/axil_timer_64_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_i2c_master_axil_0_0/design_1_i2c_master_axil_0_0.dcp' for cell 'design_1_i/peripherals/i2c_master_axil_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_negation_1_2/design_1_negation_1_2.dcp' for cell 'design_1_i/peripherals/negation_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_plic_axil_wrapper_0_0/design_1_plic_axil_wrapper_0_0.dcp' for cell 'design_1_i/peripherals/plic_axil_wrapper_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/design_1_smartconnect_1_0.dcp' for cell 'design_1_i/peripherals/smartconnect_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.dcp' for cell 'design_1_i/peripherals/util_ds_buf_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1.dcp' for cell 'design_1_i/peripherals/util_ds_buf_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 13615.242 ; gain = 0.000 ; free physical = 9584 ; free virtual = 14055
+INFO: [Netlist 29-17] Analyzing 579 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/peripherals/util_ds_buf_1/U0/<const0>.
+WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/peripherals/util_ds_buf_0/U0/<const0>.
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/bd_48ac_psr_aclk_0_board.xdc] for cell 'design_1_i/smartconnect_0/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/smartconnect.xdc] for cell 'design_1_i/smartconnect_0/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_1/bd_88fd_psr_aclk_0_board.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/ip/ip_1/bd_88fd_psr_aclk_0_board.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/smartconnect.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/smartconnect.xdc] for cell 'design_1_i/peripherals/smartconnect_1/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_gpio_0/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc:54]
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_2/design_1_clk_wiz_0_2.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/peripherals/util_ds_buf_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/peripherals/util_ds_buf_0/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_board.xdc] for cell 'design_1_i/peripherals/util_ds_buf_1/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_board.xdc] for cell 'design_1_i/peripherals/util_ds_buf_1/U0'
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/constraints.xdc]
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/constraints.xdc]
+Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/peripherals/axi_quad_spi_0/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/peripherals/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/opt/Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 232 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 13615.242 ; gain = 0.000 ; free physical = 9495 ; free virtual = 13966
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 336 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 10 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 295 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 23 instances
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 13615.242 ; gain = 0.000 ; free physical = 9250 ; free virtual = 13721
+show_objects -name find_1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ BMEM.*.* } ]
+close_design
+open_bd_design {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:VexRiscvMcuAxi:1.0 - VexRiscvMcuAxi_0
+Adding component instance block -- xilinx.com:module_ref:axi_ram:1.0 - axi_ram_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:module_ref:muxed_dual_port_ram:1.0 - muxed_dual_port_ram_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:module_ref:plic_axil_wrapper:1.0 - plic_axil_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:axil_timer_64:1.0 - axil_timer_64_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:i2c_master_axil:1.0 - i2c_master_axil_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:axi_uart_bootloader_wrapper:1.0 - axi_uart_bootloader_1
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_1
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:basic_or:1.0 - basic_or_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_2
+Successfully read diagram <design_1> from block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>
+set_property name IOBUF_scl [get_bd_ports IOBUF_IO_IO_0]
+set_property name IOBUF_sda [get_bd_ports IOBUF_IO_IO_1]
+save_bd_design
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/VexRiscvMcuAxi_0/dBusAxi' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_cdma_0/Data' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+srcPin /peripherals/util_ds_buf_0/IOBUF_IO_I dstPin /peripherals/util_ds_buf_0/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+srcPin /peripherals/util_ds_buf_1/IOBUF_IO_I dstPin /peripherals/util_ds_buf_1/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_1_0: SmartConnect design_1_smartconnect_1_0 is in Low-Area Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_0: PORT /instr_ram/axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_1: PORT /instr_ram/axi_bram_ctrl_1/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /peripherals/axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 13877.367 ; gain = 0.000 ; free physical = 9281 ; free virtual = 13786
+close_bd_design [get_bd_designs design_1]
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/hw_handoff/design_1_smartconnect_1_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/synth/design_1_smartconnect_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/smartconnect_1 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1_sv.sveo
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 651615fa47eae80b; cache size = 51.606 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_1_0, cache-ID = fb27a3751864a53f; cache size = 51.606 MB.
+[Thu Sep 10 21:26:57 2026] Launched synth_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/synth_1/runme.log
+[Thu Sep 10 21:26:57 2026] Launched impl_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 14051.590 ; gain = 126.199 ; free physical = 9161 ; free virtual = 13675
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.34 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9251 ; free virtual = 13823
+INFO: [Netlist 29-17] Analyzing 477 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9222 ; free virtual = 13795
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9184 ; free virtual = 13757
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9184 ; free virtual = 13757
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9184 ; free virtual = 13757
+Read placeStorage: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9181 ; free virtual = 13753
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9181 ; free virtual = 13753
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.08 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9181 ; free virtual = 13753
+Read Physdb Files: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.33 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9181 ; free virtual = 13753
+Restored from archive | CPU: 0.490000 secs | Memory: 16.523239 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.33 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9181 ; free virtual = 13753
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9181 ; free virtual = 13753
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 244 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 10 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 204 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 22 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 8796 ; free virtual = 13374
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.33 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9112 ; free virtual = 13696
+INFO: [Netlist 29-17] Analyzing 477 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9107 ; free virtual = 13692
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9104 ; free virtual = 13689
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9104 ; free virtual = 13689
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9104 ; free virtual = 13689
+Read placeStorage: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9109 ; free virtual = 13694
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9109 ; free virtual = 13694
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.07 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9109 ; free virtual = 13694
+Read Physdb Files: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.33 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9109 ; free virtual = 13694
+Restored from archive | CPU: 0.470000 secs | Memory: 16.521942 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.33 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9109 ; free virtual = 13694
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 9109 ; free virtual = 13694
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 244 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 10 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 204 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 22 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 14051.590 ; gain = 0.000 ; free physical = 8907 ; free virtual = 13496
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/synth/design_1_axil_timer_64_0_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/synth/design_1_axil_timer_64_0_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/synth/design_1_axil_timer_64_0_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+close_design
+open_bd_design {/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:module_ref:VexRiscvMcuAxi:1.0 - VexRiscvMcuAxi_0
+Adding component instance block -- xilinx.com:module_ref:axi_ram:1.0 - axi_ram_0
+Adding component instance block -- xilinx.com:ip:axi_cdma:4.1 - axi_cdma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:module_ref:muxed_dual_port_ram:1.0 - muxed_dual_port_ram_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_1
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:module_ref:plic_axil_wrapper:1.0 - plic_axil_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:axil_timer_64:1.0 - axil_timer_64_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:module_ref:i2c_master_axil:1.0 - i2c_master_axil_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:axi_uart_bootloader_wrapper:1.0 - axi_uart_bootloader_1
+Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_1
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:module_ref:basic_or:1.0 - basic_or_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:module_ref:negation:1.0 - negation_2
+Successfully read diagram <design_1> from block design file </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd>
+update_module_reference design_1_axil_timer_64_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IRQ' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IRQ': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IRQ' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IRQ': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'S_AXI_ARESETN'.
+WARNING: [IP_Flow 19-11770] Clock interface 'S_AXI_ACLK' has no FREQ_HZ parameter.
+Upgrading '/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_axil_timer_64_0_0/synth/design_1_axil_timer_64_0_0.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+INFO: [IP_Flow 19-3420] Updated design_1_axil_timer_64_0_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'TIMER_CLK_IN'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_axil_timer_64_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'TIMER_CLK_IN' is not found on the upgraded version of the cell '/peripherals/axil_timer_64_0'. Its connection to the net 'timer_clk_in_1' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_axil_timer_64_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+regenerate_bd_layout
+regenerate_bd_layout -hierarchy [get_bd_cells peripherals]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/VexRiscvMcuAxi_0/dBusAxi' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/axi_cdma_0/Data' to master interface '/smartconnect_0/M04_AXI'. Please either complete or remove this path to resolve.
+srcPin /peripherals/util_ds_buf_0/IOBUF_IO_I dstPin /peripherals/util_ds_buf_0/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+srcPin /peripherals/util_ds_buf_1/IOBUF_IO_I dstPin /peripherals/util_ds_buf_1/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 16K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x1000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x3000_0000 [ 64K ]> from slave interface '/smartconnect_0/S01_AXI' to master interface '/smartconnect_0/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_0000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_1000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_2000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_3000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_4000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x2000_5000 [ 4K ]> from slave interface '/peripherals/smartconnect_1/S00_AXI' to master interface '/peripherals/smartconnect_1/M05_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_1_0: SmartConnect design_1_smartconnect_1_0 is in Low-Area Mode.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /peripherals/axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_0: PORT /instr_ram/axi_bram_ctrl_0/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+WARNING: [xilinx.com:ip:axi_bram_ctrl:4.1-1] /instr_ram/axi_bram_ctrl_1: PORT /instr_ram/axi_bram_ctrl_1/BRAM_PORTA is UNCONNECTED in the design. Leaving the BRAM interface unconnected will cause BRAMs not to be initialized by Data2Mem
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/VexRiscvMcuAxi_0/softwareInterrupt
+
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.v
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/instr_ram/muxed_dual_port_ram_0/raw_b_addr'(12) to pin '/instr_ram/ram_addr'(14) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/hw_handoff/design_1_smartconnect_1_0.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/ip/design_1_smartconnect_1_0/bd_0/synth/design_1_smartconnect_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/smartconnect_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block peripherals/axil_timer_64_0 .
+Exporting to file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/design_1_sv.sveo
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_0_0, cache-ID = 651615fa47eae80b; cache size = 51.606 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_smartconnect_1_0, cache-ID = fb27a3751864a53f; cache size = 51.606 MB.
+[Thu Sep 10 21:40:37 2026] Launched design_1_axil_timer_64_0_0_synth_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/design_1_axil_timer_64_0_0_synth_1/runme.log
+[Thu Sep 10 21:40:37 2026] Launched synth_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 14534.168 ; gain = 137.188 ; free physical = 8981 ; free virtual = 13512
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+close_bd_design [get_bd_designs design_1]
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : </home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.srcs/sources_1/bd/design_1/ui/bd_fbe1e0a7.ui> 
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/ryanb/Documents/MINA/hw/custom_ip/sysclock.vhd:]
+launch_runs impl_1 -jobs 8
+[Thu Sep 10 21:41:29 2026] Launched impl_1...
+Run output will be captured here: /home/ryanb/Documents/MINA/hw/custom_ip/MINA_proj/MINA_proj.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8921 ; free virtual = 13508
+INFO: [Netlist 29-17] Analyzing 477 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/peripherals/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+Read ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8914 ; free virtual = 13500
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13455
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13455
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13455
+Read placeStorage: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.22 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13456
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13456
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.07 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13456
+Read Physdb Files: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.32 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13456
+Restored from archive | CPU: 0.490000 secs | Memory: 16.603012 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.33 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13456
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8869 ; free virtual = 13456
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 244 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 10 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 204 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 22 instances
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 15063.426 ; gain = 0.000 ; free physical = 8614 ; free virtual = 13201
