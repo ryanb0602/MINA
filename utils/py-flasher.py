@@ -112,6 +112,8 @@ def main():
                 chunk_start = i * 4
                 data_word = bin_data[chunk_start : chunk_start + 4]
 
+                data_word = data_word[::-1]
+
                 # Send the packet
                 send_write_packet(ser, current_address, data_word)
 
