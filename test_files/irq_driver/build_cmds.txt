@@ -1,0 +1,4 @@
+These are the following commands I used to build this script:
+
+riscv64-unknown-elf-gcc -march=rv32imac_zicsr -mabi=ilp32 -T link.ld -nostartfiles crt0.S gpio_toggle.c -o firmware.elf
+riscv64-unknown-elf-objcopy -O binary firmware.elf firmware.bin

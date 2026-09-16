@@ -3605,7 +3605,6 @@
           "axi_clk_1": {
             "ports": [
               "axi_clk",
-              "plic_axil_wrapper_0/S_AXI_ACLK",
               "axi_gpio_0/s_axi_aclk",
               "i2c_master_axil_0/clk",
               "negation_1/clk",
@@ -3613,7 +3612,8 @@
               "axi_uart_bootloader_1/s_axi_aclk",
               "axi_quad_spi_0/s_axi_aclk",
               "axi_quad_spi_0/ext_spi_clk",
-              "axil_timer_64_0/S_AXI_ACLK"
+              "axil_timer_64_0/S_AXI_ACLK",
+              "plic_axil_wrapper_0/S_AXI_ACLK"
             ]
           },
           "axi_gpio_0_ip2intc_irpt": {
@@ -3633,11 +3633,11 @@
               "axi_resetn",
               "negation_1/a",
               "axi_gpio_0/s_axi_aresetn",
-              "plic_axil_wrapper_0/S_AXI_ARESETN",
               "smartconnect_1/aresetn",
               "axi_uart_bootloader_1/s_axi_aresetn",
               "axi_quad_spi_0/s_axi_aresetn",
-              "axil_timer_64_0/S_AXI_ARESETN"
+              "axil_timer_64_0/S_AXI_ARESETN",
+              "plic_axil_wrapper_0/S_AXI_ARESETN"
             ]
           },
           "axi_uart_bootloader_1_bram_addr": {

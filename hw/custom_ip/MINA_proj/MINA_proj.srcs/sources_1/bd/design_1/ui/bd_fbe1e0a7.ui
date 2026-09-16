@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.676123",
-   "Default View_TopLeft":"-524,614",
+   "Default View_TopLeft":"-524,367",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
@@ -70,7 +70,7 @@ preplace netloc smartconnect_1_M03_AXI 1 1 1 N 580
 preplace netloc smartconnect_1_M04_AXI 1 1 1 310 70n
 preplace netloc smartconnect_1_M05_AXI 1 1 1 370 420n
 levelinfo -pg 1 0 170 560 760
-pagesize -pg 1 -db -bbox -sgen -130 0 920 1270
+pagesize -pg 1 -db -bbox -sgen -140 0 920 1270
 "
 }
 0
