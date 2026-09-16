@@ -1,5 +1,4 @@
 #include "../include/irq.h"
-#include "../include/uart.h"
 #include <stddef.h> // Needed for NULL in C
 
 void (*plic_irq_handlers[8])(void) = {NULL};
