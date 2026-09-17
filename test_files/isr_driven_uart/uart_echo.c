@@ -8,10 +8,11 @@ int main(void) {
   volatile uint32_t *gpio_t_state = gpio + 1;
 
   *gpio_t_state = 0x00000000;
+  *gpio = (uint32_t)0;
 
   init_interrupts();
 
-  *gpio |= ~((uint32_t)0);
+  *gpio |= 0b0001;
 
   uart_init();
 
