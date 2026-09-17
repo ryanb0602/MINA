@@ -43,4 +43,7 @@ char uart_getc(void);
 // put string to tx
 void uart_puts(const char *str);
 
+void uart_isr(void);
+void uart_init();
+
 #endif
