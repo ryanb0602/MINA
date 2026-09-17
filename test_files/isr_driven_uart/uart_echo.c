@@ -1,4 +1,4 @@
-#include "../../drivers/drivers.h"
+#include "../../sdk/drivers/drivers.h"
 #include <stdint.h>
 
 int main(void) {

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Ensure the script is run with root privileges
+if [ "$EUID" -ne 0 ]; then
+    echo "Error: Please run this script as root (e.g., sudo ./install.sh)"
+    exit 1
+fi
+
+SDK_TARGET="/opt/mina-sdk"
+BIN_TARGET="/usr/local/bin/mina-build"
+
+echo "Installing MINA SDK to $SDK_TARGET..."
+
+# 1. Create the target directory (and clear it if doing a reinstall/update)
+mkdir -p "$SDK_TARGET"
+rm -rf "${SDK_TARGET:?}/"*
+
+# 2. Copy the SDK contents (assuming install.sh is run from the SDK root)
+cp -r ./sdk/* "$SDK_TARGET/"
+
+# Ensure the core script has execution permissions
+chmod +x "$SDK_TARGET/mina-build"
+
+# 3. Create a global launcher script in the system PATH
+echo "Creating system-wide launcher at $BIN_TARGET..."
+
+cat << 'EOF' > "$BIN_TARGET"
+#!/bin/bash
+# Force the SDK path environment variable so the wrapper knows where the Makefile is
+export MINA_SDK_PATH="/opt/mina-sdk"
+exec /opt/mina-sdk/mina-build "$@"
+EOF
+
+# Make the launcher executable
+chmod +x "$BIN_TARGET"
+
+echo "MINA SDK successfully installed!"
+echo "You can now compile projects from any directory by typing:"
+echo "  mina-build <main.c> [user_includes_dir] [user_src_dir]"

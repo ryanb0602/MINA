@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# Ensure at least the main source file is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <main.c> [user_include_dir] [user_source_dir]"
+    echo "Example: $0 src/main.c inc/ src/extra_drivers/"
+    exit 1
+fi
+
+# 1. Capture the directory where the user ran the command
+PROJECT_DIR=$(pwd)
+
+# 2. Convert arguments to absolute paths
+MAIN_FILE=$(realpath "$1")
+USER_INC_DIR=""
+USER_SRC_DIR=""
+
+if [ -n "$2" ]; then USER_INC_DIR=$(realpath "$2"); fi
+if [ -n "$3" ]; then USER_SRC_DIR=$(realpath "$3"); fi
+
+# 3. Locate the SDK directory
+if [ -z "$MINA_SDK_PATH" ]; then
+    SDK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+else
+    SDK_DIR="$MINA_SDK_PATH"
+fi
+
+# 4. Create a temporary build directory in /tmp/
+TMP_BUILD_DIR=$(mktemp -d -t mina_build_XXXXXX)
+
+echo "Building MINA project..."
+echo "Application: $MAIN_FILE"
+
+# 5. Call Make and pass the temporary BUILD_DIR
+make -C "$SDK_DIR" \
+    APP_SRCS="$MAIN_FILE" \
+    USER_INC_DIR="$USER_INC_DIR" \
+    USER_SRC_DIR="$USER_SRC_DIR" \
+    BUILD_DIR="$TMP_BUILD_DIR"
+
+# Halt and clean up if the build fails
+if [ $? -ne 0 ]; then
+    echo "Error: Compilation failed."
+    rm -rf "$TMP_BUILD_DIR"
+    exit 1
+fi
+
+# 6. Move the build artifacts back to the user's project directory
+echo "Build successful. Moving artifacts to $PROJECT_DIR/build/"
+mkdir -p "$PROJECT_DIR/build"
+
+mv "$TMP_BUILD_DIR/"*.elf "$PROJECT_DIR/build/" 2>/dev/null
+mv "$TMP_BUILD_DIR/"*.bin "$PROJECT_DIR/build/" 2>/dev/null
+mv "$TMP_BUILD_DIR/"*.asm "$PROJECT_DIR/build/" 2>/dev/null
+mv "$TMP_BUILD_DIR/"*.map "$PROJECT_DIR/build/" 2>/dev/null
+
+# 7. Clean up the temporary object files
+rm -rf "$TMP_BUILD_DIR"
+
+echo "Done! Outputs are in ./build/"
