@@ -54,6 +54,9 @@ extern int plic_idx_sort[8];
 void init_interrupts(void);
 void __attribute__((interrupt("machine"), aligned(4))) trap_handler(void);
 
+extern void (*timer_irq_handler)(void);
+void reg_timer_irq(void (*_timer_irq_handler)(void));
+
 void plic_irq_handler(void);
 
 void reg_irq_handler(void (*_plic_irq_handler)(void), int priority,

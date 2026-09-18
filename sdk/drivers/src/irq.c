@@ -4,6 +4,7 @@
 void (*plic_irq_handlers[8])(void) = {NULL};
 int plic_irq_priorities[8] = {-1, -1, -1, -1, -1, -1, -1, -1};
 int plic_idx_sort[8] = {0, 1, 2, 3, 4, 5, 6, 7};
+void (*timer_irq_handler)(void) = NULL;
 
 void init_interrupts(void) {
   // A. Point mtvec to our handler (Direct mode: lowest 2 bits are 00)
@@ -33,6 +34,11 @@ void __attribute__((interrupt("machine"), aligned(4))) trap_handler(void) {
       // branch to handling with the PLIC
       plic_irq_handler();
     } else if (exception_code == IRQ_M_TIMER) {
+
+      if (timer_irq_handler) {
+        timer_irq_handler();
+      }
+
     } else if (exception_code == IRQ_M_SOFT) {
     }
   } else {
@@ -104,4 +110,8 @@ void resort_by_prior() {
   CS(3, 5);
   // Layer 7
   CS(3, 4);
+}
+
+void reg_timer_irq(void (*_timer_irq_handler)(void)) {
+  timer_irq_handler = _timer_irq_handler;
 }

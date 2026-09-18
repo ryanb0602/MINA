@@ -11,6 +11,7 @@ ______________________________________________
 #define DRIVERS_H
 
 #include "include/irq.h"
+#include "include/timer.h"
 #include "include/uart.h"
 
 #endif
